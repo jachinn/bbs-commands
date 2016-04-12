@@ -1,39 +1,30 @@
-//set up variables for form fields, arrays for each filter type...
 var chars = document.querySelectorAll(".who .char");
 var commandInput = document.querySelector('.commandInput input');
 var commandSuggestions = document.querySelector('#meldSuggestions');
 var commands = document.querySelectorAll(".command");
 var typeOptions = document.querySelector(".typeSelect select");
 var abilityOptions = document.querySelector(".abilitySelect select");
-//create reset button for all filters
 var reset = document.querySelector(".reset");
-//this will hold applied filters
 var filters = [];
-//holds all possible filters. used for autocomplete
 //holds all filter options but only actually needs to hold ingredients/melds
 //could be used to do autocomplete for all fields
 var filterOptions = [];
 
-//unique list of all abilities, in journal order for ease of reference
 var abilities = "Treasure Magnet, HP Prize Plus, Link Prize Plus, Lucky Strike, HP Boost, Fire Boost, Blizzard Boost, Thunder Boost, Cure Boost, Item Boost, Attack Haste, Magic Haste, Combo F Boost, Finish Boost, Fire Screen, Blizzard Screen, Thunder Screen, Dark Screen, Reload Boost, Defender, Zero EXP, Combo Plus, Air Combo Plus, EXP Chance, EXP Walker, Damage Syphon, Second Chance, Once More, Scan, Leaf Bracer".split(', ');
-//create reset option for abilities
 abilityReset = document.createElement("option");
 abilityReset.textContent = "Select";
 abilityOptions.appendChild(abilityReset);
 
-//constructor for filters to be added to filters array
-//holds type of filter and name of filter
-//eg: new Filter("meld", "Blitz")
 function Filter(type, name) {
     this.type = type;
     this.name = name;
 }
-//adds characters to list of all filters
+
 filterOptions.push(new Filter("person", "T"));
 filterOptions.push(new Filter("person", "V"));
 filterOptions.push(new Filter("person", "A"));
 
-//creates type options
+
 for (var i = 65; i < 81; i++) { //A through P
 	var type = String.fromCharCode(i);
 	var option = document.createElement("option");
@@ -41,14 +32,12 @@ for (var i = 65; i < 81; i++) { //A through P
     filterOptions.push(new Filter("type", "type" + type));
 	typeOptions.appendChild(option);
 }
-//adds reset option to type filter dropdown
+
 var resetOption = document.createElement("option");
 resetOption.textContent = "Select";
 var firstOption = typeOptions.firstChild;
 typeOptions.insertBefore(resetOption, firstOption);
 
-//iterates over commands and uniques melds
-//adds unique values to list of all filters
 var melds = [];
 Array.prototype.forEach.call(commands, function(command) {
     var meld = command.cells[0].textContent;
@@ -58,8 +47,7 @@ Array.prototype.forEach.call(commands, function(command) {
         filterOptions.push(meldFilter);
     }
 });
-//goes through all ingredients and uniques list
-//adds unique values to dropdown and list of all filters
+
 var ingColumnsData = document.querySelectorAll(".command td .ingredient");
 var ingredients = [];
 Array.prototype.forEach.call(ingColumnsData, function(ing) {
@@ -72,7 +60,6 @@ Array.prototype.forEach.call(ingColumnsData, function(ing) {
 var ingredientInput = document.querySelector('.ingredientInput input');
 var ingredientSuggestions = document.querySelector('#ingredientSuggestions');
 
-//iterates over abilities array (created above) and adds each to dropdown and filterOptions
 abilities.forEach(function(ability) {
     var abilityEl = document.createElement("option");
     abilityEl.textContent = ability;
@@ -81,13 +68,10 @@ abilities.forEach(function(ability) {
     
 });
 
-//get all classes from command
-//used for identifying character and type
 function getClasses(command) {
     return command.className.split(' ');
 }
 
-//since abilities are stored in separate table cells, this makes it easier to access them
 function getAbilities(command) {
     var commandAbilities = [];
     try{ //avoid adding commands that don't have abilities
@@ -99,12 +83,10 @@ function getAbilities(command) {
     }
 }
 
-//is thing in array
 function isInArray(array, item) {
     return array.indexOf(item) > -1;
 }
 
-//check if command has given filter
 function matches(filter, command) {
     if (filter.type == "person" || filter.type == "type"){
         var classes = getClasses(command);
@@ -121,9 +103,6 @@ function matches(filter, command) {
     }
 }
 
-//apply selected filters to table
-//this is the thing that makes the magic happen
-//called each time a filter is applied
 function applyFilters(filters) {
     if (filters.length == 0) {
         Array.prototype.forEach.call(commands, function(command) {
@@ -146,24 +125,21 @@ function applyFilters(filters) {
 
 
 
-//show commands    
 function show(command) {
     command.style.display = '';
 }
-//hide command
+
 function hide(command){
    command.style.display = 'none';
 }
 
-//remove given item from array
 function removeFromArray(array, item) {
     if (array.indexOf(item) > -1) {
         array.splice(array.indexOf(item),1);
         return array;
     }
 }
-//remove filters of given type
-//eg: if filtering to show Terra's commands, all other person filters should be removed first
+
 function deFilter(type) {
     filters.forEach(function(item) {
         if (item.type == type) {
@@ -172,7 +148,7 @@ function deFilter(type) {
     });
     return filters;
 }
-//case-folding contains
+//case-folds
 function contains(big, little) {
     big = big.toLowerCase();
     little = little.toLowerCase();
