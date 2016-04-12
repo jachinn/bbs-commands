@@ -1,0 +1,67 @@
+table, tr, td, th{
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+td,th{
+	vertical-align: middle;
+	padding: 5px;
+}
+.crystal{
+	text-transform: capitalize;
+}
+
+.who ul{
+	list-style-type: none;
+	padding: 0;
+}
+
+.who li{
+	display: inline-block;
+	
+}
+#meldSuggestions, #ingredientSuggestions{
+	display: none;
+	position: absolute;
+	z-index: 2;
+	max-height: 150px;
+	border: 2px solid lightgray;
+	background-color: white;
+	width: 170px;
+	overflow-y: auto;
+	margin-top: 0px;
+}
+div{
+	margin: 10px 0;
+}
+
+.commandInput{
+	position: relative;
+}
+
+body{
+	margin: 50px 50px;
+	font-family: "sans-serif";
+	
+}
+.T {
+	background-color: rgba(256, 0, 0, .6);
+}
+.V {
+	background-color: rgba(0, 256, 0, .6);
+}
+.A {
+	background-color: rgba(0, 0, 256, .6);
+}
+.T.V {
+	background-color: rgba(256, 256, 0, .6);
+}
+.V.A {
+	background-color: rgba(0, 256, 256, .6);
+}
+.T.A {
+	background-color: rgba(256, 0, 256, .6);
+}
+.T.V.A{
+	background-color: rgba(256, 256, 256, .6);
+}
+

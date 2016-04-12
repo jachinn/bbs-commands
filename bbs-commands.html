@@ -1,0 +1,3952 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>BBS Command Guide</title>
+      <link href="style.css" rel="stylesheet" type="text/css">
+   </head>
+   <body>
+      <h1>Kingdom Hearts Birth By Sleep Command Tool</h1>
+      <h2>Filters</h2>
+      <div class="who">
+         <ul>
+            <li><input name="who" class="char" type="radio" value="All" checked="true">All</li>
+            <li><input name="who" class="char" type="radio" value="T">Terra</li>
+            <li><input name="who" class="char" type="radio" value="V">Ventus</li>
+            <li><input name="who" class="char" type="radio" value="A">Aqua</li>
+         </ul>
+      </div>
+      <div class="commandInput"><input type="text" name="command"> Command Name<div id="meldSuggestions"></div>
+      </div>
+      <div class="ingredientInput"><input type="text" name="ingredient"> Ingredient Name<div id="ingredientSuggestions"></div>
+      </div>
+      <div class="typeSelect"><select></select> Type
+         
+      </div>
+      <div class="abilitySelect"><select></select> Ability
+         
+      </div>
+      <p><button class="reset">Reset</button></p>
+      <h2>Commands</h2>
+      <table>
+         <tr>
+            <th rowspan="2">Command</th>
+            <th rowspan="2">Type</th>
+            <th rowspan="2">Ingredients</th>
+            <th rowspan="2">Odds</th>
+            <th colspan="10">Abilities</th>
+         </tr>
+         <tr class="crystal">
+            <th>shimmering</th>
+            <th>fleeting</th>
+            <th>pulsing</th>
+            <th>wellspring</th>
+            <th>soothing</th>
+            <th>hungry</th>
+            <th>abounding</th>
+         </tr>
+         <tr class="T V A type command">
+            <td>Quick Blitz</td>
+            <td></td>
+            <td><span class="ingredient">Chest</span><br><span class="ingredient"></span></td>
+            <td></td>
+            <td colspan="10"></td>
+         </tr>
+         <tr class="T V A typeO command">
+            <td>Blitz</td>
+            <td>O</td>
+            <td><span class="ingredient">Quick Blitz</span><br><span class="ingredient">Slot Edge</span></td>
+            <td>90</td>
+            <td>Dark Screen</td>
+            <td>Attack Haste</td>
+            <td>Finish Boost</td>
+            <td>Air Combo Plus</td>
+            <td>Item Boost</td>
+            <td>Treasure Magnet</td>
+            <td>Lucky Strike</td>
+         </tr>
+         <tr class="A typeP command">
+            <td>Blitz</td>
+            <td>P</td>
+            <td><span class="ingredient">Barrier Surge</span><br><span class="ingredient">Wishing Edge</span></td>
+            <td>90</td>
+            <td>Dark Screen</td>
+            <td>Magic Haste</td>
+            <td>Combo F Boost</td>
+            <td>Air Combo Plus</td>
+            <td>Item Boost</td>
+            <td>Treasure Magnet</td>
+            <td>EXP Walker</td>
+         </tr>
+         <tr class="T V A typeK command">
+            <td>Blitz</td>
+            <td>K</td>
+            <td><span class="ingredient">Stun Edge</span><br><span class="ingredient">Slot Edge</span></td>
+            <td>90</td>
+            <td>Thunder Screen</td>
+            <td>Attack Haste</td>
+            <td>Finish Boost</td>
+            <td>Combo Plus</td>
+            <td>HP Boost</td>
+            <td>Treasure Magnet</td>
+            <td>Link Prize Plus</td>
+         </tr>
+         <tr class="T typeN command">
+            <td>Meteor Crash</td>
+            <td>N</td>
+            <td><span class="ingredient">Blitz</span><br><span class="ingredient">Quake</span></td>
+            <td>100</td>
+            <td>Cure Boost</td>
+            <td>Reload Boost</td>
+            <td>Second Chance</td>
+            <td>Combo Plus</td>
+            <td>Defender</td>
+            <td>Treasure Magnet</td>
+            <td>Lucky Strike</td>
+         </tr>
+         <tr class="T typeD command">
+            <td>Meteor Crash</td>
+            <td>D</td>
+            <td><span class="ingredient">Fire Strike</span><br><span class="ingredient">Brutal Blast</span></td>
+            <td>100</td>
+            <td>Fire Screen</td>
+            <td>Attack Haste</td>
+            <td>Leaf Bracer</td>
+            <td>Combo Plus</td>
+            <td>HP Boost</td>
+            <td>HP Prize Plus</td>
+            <td>Link Prize Plus</td>
+         </tr>
+         <tr class="A typeO command">
+            <td>Magic Hour</td>
+            <td>O</td>
+            <td><span class="ingredient">Blitz</span><br><span class="ingredient">Zero Graviga</span></td>
+            <td>90</td>
+            <td>Dark Screen</td>
+            <td>Attack Haste</td>
+            <td>Finish Boost</td>
+            <td>Air Combo Plus</td>
+            <td>Item Boost</td>
+            <td>Treasure Magnet</td>
+            <td>Lucky Strike</td>
+         </tr>
+         <tr class="A typeN command">
+            <td>Magic Hour</td>
+            <td>N</td>
+            <td><span class="ingredient">Barrier Surge</span><br><span class="ingredient">Aeroga</span></td>
+            <td>90</td>
+            <td>Cure Boost</td>
+            <td>Reload Boost</td>
+            <td>Second Chance</td>
+            <td>Combo Plus</td>
+            <td>Defender</td>
+            <td>Treasure Magnet</td>
+            <td>Lucky Strike</td>
+         </tr>
+         <tr class="T V type command">
+            <td>Sliding Dash</td>
+            <td></td>
+            <td><span class="ingredient">Start</span><br><span class="ingredient"></span></td>
+            <td></td>
+            <td colspan="10"></td>
+         </tr>
+         <tr class="A type command">
+            <td>Sliding Dash</td>
+            <td></td>
+            <td><span class="ingredient">Shop</span><br><span class="ingredient"></span></td>
+            <td></td>
+            <td colspan="10"></td>
+         </tr>
+         <tr class="T V A typeD command">
+            <td>Fire Dash</td>
+            <td>D</td>
+            <td><span class="ingredient">Sliding Dash</span><br><span class="ingredient">Fire</span></td>
+            <td>100</td>
+            <td>Fire Screen</td>
+            <td>Attack Haste</td>
+            <td>Leaf Bracer</td>
+            <td>Combo Plus</td>
+            <td>HP Boost</td>
+            <td>HP Prize Plus</td>
+            <td>Link Prize Plus</td>
+         </tr>
+         <tr class="T V A typeC command">
+            <td>Fire Dash</td>
+            <td>C</td>
+            <td><span class="ingredient">Sliding Dash</span><br><span class="ingredient">Fira</span></td>
+            <td>100</td>
+            <td>Fire Screen</td>
+            <td>Attack Haste</td>
+            <td>Finish Boost</td>
+            <td>Combo Plus</td>
+            <td>HP Boost</td>
+            <td>HP Prize Plus</td>
+            <td>Link Prize Plus</td>
+         </tr>
+         <tr class="T V A typeD command">
+            <td>Fire Dash</td>
+            <td>D</td>
+            <td><span class="ingredient">Confusion Strike</span><br><span class="ingredient">Fire</span></td>
+            <td>100</td>
+            <td>Fire Screen</td>
+            <td>Attack Haste</td>
+            <td>Leaf Bracer</td>
+            <td>Combo Plus</td>
+            <td>HP Boost</td>
+            <td>HP Prize Plus</td>
+            <td>Link Prize Plus</td>
+         </tr>
+         <tr class="T typeD command">
+            <td>Dark Haze</td>
+            <td>D</td>
+            <td><span class="ingredient">Fire Dash</span><br><span class="ingredient">Zero Gravira</span></td>
+            <td>100</td>
+            <td>Fire Screen</td>
+            <td>Attack Haste</td>
+            <td>Leaf Bracer</td>
+            <td>Combo Plus</td>
+            <td>HP Boost</td>
+            <td>HP Prize Plus</td>
+            <td>Link Prize Plus</td>
+         </tr>
+         <tr class="T typeA command">
+            <td>Dark Haze</td>
+            <td>A</td>
+            <td><span class="ingredient">Fire Dash</span><br><span class="ingredient">Blackout</span></td>
+            <td>100</td>
+            <td>Fire Boost</td>
+            <td>Magic Haste</td>
+            <td>Leaf Bracer</td>
+            <td>Air Combo Plus</td>
+            <td>HP Boost</td>
+            <td>HP Prize Plus</td>
+            <td>Link Prize Plus</td>
+         </tr>
+         <tr class="T typeC command">
+            <td>Dark Haze</td>
+            <td>C</td>
+            <td><span class="ingredient">Fire Surge</span><br><span class="ingredient">Zero Gravity</span></td>
+            <td>100</td>
+            <td>Fire Screen</td>
+            <td>Attack Haste</td>
+            <td>Finish Boost</td>
+            <td>Combo Plus</td>
+            <td>HP Boost</td>
+            <td>HP Prize Plus</td>
+            <td>Link Prize Plus</td>
+         </tr>
+         <tr class="T typeD command">
+            <td>Sonic Blade</td>
+            <td>D</td>
+            <td><span class="ingredient">Blitz</span><br><span class="ingredient">Dark Haze</span></td>
+            <td>90</td>
+            <td>Fire Screen</td>
+            <td>Attack Haste</td>
+            <td>Leaf Bracer</td>
+            <td>Combo Plus</td>
+            <td>HP Boost</td>
+            <td>HP Prize Plus</td>
+            <td>Link Prize Plus</td>
+         </tr>
+         <tr class="T V A typeN command">
+            <td>Sonic Blade</td>
+            <td>N</td>
+            <td><span class="ingredient">Blitz</span><br><span class="ingredient">Air Slide</span></td>
+            <td>90</td>
+            <td>Cure Boost</td>
+            <td>Reload Boost</td>
+            <td>Second Chance</td>
+            <td>Combo Plus</td>
+            <td>Defender</td>
+            <td>Treasure Magnet</td>
+            <td>Lucky Strike</td>
+         </tr>
+         <tr class="T V A typeK command">
+            <td>Sonic Blade</td>
+            <td>K</td>
+            <td><span class="ingredient">Fire Dash</span><br><span class="ingredient">Thunder Surge</span></td>
+            <td>90</td>
+            <td>Thunder Screen</td>
+            <td>Attack Haste</td>
+            <td>Finish Boost</td>
+            <td>Combo Plus</td>
+            <td>HP Boost</td>
+            <td>Treasure Magnet</td>
+            <td>Link Prize Plus</td>
+         </tr>
+         <tr class="T typeB command">
+            <td>Chaos Blade</td>
+            <td>B</td>
+            <td><span class="ingredient">Dark Haze</span><br><span class="ingredient">Sonic Blade</span></td>
+            <td>90</td>
+            <td>Fire Boost</td>
+            <td>Reload Boost</td>
+            <td>Finish Boost</td>
+            <td>Once More</td>
+            <td>Damage Syphon</td>
+            <td>HP Prize Plus</td>
+            <td>EXP Chance</td>
+         </tr>
+         <tr class="T typeB command">
+            <td>Zantetsuken</td>
+            <td>B</td>
+            <td><span class="ingredient">Dark Haze</span><br><span class="ingredient">Stopga</span></td>
+            <td>80</td>
+            <td>Fire Boost</td>
+            <td>Reload Boost</td>
+            <td>Finish Boost</td>
+            <td>Once More</td>
+            <td>Damage Syphon</td>
+            <td>HP Prize Plus</td>
+            <td>EXP Chance</td>
+         </tr>
+         <tr class="T typeF command">
+            <td>Zantetsuken</td>
+            <td>F</td>
+            <td><span class="ingredient">Sonic Blade</span><br><span class="ingredient">Stopga</span></td>
+            <td>80</td>
+            <td>Blizzard Boost</td>
+            <td>Reload Boost</td>
+            <td>Second Chance</td>
+            <td>Air Combo Plus</td>
+            <td>Damage Syphon</td>
+            <td>HP Prize Plus</td>
+            <td>Lucky Strike</td>
+         </tr>
+         <tr class="T V A typeO command">
+            <td>Strike Raid</td>
+            <td>O</td>
+            <td><span class="ingredient">Quick Blitz</span><br><span class="ingredient">Sliding Dash</span></td>
+            <td>100</td>
+            <td>Dark Screen</td>
+            <td>Attack Haste</td>
+            <td>Finish Boost</td>
+            <td>Air Combo Plus</td>
+            <td>Item Boost</td>
+            <td>Treasure Magnet</td>
+            <td>Lucky Strike</td>
+         </tr>
+         <tr class="T V A typeI command">
+            <td>Freeze Raid</td>
+            <td>I</td>
+            <td><span class="ingredient">Strike Raid</span><br><span class="ingredient">Blizzara</span></td>
+            <td>100</td>
+            <td>Thunder Boost</td>
+            <td>Magic Haste</td>
+            <td>Combo F Boost</td>
+            <td>Air Combo Plus</td>
+            <td>HP Boost</td>
+            <td>Treasure Magnet</td>
+            <td>Link Prize Plus</td>
+         </tr>
+         <tr class="T V A typeK command">
+            <td>Freeze Raid</td>
+            <td>K</td>
+            <td><span class="ingredient">Blizzard Edge</span><br><span class="ingredient">Binding Strike</span></td>
+            <td>100</td>
+            <td>Thunder Screen</td>
+            <td>Attack Haste</td>
+            <td>Finish Boost</td>
+            <td>Combo Plus</td>
+            <td>HP Boost</td>
+            <td>Treasure Magnet</td>
+            <td>Link Prize Plus</td>
+         </tr>
+         <tr class="V typeO command">
+            <td>Treasure Raid</td>
+            <td>O</td>
+            <td><span class="ingredient">Strike Raid</span><br><span class="ingredient">Slot Edge</span></td>
+            <td>100</td>
+            <td>Dark Screen</td>
+            <td>Attack Haste</td>
+            <td>Finish Boost</td>
+            <td>Air Combo Plus</td>
+            <td>Item Boost</td>
+            <td>Treasure Magnet</td>
+            <td>Lucky Strike</td>
+         </tr>
+         <tr class="V typeD command">
+            <td>Treasure Raid</td>
+            <td>D</td>
+            <td><span class="ingredient">Slot Edge</span><br><span class="ingredient">Magnet</span></td>
+            <td>100</td>
+            <td>Fire Screen</td>
+            <td>Attack Haste</td>
+            <td>Leaf Bracer</td>
+            <td>Combo Plus</td>
+            <td>HP Boost</td>
+            <td>HP Prize Plus</td>
+            <td>Link Prize Plus</td>
+         </tr>
+         <tr class="V typeK command">
+            <td>Treasure Raid</td>
+            <td>K</td>
+            <td><span class="ingredient">Slot Edge</span><br><span class="ingredient">Magnera</span></td>
+            <td>100</td>
+            <td>Thunder Screen</td>
+            <td>Attack Haste</td>
+            <td>Finish Boost</td>
+            <td>Combo Plus</td>
+            <td>HP Boost</td>
+            <td>Treasure Magnet</td>
+            <td>Link Prize Plus</td>
+         </tr>
+         <tr class="V typeJ command">
+            <td>Spark Raid</td>
+            <td>J</td>
+            <td><span class="ingredient">Freeze Raid</span><br><span class="ingredient">Magnega</span></td>
+            <td>100</td>
+            <td>Thunder Boost</td>
+            <td>Reload Boost</td>
+            <td>Combo F Boost</td>
+            <td>Once More</td>
+            <td>Defender</td>
+            <td>Treasure Magnet</td>
+            <td>EXP Chance</td>
+         </tr>
+         <tr class="V typeN command">
+            <td>Spark Raid</td>
+            <td>N</td>
+            <td><span class="ingredient">Treasure Raid</span><br><span class="ingredient">Magnega</span></td>
+            <td>100</td>
+            <td>Cure Boost</td>
+            <td>Reload Boost</td>
+            <td>Second Chance</td>
+            <td>Combo Plus</td>
+            <td>Defender</td>
+            <td>Treasure Magnet</td>
+            <td>Lucky Strike</td>
+         </tr>
+         <tr class="V typeP command">
+            <td>Spark Raid</td>
+            <td>P</td>
+            <td><span class="ingredient">Thunder Surge</span><br><span class="ingredient">Dodge Roll</span></td>
+            <td>20</td>
+            <td>Dark Screen</td>
+            <td>Magic Haste</td>
+            <td>Combo F Boost</td>
+            <td>Air Combo Plus</td>
+            <td>Item Boost</td>
+            <td>Treasure Magnet</td>
+            <td>EXP Walker</td>
+         </tr>
+         <tr class="V typeL command">
+            <td>Spark Raid</td>
+            <td>L</td>
+            <td><span class="ingredient">Thundaga</span><br><span class="ingredient">Dodge Roll</span></td>
+            <td>20</td>
+            <td>Thunder Screen</td>
+            <td>Attack Haste</td>
+            <td>Finish Boost</td>
+            <td>Combo Plus</td>
+            <td>HP Boost</td>
+            <td>Treasure Magnet</td>
+            <td>Lucky Strike</td>
+         </tr>
+         <tr class="V typeL command">
+            <td>Spark Raid</td>
+            <td>L</td>
+            <td><span class="ingredient">Dodge Roll</span><br><span class="ingredient">Stun Block</span></td>
+            <td>20</td>
+            <td>Thunder Screen</td>
+            <td>Attack Haste</td>
+            <td>Finish Boost</td>
+            <td>Combo Plus</td>
+            <td>HP Boost</td>
+            <td>Treasure Magnet</td>
+            <td>Lucky Strike</td>
+         </tr>
+         <tr class="V typeB command">
+            <td>Wind Raid</td>
+            <td>B</td>
+            <td><span class="ingredient">Freeze Raid</span><br><span class="ingredient">Aeroga</span></td>
+            <td>100</td>
+            <td>Fire Boost</td>
+            <td>Reload Boost</td>
+            <td>Finish Boost</td>
+            <td>Once More</td>
+            <td>Damage Syphon</td>
+            <td>HP Prize Plus</td>
+            <td>EXP Chance</td>
+         </tr>
+         <tr class="V typeF command">
+            <td>Wind Raid</td>
+            <td>F</td>
+            <td><span class="ingredient">Treasure Raid</span><br><span class="ingredient">Aeroga</span></td>
+            <td>100</td>
+            <td>Blizzard Boost</td>
+            <td>Reload Boost</td>
+            <td>Second Chance</td>
+            <td>Air Combo Plus</td>
+            <td>Damage Syphon</td>
+            <td>HP Prize Plus</td>
+            <td>Lucky Strike</td>
+         </tr>
+         <tr class="T V A typeD command">
+            <td>Fire Surge</td>
+            <td>D</td>
+            <td><span class="ingredient">Fire Dash</span><br><span class="ingredient">Ignite</span></td>
+            <td>100</td>
+            <td>Fire Screen</td>
+            <td>Attack Haste</td>
+            <td>Leaf Bracer</td>
+            <td>Combo Plus</td>
+            <td>HP Boost</td>
+            <td>HP Prize Plus</td>
+            <td>Link Prize Plus</td>
+         </tr>
+         <tr class="T V A typeA command">
+            <td>Fire Surge</td>
+            <td>A</td>
+            <td><span class="ingredient">Fire Strike</span><br><span class="ingredient">Fira</span></td>
+            <td>100</td>
+            <td>Fire Boost</td>
+            <td>Magic Haste</td>
+            <td>Leaf Bracer</td>
+            <td>Air Combo Plus</td>
+            <td>HP Boost</td>
+            <td>HP Prize Plus</td>
+            <td>Link Prize Plus</td>
+         </tr>
+         <tr class="T V A typeO command">
+            <td>Fire Surge</td>
+            <td>O</td>
+            <td><span class="ingredient">Confusion Strike</span><br><span class="ingredient">Fira</span></td>
+            <td>100</td>
+            <td>Dark Screen</td>
+            <td>Attack Haste</td>
+            <td>Finish Boost</td>
+            <td>Air Combo Plus</td>
+            <td>Item Boost</td>
+            <td>Treasure Magnet</td>
+            <td>Lucky Strike</td>
+         </tr>
+         <tr class="T V A typeK command">
+            <td>Fire Surge</td>
+            <td>K</td>
+            <td><span class="ingredient">Binding Strike</span><br><span class="ingredient">Fira</span></td>
+            <td>100</td>
+            <td>Thunder Screen</td>
+            <td>Attack Haste</td>
+            <td>Finish Boost</td>
+            <td>Combo Plus</td>
+            <td>HP Boost</td>
+            <td>Treasure Magnet</td>
+            <td>Link Prize Plus</td>
+         </tr>
+         <tr class="A typeD command">
+            <td>Barrier Surge</td>
+            <td>D</td>
+            <td><span class="ingredient">Fire Dash</span><br><span class="ingredient">Barrier</span></td>
+            <td>100</td>
+            <td>Fire Screen</td>
+            <td>Attack Haste</td>
+            <td>Leaf Bracer</td>
+            <td>Combo Plus</td>
+            <td>HP Boost</td>
+            <td>HP Prize Plus</td>
+            <td>Link Prize Plus</td>
+         </tr>
+         <tr class="A typeK command">
+            <td>Barrier Surge</td>
+            <td>K</td>
+            <td><span class="ingredient">Stun Edge</span><br><span class="ingredient">Barrier</span></td>
+            <td>100</td>
+            <td>Thunder Screen</td>
+            <td>Attack Haste</td>
+            <td>Finish Boost</td>
+            <td>Combo Plus</td>
+            <td>HP Boost</td>
+            <td>Treasure Magnet</td>
+            <td>Link Prize Plus</td>
+         </tr>
+         <tr class="T V A typeD command">
+            <td>Thunder Surge</td>
+            <td>D</td>
+            <td><span class="ingredient">Fire Dash</span><br><span class="ingredient">Thundara</span></td>
+            <td>100</td>
+            <td>Fire Screen</td>
+            <td>Attack Haste</td>
+            <td>Leaf Bracer</td>
+            <td>Combo Plus</td>
+            <td>HP Boost</td>
+            <td>HP Prize Plus</td>
+            <td>Link Prize Plus</td>
+         </tr>
+         <tr class="T V A typeG command">
+            <td>Thunder Surge</td>
+            <td>G</td>
+            <td><span class="ingredient">Freeze Raid</span><br><span class="ingredient">Thundara</span></td>
+            <td>100</td>
+            <td>Blizzard Screen</td>
+            <td>Attack Haste</td>
+            <td>Leaf Bracer</td>
+            <td>Air Combo Plus</td>
+            <td>Item Boost</td>
+            <td>HP Prize Plus</td>
+            <td>Luck Boost</td>
+         </tr>
+         <tr class="T V A typeI command">
+            <td>Thunder Surge</td>
+            <td>I</td>
+            <td><span class="ingredient">Stun Edge</span><br><span class="ingredient">Thundara</span></td>
+            <td>100</td>
+            <td>Thunder Boost</td>
+            <td>Magic Haste</td>
+            <td>Combo F Boost</td>
+            <td>Air Combo Plus</td>
+            <td>HP Boost</td>
+            <td>Treasure Magnet</td>
+            <td>Link Prize Plus</td>
+         </tr>
+         <tr class="T V A typeI command">
+            <td>Thunder Surge</td>
+            <td>I</td>
+            <td><span class="ingredient">Confusion Strike</span><br><span class="ingredient">Thundara</span></td>
+            <td>95</td>
+            <td>Thunder Boost</td>
+            <td>Magic Haste</td>
+            <td>Combo F Boost</td>
+            <td>Air Combo Plus</td>
+            <td>HP Boost</td>
+            <td>Treasure Magnet</td>
+            <td>Link Prize Plus</td>
+         </tr>
+         <tr class="T V A typeA command">
+            <td>Aerial Slam</td>
+            <td>A</td>
+            <td><span class="ingredient">Fire Dash</span><br><span class="ingredient">High Jump</span></td>
+            <td>100</td>
+            <td>Fire Boost</td>
+            <td>Magic Haste</td>
+            <td>Leaf Bracer</td>
+            <td>Air Combo Plus</td>
+            <td>HP Boost</td>
+            <td>HP Prize Plus</td>
+            <td>Link Prize Plus</td>
+         </tr>
+         <tr class="T V A typeD command">
+            <td>Aerial Slam</td>
+            <td>D</td>
+            <td><span class="ingredient">Fire Surge</span><br><span class="ingredient">Aero</span></td>
+            <td>100</td>
+            <td>Fire Screen</td>
+            <td>Attack Haste</td>
+            <td>Leaf Bracer</td>
+            <td>Combo Plus</td>
+            <td>HP Boost</td>
+            <td>HP Prize Plus</td>
+            <td>Link Prize Plus</td>
+         </tr>
+         <tr class="T V A typeC command">
+            <td>Aerial Slam</td>
+            <td>C</td>
+            <td><span class="ingredient">Fire Strike</span><br><span class="ingredient">Aerora</span></td>
+            <td>90</td>
+            <td>Fire Screen</td>
+            <td>Attack Haste</td>
+            <td>Finish Boost</td>
+            <td>Combo Plus</td>
+            <td>HP Boost</td>
+            <td>HP Prize Plus</td>
+            <td>Link Prize Plus</td>
+         </tr>
+         <tr class="T typeB command">
+            <td>Ars Solum</td>
+            <td>B</td>
+            <td><span class="ingredient">Dark Haze</span><br><span class="ingredient">Sonic Blade</span></td>
+            <td>20</td>
+            <td>Fire Boost</td>
+            <td>Reload Boost</td>
+            <td>Finish Boost</td>
+            <td>Once More</td>
+            <td>Damage Syphon</td>
+            <td>HP Prize Plus</td>
+            <td>EXP Chance</td>
+         </tr>
+         <tr class="T typeB command">
+            <td>Ars Solum</td>
+            <td>B</td>
+            <td><span class="ingredient">Dark Haze</span><br><span class="ingredient">Stopga</span></td>
+            <td>20</td>
+            <td>Fire Boost</td>
+            <td>Reload Boost</td>
+            <td>Finish Boost</td>
+            <td>Once More</td>
+            <td>Damage Syphon</td>
+            <td>HP Prize Plus</td>
+            <td>EXP Chance</td>
+         </tr>
+         <tr class="T typeF command">
+            <td>Ars Solum</td>
+            <td>F</td>
+            <td><span class="ingredient">Sonic Blade</span><br><span class="ingredient">Stopga</span></td>
+            <td>20</td>
+            <td>Blizzard Boost</td>
+            <td>Reload Boost</td>
+            <td>Second Chance</td>
+            <td>Air Combo Plus</td>
+            <td>Damage Syphon</td>
+            <td>HP Prize Plus</td>
+            <td>Lucky Strike</td>
+         </tr>
+         <tr class="T typeK command">
+            <td>Ars Solum</td>
+            <td>K</td>
+            <td><span class="ingredient">Sliding Dash</span><br><span class="ingredient">Thunder</span></td>
+            <td>5</td>
+            <td>Thunder Screen</td>
+            <td>Attack Haste</td>
+            <td>Finish Boost</td>
+            <td>Combo Plus</td>
+            <td>HP Boost</td>
+            <td>Treasure Magnet</td>
+            <td>Link Prize Plus</td>
+         </tr>
+         <tr class="T typeL command">
+            <td>Ars Solum</td>
+            <td>L</td>
+            <td><span class="ingredient">Strike Raid</span><br><span class="ingredient">Thunder</span></td>
+            <td>5</td>
+            <td>Thunder Screen</td>
+            <td>Attack Haste</td>
+            <td>Finish Boost</td>
+            <td>Combo Plus</td>
+            <td>HP Boost</td>
+            <td>Treasure Magnet</td>
+            <td>Lucky Strike</td>
+         </tr>
+         <tr class="T typeK command">
+            <td>Ars Solum</td>
+            <td>K</td>
+            <td><span class="ingredient">Strike Raid</span><br><span class="ingredient">Thundara</span></td>
+            <td>5</td>
+            <td>Thunder Screen</td>
+            <td>Attack Haste</td>
+            <td>Finish Boost</td>
+            <td>Combo Plus</td>
+            <td>HP Boost</td>
+            <td>Treasure Magnet</td>
+            <td>Link Prize Plus</td>
+         </tr>
+         <tr class="T typeI command">
+            <td>Ars Solum</td>
+            <td>I</td>
+            <td><span class="ingredient">Confusion Strike</span><br><span class="ingredient">Thundara</span></td>
+            <td>5</td>
+            <td>Thunder Boost</td>
+            <td>Magic Haste</td>
+            <td>Combo F Boost</td>
+            <td>Air Combo Plus</td>
+            <td>HP Boost</td>
+            <td>Treasure Magnet</td>
+            <td>Link Prize Plus</td>
+         </tr>
+         <tr class="V typeF command">
+            <td>Ars Arcanum</td>
+            <td>F</td>
+            <td><span class="ingredient">Blitz</span><br><span class="ingredient">Aerial Slam</span></td>
+            <td>100</td>
+            <td>Blizzard Boost</td>
+            <td>Reload Boost</td>
+            <td>Second Chance</td>
+            <td>Air Combo Plus</td>
+            <td>Damage Syphon</td>
+            <td>HP Prize Plus</td>
+            <td>Lucky Strike</td>
+         </tr>
+         <tr class="V typeO command">
+            <td>Ars Arcanum</td>
+            <td>O</td>
+            <td><span class="ingredient">Quick Blitz</span><br><span class="ingredient">Slot Edge</span></td>
+            <td>10</td>
+            <td>Dark Screen</td>
+            <td>Attack Haste</td>
+            <td>Finish Boost</td>
+            <td>Air Combo Plus</td>
+            <td>Item Boost</td>
+            <td>Treasure Magnet</td>
+            <td>Lucky Strike</td>
+         </tr>
+         <tr class="V typeC command">
+            <td>Ars Arcanum</td>
+            <td>C</td>
+            <td><span class="ingredient">Fire Strike</span><br><span class="ingredient">Aerora</span></td>
+            <td>10</td>
+            <td>Fire Screen</td>
+            <td>Attack Haste</td>
+            <td>Finish Boost</td>
+            <td>Combo Plus</td>
+            <td>HP Boost</td>
+            <td>HP Prize Plus</td>
+            <td>Link Prize Plus</td>
+         </tr>
+         <tr class="V typeG command">
+            <td>Ars Arcanum</td>
+            <td>G</td>
+            <td><span class="ingredient">Quick Blitz</span><br><span class="ingredient">Blizzard</span></td>
+            <td>5</td>
+            <td>Blizzard Screen</td>
+            <td>Attack Haste</td>
+            <td>Leaf Bracer</td>
+            <td>Air Combo Plus</td>
+            <td>Item Boost</td>
+            <td>HP Prize Plus</td>
+            <td>Luck Boost</td>
+         </tr>
+         <tr class="V typeH command">
+            <td>Ars Arcanum</td>
+            <td>H</td>
+            <td><span class="ingredient">Quick Blitz</span><br><span class="ingredient">Blizzara</span></td>
+            <td>5</td>
+            <td>Blizzard Screen</td>
+            <td>Magic Haste</td>
+            <td>Combo F Boost</td>
+            <td>Air Combo Plus</td>
+            <td>Item Boost</td>
+            <td>HP Prize Plus</td>
+            <td>EXP Walker</td>
+         </tr>
+         <tr class="V typeE command">
+            <td>Ars Arcanum</td>
+            <td>E</td>
+            <td><span class="ingredient">Sliding Dash</span><br><span class="ingredient">Blizzard</span></td>
+            <td>5</td>
+            <td>Blizzard Boost</td>
+            <td>Magic Haste</td>
+            <td>Leaf Bracer</td>
+            <td>Combo Plus</td>
+            <td>Item Boost</td>
+            <td>HP Prize Plus</td>
+            <td>Lucky Strike</td>
+         </tr>
+         <tr class="V typeG command">
+            <td>Ars Arcanum</td>
+            <td>G</td>
+            <td><span class="ingredient">Sliding Dash</span><br><span class="ingredient">Blizzara</span></td>
+            <td>5</td>
+            <td>Blizzard Screen</td>
+            <td>Attack Haste</td>
+            <td>Leaf Bracer</td>
+            <td>Air Combo Plus</td>
+            <td>Item Boost</td>
+            <td>HP Prize Plus</td>
+            <td>Luck Boost</td>
+         </tr>
+         <tr class="V typeP command">
+            <td>Ars Arcanum</td>
+            <td>P</td>
+            <td><span class="ingredient">Poison Edge</span><br><span class="ingredient">Cura</span></td>
+            <td>5</td>
+            <td>Dark Screen</td>
+            <td>Magic Haste</td>
+            <td>Combo F Boost</td>
+            <td>Air Combo Plus</td>
+            <td>Item Boost</td>
+            <td>Treasure Magnet</td>
+            <td>EXP Walker</td>
+         </tr>
+         <tr class="V typeG command">
+            <td>Ars Arcanum</td>
+            <td>G</td>
+            <td><span class="ingredient">Blizzard Edge</span><br><span class="ingredient">Cura</span></td>
+            <td>5</td>
+            <td>Blizzard Screen</td>
+            <td>Attack Haste</td>
+            <td>Leaf Bracer</td>
+            <td>Air Combo Plus</td>
+            <td>Item Boost</td>
+            <td>HP Prize Plus</td>
+            <td>Luck Boost</td>
+         </tr>
+         <tr class="V A typeF command">
+            <td>Time Splicer</td>
+            <td>F</td>
+            <td><span class="ingredient">Aerial Slam</span><br><span class="ingredient">Stopga</span></td>
+            <td>100</td>
+            <td>Blizzard Boost</td>
+            <td>Reload Boost</td>
+            <td>Second Chance</td>
+            <td>Air Combo Plus</td>
+            <td>Damage Syphon</td>
+            <td>HP Prize Plus</td>
+            <td>Lucky Strike</td>
+         </tr>
+         <tr class="A typeC command">
+            <td>Time Splicer</td>
+            <td>C</td>
+            <td><span class="ingredient">Stopga</span><br><span class="ingredient">Barrier</span></td>
+            <td>20</td>
+            <td>Fire Screen</td>
+            <td>Attack Haste</td>
+            <td>Finish Boost</td>
+            <td>Combo Plus</td>
+            <td>HP Boost</td>
+            <td>HP Prize Plus</td>
+            <td>Link Prize Plus</td>
+         </tr>
+         <tr class="A typeP command">
+            <td>Time Splicer</td>
+            <td>P</td>
+            <td><span class="ingredient">Barrier Surge</span><br><span class="ingredient">Wishing Edge</span></td>
+            <td>10</td>
+            <td>Dark Screen</td>
+            <td>Magic Haste</td>
+            <td>Combo F Boost</td>
+            <td>Air Combo Plus</td>
+            <td>Item Boost</td>
+            <td>Treasure Magnet</td>
+            <td>EXP Walker</td>
+         </tr>
+         <tr class="V A typeK command">
+            <td>Time Splicer</td>
+            <td>K</td>
+            <td><span class="ingredient">Stun Edge</span><br><span class="ingredient">Slot Edge</span></td>
+            <td>10</td>
+            <td>Thunder Screen</td>
+            <td>Attack Haste</td>
+            <td>Finish Boost</td>
+            <td>Combo Plus</td>
+            <td>HP Boost</td>
+            <td>Treasure Magnet</td>
+            <td>Link Prize Plus</td>
+         </tr>
+         <tr class="T V A typeO command">
+            <td>Poison Edge</td>
+            <td>O</td>
+            <td><span class="ingredient">Quick Blitz</span><br><span class="ingredient">Poison</span></td>
+            <td>95</td>
+            <td>Dark Screen</td>
+            <td>Attack Haste</td>
+            <td>Finish Boost</td>
+            <td>Air Combo Plus</td>
+            <td>Item Boost</td>
+            <td>Treasure Magnet</td>
+            <td>Lucky Strike</td>
+         </tr>
+         <tr class="T V A typeK command">
+            <td>Poison Edge</td>
+            <td>K</td>
+            <td><span class="ingredient">Sliding Dash</span><br><span class="ingredient">Poison</span></td>
+            <td>95</td>
+            <td>Thunder Screen</td>
+            <td>Attack Haste</td>
+            <td>Finish Boost</td>
+            <td>Combo Plus</td>
+            <td>HP Boost</td>
+            <td>Treasure Magnet</td>
+            <td>Link Prize Plus</td>
+         </tr>
+         <tr class="T V A typeD command">
+            <td>Poison Edge</td>
+            <td>D</td>
+            <td><span class="ingredient">Strike Raid</span><br><span class="ingredient">Poison</span></td>
+            <td>95</td>
+            <td>Fire Screen</td>
+            <td>Attack Haste</td>
+            <td>Leaf Bracer</td>
+            <td>Combo Plus</td>
+            <td>HP Boost</td>
+            <td>HP Prize Plus</td>
+            <td>Link Prize Plus</td>
+         </tr>
+         <tr class="A typeO command">
+            <td>Wishing Edge</td>
+            <td>O</td>
+            <td><span class="ingredient">Strike Raid</span><br><span class="ingredient">Barrier Surge</span></td>
+            <td>100</td>
+            <td>Dark Screen</td>
+            <td>Attack Haste</td>
+            <td>Finish Boost</td>
+            <td>Air Combo Plus</td>
+            <td>Item Boost</td>
+            <td>Treasure Magnet</td>
+            <td>Lucky Strike</td>
+         </tr>
+         <tr class="A typeK command">
+            <td>Wishing Edge</td>
+            <td>K</td>
+            <td><span class="ingredient">Barrier Surge</span><br><span class="ingredient">Stun Edge</span></td>
+            <td>100</td>
+            <td>Thunder Screen</td>
+            <td>Attack Haste</td>
+            <td>Finish Boost</td>
+            <td>Combo Plus</td>
+            <td>HP Boost</td>
+            <td>Treasure Magnet</td>
+            <td>Link Prize Plus</td>
+         </tr>
+         <tr class="A typeJ command">
+            <td>Wishing Edge</td>
+            <td>J</td>
+            <td><span class="ingredient">Stun Edge</span><br><span class="ingredient">Binding Strike</span></td>
+            <td>100</td>
+            <td>Thunder Boost</td>
+            <td>Reload Boost</td>
+            <td>Combo F Boost</td>
+            <td>Once More</td>
+            <td>Defender</td>
+            <td>Treasure Magnet</td>
+            <td>EXP Chance</td>
+         </tr>
+         <tr class="T V A typeG command">
+            <td>Blizzard Edge</td>
+            <td>G</td>
+            <td><span class="ingredient">Quick Blitz</span><br><span class="ingredient">Blizzard</span></td>
+            <td>95</td>
+            <td>Blizzard Screen</td>
+            <td>Attack Haste</td>
+            <td>Leaf Bracer</td>
+            <td>Air Combo Plus</td>
+            <td>Item Boost</td>
+            <td>HP Prize Plus</td>
+            <td>Luck Boost</td>
+         </tr>
+         <tr class="T V A typeH command">
+            <td>Blizzard Edge</td>
+            <td>H</td>
+            <td><span class="ingredient">Quick Blitz</span><br><span class="ingredient">Blizzara</span></td>
+            <td>95</td>
+            <td>Blizzard Screen</td>
+            <td>Magic Haste</td>
+            <td>Combo F Boost</td>
+            <td>Air Combo Plus</td>
+            <td>Item Boost</td>
+            <td>HP Prize Plus</td>
+            <td>EXP Walker</td>
+         </tr>
+         <tr class="T V A typeE command">
+            <td>Blizzard Edge</td>
+            <td>E</td>
+            <td><span class="ingredient">Sliding Dash</span><br><span class="ingredient">Blizzard</span></td>
+            <td>95</td>
+            <td>Blizzard Boost</td>
+            <td>Magic Haste</td>
+            <td>Leaf Bracer</td>
+            <td>Combo Plus</td>
+            <td>Item Boost</td>
+            <td>HP Prize Plus</td>
+            <td>Lucky Strike</td>
+         </tr>
+         <tr class="T V A typeG command">
+            <td>Blizzard Edge</td>
+            <td>G</td>
+            <td><span class="ingredient">Sliding Dash</span><br><span class="ingredient">Blizzara</span></td>
+            <td>95</td>
+            <td>Blizzard Screen</td>
+            <td>Attack Haste</td>
+            <td>Leaf Bracer</td>
+            <td>Air Combo Plus</td>
+            <td>Item Boost</td>
+            <td>HP Prize Plus</td>
+            <td>Luck Boost</td>
+         </tr>
+         <tr class="T V A typeK command">
+            <td>Stun Edge</td>
+            <td>K</td>
+            <td><span class="ingredient">Sliding Dash</span><br><span class="ingredient">Thunder</span></td>
+            <td>95</td>
+            <td>Thunder Screen</td>
+            <td>Attack Haste</td>
+            <td>Finish Boost</td>
+            <td>Combo Plus</td>
+            <td>HP Boost</td>
+            <td>Treasure Magnet</td>
+            <td>Link Prize Plus</td>
+         </tr>
+         <tr class="T V A typeL command">
+            <td>Stun Edge</td>
+            <td>L</td>
+            <td><span class="ingredient">Strike Raid</span><br><span class="ingredient">Thunder</span></td>
+            <td>95</td>
+            <td>Thunder Screen</td>
+            <td>Attack Haste</td>
+            <td>Finish Boost</td>
+            <td>Combo Plus</td>
+            <td>HP Boost</td>
+            <td>Treasure Magnet</td>
+            <td>Lucky Strike</td>
+         </tr>
+         <tr class="T V A typeK command">
+            <td>Stun Edge</td>
+            <td>K</td>
+            <td><span class="ingredient">Strike Raid</span><br><span class="ingredient">Thundara</span></td>
+            <td>95</td>
+            <td>Thunder Screen</td>
+            <td>Attack Haste</td>
+            <td>Finish Boost</td>
+            <td>Combo Plus</td>
+            <td>HP Boost</td>
+            <td>Treasure Magnet</td>
+            <td>Link Prize Plus</td>
+         </tr>
+         <tr class="A typeO command">
+            <td>Slot Edge</td>
+            <td>O</td>
+            <td><span class="ingredient">Wishing Edge</span><br><span class="ingredient">Cure</span></td>
+            <td>100</td>
+            <td>Dark Screen</td>
+            <td>Attack Haste</td>
+            <td>Finish Boost</td>
+            <td>Air Combo Plus</td>
+            <td>Item Boost</td>
+            <td>Treasure Magnet</td>
+            <td>Lucky Strike</td>
+         </tr>
+         <tr class="T V A typeP command">
+            <td>Slot Edge</td>
+            <td>P</td>
+            <td><span class="ingredient">Poison Edge</span><br><span class="ingredient">Cura</span></td>
+            <td>95</td>
+            <td>Dark Screen</td>
+            <td>Magic Haste</td>
+            <td>Combo F Boost</td>
+            <td>Air Combo Plus</td>
+            <td>Item Boost</td>
+            <td>Treasure Magnet</td>
+            <td>EXP Walker</td>
+         </tr>
+         <tr class="T V A typeG command">
+            <td>Slot Edge</td>
+            <td>G</td>
+            <td><span class="ingredient">Blizzard Edge</span><br><span class="ingredient">Cura</span></td>
+            <td>95</td>
+            <td>Blizzard Screen</td>
+            <td>Attack Haste</td>
+            <td>Leaf Bracer</td>
+            <td>Air Combo Plus</td>
+            <td>Item Boost</td>
+            <td>HP Prize Plus</td>
+            <td>Luck Boost</td>
+         </tr>
+         <tr class="V T typeN command">
+            <td>Slot Edge</td>
+            <td>N</td>
+            <td><span class="ingredient">Curaga</span><br><span class="ingredient">Renewal Block</span></td>
+            <td>90</td>
+            <td>Cure Boost</td>
+            <td>Reload Boost</td>
+            <td>Second Chance</td>
+            <td>Combo Plus</td>
+            <td>Defender</td>
+            <td>Treasure Magnet</td>
+            <td>Lucky Strike</td>
+         </tr>
+         <tr class="V T typeP command">
+            <td>Slot Edge</td>
+            <td>P</td>
+            <td><span class="ingredient">Curaga</span><br><span class="ingredient">Focus Block</span></td>
+            <td>90</td>
+            <td>Dark Screen</td>
+            <td>Magic Haste</td>
+            <td>Combo F Boost</td>
+            <td>Air Combo Plus</td>
+            <td>Item Boost</td>
+            <td>Treasure Magnet</td>
+            <td>EXP Walker</td>
+         </tr>
+         <tr class="A typeN command">
+            <td>Slot Edge</td>
+            <td>N</td>
+            <td><span class="ingredient">Curaga</span><br><span class="ingredient">Renewal Barrier</span></td>
+            <td>90</td>
+            <td>Cure Boost</td>
+            <td>Reload Boost</td>
+            <td>Second Chance</td>
+            <td>Combo Plus</td>
+            <td>Defender</td>
+            <td>Treasure Magnet</td>
+            <td>Lucky Strike</td>
+         </tr>
+         <tr class="A typeP command">
+            <td>Slot Edge</td>
+            <td>P</td>
+            <td><span class="ingredient">Curaga</span><br><span class="ingredient">Focus Barrier</span></td>
+            <td>90</td>
+            <td>Dark Screen</td>
+            <td>Magic Haste</td>
+            <td>Combo F Boost</td>
+            <td>Air Combo Plus</td>
+            <td>Item Boost</td>
+            <td>Treasure Magnet</td>
+            <td>EXP Walker</td>
+         </tr>
+         <tr class="T V A typeD command">
+            <td>Fire Strike</td>
+            <td>D</td>
+            <td><span class="ingredient">Poison Edge</span><br><span class="ingredient">Fira</span></td>
+            <td>100</td>
+            <td>Fire Screen</td>
+            <td>Attack Haste</td>
+            <td>Leaf Bracer</td>
+            <td>Combo Plus</td>
+            <td>HP Boost</td>
+            <td>HP Prize Plus</td>
+            <td>Link Prize Plus</td>
+         </tr>
+         <tr class="A typeA command">
+            <td>Fire Strike</td>
+            <td>A</td>
+            <td><span class="ingredient">Wishing Edge</span><br><span class="ingredient">Ignite</span></td>
+            <td>100</td>
+            <td>Fire Boost</td>
+            <td>Magic Haste</td>
+            <td>Leaf Bracer</td>
+            <td>Air Combo Plus</td>
+            <td>HP Boost</td>
+            <td>HP Prize Plus</td>
+            <td>Link Prize Plus</td>
+         </tr>
+         <tr class="T V A typeK command">
+            <td>Fire Strike</td>
+            <td>K</td>
+            <td><span class="ingredient">Stun Edge</span><br><span class="ingredient">Fire</span></td>
+            <td>100</td>
+            <td>Thunder Screen</td>
+            <td>Attack Haste</td>
+            <td>Finish Boost</td>
+            <td>Combo Plus</td>
+            <td>HP Boost</td>
+            <td>Treasure Magnet</td>
+            <td>Link Prize Plus</td>
+         </tr>
+         <tr class="T V A typeO command">
+            <td>Confusion Strike</td>
+            <td>O</td>
+            <td><span class="ingredient">Quick Blitz</span><br><span class="ingredient">Confuse</span></td>
+            <td>100</td>
+            <td>Dark Screen</td>
+            <td>Attack Haste</td>
+            <td>Finish Boost</td>
+            <td>Air Combo Plus</td>
+            <td>Item Boost</td>
+            <td>Treasure Magnet</td>
+            <td>Lucky Strike</td>
+         </tr>
+         <tr class="T V A typeK command">
+            <td>Confusion Strike</td>
+            <td>K</td>
+            <td><span class="ingredient">Sliding Dash</span><br><span class="ingredient">Zero Gravity</span></td>
+            <td>100</td>
+            <td>Thunder Screen</td>
+            <td>Attack Haste</td>
+            <td>Finish Boost</td>
+            <td>Combo Plus</td>
+            <td>HP Boost</td>
+            <td>Treasure Magnet</td>
+            <td>Link Prize Plus</td>
+         </tr>
+         <tr class="T V A typeG command">
+            <td>Confusion Strike</td>
+            <td>G</td>
+            <td><span class="ingredient">Strike Raid</span><br><span class="ingredient">Confuse</span></td>
+            <td>100</td>
+            <td>Blizzard Screen</td>
+            <td>Attack Haste</td>
+            <td>Leaf Bracer</td>
+            <td>Air Combo Plus</td>
+            <td>Item Boost</td>
+            <td>HP Prize Plus</td>
+            <td>Luck Boost</td>
+         </tr>
+         <tr class="T V A typeK command">
+            <td>Binding Strike</td>
+            <td>K</td>
+            <td><span class="ingredient">Quick Blitz</span><br><span class="ingredient">Bind</span></td>
+            <td>100</td>
+            <td>Thunder Screen</td>
+            <td>Attack Haste</td>
+            <td>Finish Boost</td>
+            <td>Combo Plus</td>
+            <td>HP Boost</td>
+            <td>Treasure Magnet</td>
+            <td>Link Prize Plus</td>
+         </tr>
+         <tr class="T V A typeO command">
+            <td>Binding Strike</td>
+            <td>O</td>
+            <td><span class="ingredient">Strike Raid</span><br><span class="ingredient">Bind</span></td>
+            <td>100</td>
+            <td>Dark Screen</td>
+            <td>Attack Haste</td>
+            <td>Finish Boost</td>
+            <td>Air Combo Plus</td>
+            <td>Item Boost</td>
+            <td>Treasure Magnet</td>
+            <td>Lucky Strike</td>
+         </tr>
+         <tr class="T V A typeI command">
+            <td>Binding Strike</td>
+            <td>I</td>
+            <td><span class="ingredient">Stun Edge</span><br><span class="ingredient">Zero Gravity</span></td>
+            <td>100</td>
+            <td>Thunder Boost</td>
+            <td>Magic Haste</td>
+            <td>Combo F Boost</td>
+            <td>Air Combo Plus</td>
+            <td>HP Boost</td>
+            <td>Treasure Magnet</td>
+            <td>Link Prize Plus</td>
+         </tr>
+         <tr class="T typeO command">
+            <td>Brutal Blast</td>
+            <td>O</td>
+            <td><span class="ingredient">Stun Edge</span><br><span class="ingredient">Mine Shield</span></td>
+            <td>70</td>
+            <td>Dark Screen</td>
+            <td>Attack Haste</td>
+            <td>Finish Boost</td>
+            <td>Air Combo Plus</td>
+            <td>Item Boost</td>
+            <td>Treasure Magnet</td>
+            <td>Lucky Strike</td>
+         </tr>
+         <tr class="T typeL command">
+            <td>Brutal Blast</td>
+            <td>L</td>
+            <td><span class="ingredient">Binding Strike</span><br><span class="ingredient">Mine Square</span></td>
+            <td>70</td>
+            <td>Thunder Screen</td>
+            <td>Attack Haste</td>
+            <td>Finish Boost</td>
+            <td>Combo Plus</td>
+            <td>HP Boost</td>
+            <td>Treasure Magnet</td>
+            <td>Lucky Strike</td>
+         </tr>
+         <tr class="V typeG command">
+            <td>Tornado Strike</td>
+            <td>G</td>
+            <td><span class="ingredient">Confusion Strike</span><br><span class="ingredient">Aeroga</span></td>
+            <td>100</td>
+            <td>Blizzard Screen</td>
+            <td>Attack Haste</td>
+            <td>Leaf Bracer</td>
+            <td>Air Combo Plus</td>
+            <td>Item Boost</td>
+            <td>HP Prize Plus</td>
+            <td>Luck Boost</td>
+         </tr>
+         <tr class="V typeF command">
+            <td>Tornado Strike</td>
+            <td>F</td>
+            <td><span class="ingredient">Binding Strike</span><br><span class="ingredient">Aeroga</span></td>
+            <td>100</td>
+            <td>Blizzard Boost</td>
+            <td>Reload Boost</td>
+            <td>Second Chance</td>
+            <td>Air Combo Plus</td>
+            <td>Damage Syphon</td>
+            <td>HP Prize Plus</td>
+            <td>Lucky Strike</td>
+         </tr>
+         <tr class="T V A typeK command">
+            <td>Magnet Spiral</td>
+            <td>K</td>
+            <td><span class="ingredient">Binding Strike</span><br><span class="ingredient">Collision Magnet</span></td>
+            <td>100</td>
+            <td>Thunder Screen</td>
+            <td>Attack Haste</td>
+            <td>Finish Boost</td>
+            <td>Combo Plus</td>
+            <td>HP Boost</td>
+            <td>Treasure Magnet</td>
+            <td>Link Prize Plus</td>
+         </tr>
+         <tr class="T V A typeJ command">
+            <td>Magnet Spiral</td>
+            <td>J</td>
+            <td><span class="ingredient">Binding Strike</span><br><span class="ingredient">Magnega</span></td>
+            <td>100</td>
+            <td>Thunder Boost</td>
+            <td>Reload Boost</td>
+            <td>Combo F Boost</td>
+            <td>Once More</td>
+            <td>Defender</td>
+            <td>Treasure Magnet</td>
+            <td>EXP Chance</td>
+         </tr>
+         <tr class="T V A typeK command">
+            <td>Magnet Spiral</td>
+            <td>K</td>
+            <td><span class="ingredient">Quick Blitz</span><br><span class="ingredient">Magnera</span></td>
+            <td>20</td>
+            <td>Thunder Screen</td>
+            <td>Attack Haste</td>
+            <td>Finish Boost</td>
+            <td>Combo Plus</td>
+            <td>HP Boost</td>
+            <td>Treasure Magnet</td>
+            <td>Link Prize Plus</td>
+         </tr>
+         <tr class="T V A typeL command">
+            <td>Magnet Spiral</td>
+            <td>L</td>
+            <td><span class="ingredient">Stun Edge</span><br><span class="ingredient">Magnera</span></td>
+            <td>20</td>
+            <td>Thunder Screen</td>
+            <td>Attack Haste</td>
+            <td>Finish Boost</td>
+            <td>Combo Plus</td>
+            <td>HP Boost</td>
+            <td>Treasure Magnet</td>
+            <td>Lucky Strike</td>
+         </tr>
+         <tr class="T V A typeI command">
+            <td>Magnet Spiral</td>
+            <td>I</td>
+            <td><span class="ingredient">Zero Gravira</span><br><span class="ingredient">Magnet</span></td>
+            <td>20</td>
+            <td>Thunder Boost</td>
+            <td>Magic Haste</td>
+            <td>Combo F Boost</td>
+            <td>Air Combo Plus</td>
+            <td>HP Boost</td>
+            <td>Treasure Magnet</td>
+            <td>Link Prize Plus</td>
+         </tr>
+         <tr class="T typeF command">
+            <td>Windcutter</td>
+            <td>F</td>
+            <td><span class="ingredient">Binding Strike</span><br><span class="ingredient">Aeroga</span></td>
+            <td>100</td>
+            <td>Blizzard Boost</td>
+            <td>Reload Boost</td>
+            <td>Second Chance</td>
+            <td>Air Combo Plus</td>
+            <td>Damage Syphon</td>
+            <td>HP Prize Plus</td>
+            <td>Lucky Strike</td>
+         </tr>
+         <tr class="T typeG command">
+            <td>Windcutter</td>
+            <td>G</td>
+            <td><span class="ingredient">Confusion Strike</span><br><span class="ingredient">Aeroga</span></td>
+            <td>100</td>
+            <td>Blizzard Screen</td>
+            <td>Attack Haste</td>
+            <td>Leaf Bracer</td>
+            <td>Air Combo Plus</td>
+            <td>Item Boost</td>
+            <td>HP Prize Plus</td>
+            <td>Luck Boost</td>
+         </tr>
+         <tr class="T typeG command">
+            <td>Limit Storm</td>
+            <td>G</td>
+            <td><span class="ingredient">Brutal Blast</span><br><span class="ingredient">Confusion Strike</span></td>
+            <td>100</td>
+            <td>Blizzard Screen</td>
+            <td>Attack Haste</td>
+            <td>Leaf Bracer</td>
+            <td>Air Combo Plus</td>
+            <td>Item Boost</td>
+            <td>HP Prize Plus</td>
+            <td>Luck Boost</td>
+         </tr>
+         <tr class="T typeD command">
+            <td>Limit Storm</td>
+            <td>D</td>
+            <td><span class="ingredient">Brutal Blast</span><br><span class="ingredient">Binding Strike</span></td>
+            <td>100</td>
+            <td>Fire Screen</td>
+            <td>Attack Haste</td>
+            <td>Leaf Bracer</td>
+            <td>Combo Plus</td>
+            <td>HP Boost</td>
+            <td>HP Prize Plus</td>
+            <td>Link Prize Plus</td>
+         </tr>
+         <tr class="V typeN command">
+            <td>Salvation</td>
+            <td>N</td>
+            <td><span class="ingredient">Wind Raid</span><br><span class="ingredient">Curaga</span></td>
+            <td>100</td>
+            <td>Cure Boost</td>
+            <td>Reload Boost</td>
+            <td>Second Chance</td>
+            <td>Combo Plus</td>
+            <td>Defender</td>
+            <td>Treasure Magnet</td>
+            <td>Lucky Strike</td>
+         </tr>
+         <tr class="T V A typeK command">
+            <td>Collision Magnet</td>
+            <td>K</td>
+            <td><span class="ingredient">Quick Blitz</span><br><span class="ingredient">Magnera</span></td>
+            <td>80</td>
+            <td>Thunder Screen</td>
+            <td>Attack Haste</td>
+            <td>Finish Boost</td>
+            <td>Combo Plus</td>
+            <td>HP Boost</td>
+            <td>Treasure Magnet</td>
+            <td>Link Prize Plus</td>
+         </tr>
+         <tr class="T V A typeL command">
+            <td>Collision Magnet</td>
+            <td>L</td>
+            <td><span class="ingredient">Stun Edge</span><br><span class="ingredient">Magnera</span></td>
+            <td>80</td>
+            <td>Thunder Screen</td>
+            <td>Attack Haste</td>
+            <td>Finish Boost</td>
+            <td>Combo Plus</td>
+            <td>HP Boost</td>
+            <td>Treasure Magnet</td>
+            <td>Lucky Strike</td>
+         </tr>
+         <tr class="T V A typeI command">
+            <td>Collision Magnet</td>
+            <td>I</td>
+            <td><span class="ingredient">Zero Gravira</span><br><span class="ingredient">Magnet</span></td>
+            <td>80</td>
+            <td>Thunder Boost</td>
+            <td>Magic Haste</td>
+            <td>Combo F Boost</td>
+            <td>Air Combo Plus</td>
+            <td>HP Boost</td>
+            <td>Treasure Magnet</td>
+            <td>Link Prize Plus</td>
+         </tr>
+         <tr class="T typeN command">
+            <td>Geo Impact</td>
+            <td>N</td>
+            <td><span class="ingredient">Brutal Blast</span><br><span class="ingredient">Brutal Blast</span></td>
+            <td>70</td>
+            <td>Cure Boost</td>
+            <td>Reload Boost</td>
+            <td>Second Chance</td>
+            <td>Combo Plus</td>
+            <td>Defender</td>
+            <td>Treasure Magnet</td>
+            <td>Lucky Strike</td>
+         </tr>
+         <tr class="T typeB command">
+            <td>Sacrifice</td>
+            <td>B</td>
+            <td><span class="ingredient">Dark Haze</span><br><span class="ingredient">Warp</span></td>
+            <td>100</td>
+            <td>Fire Boost</td>
+            <td>Reload Boost</td>
+            <td>Finish Boost</td>
+            <td>Once More</td>
+            <td>Damage Syphon</td>
+            <td>HP Prize Plus</td>
+            <td>EXP Chance</td>
+         </tr>
+         <tr class="T typeD command">
+            <td>Sacrifice</td>
+            <td>D</td>
+            <td><span class="ingredient">Poison Edge</span><br><span class="ingredient">Warp</span></td>
+            <td>100</td>
+            <td>Fire Screen</td>
+            <td>Attack Haste</td>
+            <td>Leaf Bracer</td>
+            <td>Combo Plus</td>
+            <td>HP Boost</td>
+            <td>HP Prize Plus</td>
+            <td>Link Prize Plus</td>
+         </tr>
+         <tr class="V T typeN command">
+            <td>Break Time</td>
+            <td>N</td>
+            <td><span class="ingredient">Curaga</span><br><span class="ingredient">Renewal Block</span></td>
+            <td>10</td>
+            <td>Cure Boost</td>
+            <td>Reload Boost</td>
+            <td>Second Chance</td>
+            <td>Combo Plus</td>
+            <td>Defender</td>
+            <td>Treasure Magnet</td>
+            <td>Lucky Strike</td>
+         </tr>
+         <tr class="A typeN command">
+            <td>Break Time</td>
+            <td>N</td>
+            <td><span class="ingredient">Curaga</span><br><span class="ingredient">Renewal Barrier</span></td>
+            <td>10</td>
+            <td>Cure Boost</td>
+            <td>Reload Boost</td>
+            <td>Second Chance</td>
+            <td>Combo Plus</td>
+            <td>Defender</td>
+            <td>Treasure Magnet</td>
+            <td>Lucky Strike</td>
+         </tr>
+         <tr class="V T typeP command">
+            <td>Break Time</td>
+            <td>P</td>
+            <td><span class="ingredient">Curaga</span><br><span class="ingredient">Focus Block</span></td>
+            <td>10</td>
+            <td>Dark Screen</td>
+            <td>Magic Haste</td>
+            <td>Combo F Boost</td>
+            <td>Air Combo Plus</td>
+            <td>Item Boost</td>
+            <td>Treasure Magnet</td>
+            <td>EXP Walker</td>
+         </tr>
+         <tr class="A typeP command">
+            <td>Break Time</td>
+            <td>P</td>
+            <td><span class="ingredient">Curaga</span><br><span class="ingredient">Focus Barrier</span></td>
+            <td>10</td>
+            <td>Dark Screen</td>
+            <td>Magic Haste</td>
+            <td>Combo F Boost</td>
+            <td>Air Combo Plus</td>
+            <td>Item Boost</td>
+            <td>Treasure Magnet</td>
+            <td>EXP Walker</td>
+         </tr>
+         <tr class="T V A type command">
+            <td>Fire</td>
+            <td></td>
+            <td><span class="ingredient">Chest</span><br><span class="ingredient"></span></td>
+            <td></td>
+            <td colspan="10"></td>
+         </tr>
+         <tr class="T V A typeD command">
+            <td>Fira</td>
+            <td>D</td>
+            <td><span class="ingredient">Fire Dash</span><br><span class="ingredient">Fire</span></td>
+            <td>100</td>
+            <td>Fire Screen</td>
+            <td>Attack Haste</td>
+            <td>Leaf Bracer</td>
+            <td>Combo Plus</td>
+            <td>HP Boost</td>
+            <td>HP Prize Plus</td>
+            <td>Link Prize Plus</td>
+         </tr>
+         <tr class="T V A typeD command">
+            <td>Fira</td>
+            <td>D</td>
+            <td><span class="ingredient">Fire Strike</span><br><span class="ingredient">Fire</span></td>
+            <td>100</td>
+            <td>Fire Screen</td>
+            <td>Attack Haste</td>
+            <td>Leaf Bracer</td>
+            <td>Combo Plus</td>
+            <td>HP Boost</td>
+            <td>HP Prize Plus</td>
+            <td>Link Prize Plus</td>
+         </tr>
+         <tr class="T V A typeA command">
+            <td>Fira</td>
+            <td>A</td>
+            <td><span class="ingredient">Fire</span><br><span class="ingredient">Fire</span></td>
+            <td>100</td>
+            <td>Fire Boost</td>
+            <td>Magic Haste</td>
+            <td>Leaf Bracer</td>
+            <td>Air Combo Plus</td>
+            <td>HP Boost</td>
+            <td>HP Prize Plus</td>
+            <td>Link Prize Plus</td>
+         </tr>
+         <tr class="T V A typeC command">
+            <td>Fira</td>
+            <td>C</td>
+            <td><span class="ingredient">Fire</span><br><span class="ingredient">Ignite</span></td>
+            <td>100</td>
+            <td>Fire Screen</td>
+            <td>Attack Haste</td>
+            <td>Finish Boost</td>
+            <td>Combo Plus</td>
+            <td>HP Boost</td>
+            <td>HP Prize Plus</td>
+            <td>Link Prize Plus</td>
+         </tr>
+         <tr class="T V A typeD command">
+            <td>Firaga</td>
+            <td>D</td>
+            <td><span class="ingredient">Fire Dash</span><br><span class="ingredient">Fira</span></td>
+            <td>90</td>
+            <td>Fire Screen</td>
+            <td>Attack Haste</td>
+            <td>Leaf Bracer</td>
+            <td>Combo Plus</td>
+            <td>HP Boost</td>
+            <td>HP Prize Plus</td>
+            <td>Link Prize Plus</td>
+         </tr>
+         <tr class="T V A typeA command">
+            <td>Firaga</td>
+            <td>A</td>
+            <td><span class="ingredient">Fire</span><br><span class="ingredient">Fira</span></td>
+            <td>90</td>
+            <td>Fire Boost</td>
+            <td>Magic Haste</td>
+            <td>Leaf Bracer</td>
+            <td>Air Combo Plus</td>
+            <td>HP Boost</td>
+            <td>HP Prize Plus</td>
+            <td>Link Prize Plus</td>
+         </tr>
+         <tr class="T V A typeB command">
+            <td>Firaga</td>
+            <td>B</td>
+            <td><span class="ingredient">Fira</span><br><span class="ingredient">Fira</span></td>
+            <td>90</td>
+            <td>Fire Boost</td>
+            <td>Reload Boost</td>
+            <td>Finish Boost</td>
+            <td>Once More</td>
+            <td>Damage Syphon</td>
+            <td>HP Prize Plus</td>
+            <td>EXP Chance</td>
+         </tr>
+         <tr class="T typeD command">
+            <td>Dark Firaga</td>
+            <td>D</td>
+            <td><span class="ingredient">Dark Haze</span><br><span class="ingredient">Firaga</span></td>
+            <td>100</td>
+            <td>Fire Screen</td>
+            <td>Attack Haste</td>
+            <td>Leaf Bracer</td>
+            <td>Combo Plus</td>
+            <td>HP Boost</td>
+            <td>HP Prize Plus</td>
+            <td>Link Prize Plus</td>
+         </tr>
+         <tr class="T typeB command">
+            <td>Dark Firaga</td>
+            <td>B</td>
+            <td><span class="ingredient">Firaga</span><br><span class="ingredient">Blackout</span></td>
+            <td>100</td>
+            <td>Fire Boost</td>
+            <td>Reload Boost</td>
+            <td>Finish Boost</td>
+            <td>Once More</td>
+            <td>Damage Syphon</td>
+            <td>HP Prize Plus</td>
+            <td>EXP Chance</td>
+         </tr>
+         <tr class="T V A typeA command">
+            <td>Fission Firaga</td>
+            <td>A</td>
+            <td><span class="ingredient">Fira</span><br><span class="ingredient">Aeroga</span></td>
+            <td>80</td>
+            <td>Fire Boost</td>
+            <td>Magic Haste</td>
+            <td>Leaf Bracer</td>
+            <td>Air Combo Plus</td>
+            <td>HP Boost</td>
+            <td>HP Prize Plus</td>
+            <td>Link Prize Plus</td>
+         </tr>
+         <tr class="T V A typeA command">
+            <td>Fission Firaga</td>
+            <td>A</td>
+            <td><span class="ingredient">Firaga</span><br><span class="ingredient">Aerora</span></td>
+            <td>80</td>
+            <td>Fire Boost</td>
+            <td>Magic Haste</td>
+            <td>Leaf Bracer</td>
+            <td>Air Combo Plus</td>
+            <td>HP Boost</td>
+            <td>HP Prize Plus</td>
+            <td>Link Prize Plus</td>
+         </tr>
+         <tr class="T V A typeB command">
+            <td>Fission Firaga</td>
+            <td>B</td>
+            <td><span class="ingredient">Firaga</span><br><span class="ingredient">Aeroga</span></td>
+            <td>80</td>
+            <td>Fire Boost</td>
+            <td>Reload Boost</td>
+            <td>Finish Boost</td>
+            <td>Once More</td>
+            <td>Damage Syphon</td>
+            <td>HP Prize Plus</td>
+            <td>EXP Chance</td>
+         </tr>
+         <tr class="A typeA command">
+            <td>Triple Firaga</td>
+            <td>A</td>
+            <td><span class="ingredient">Fira</span><br><span class="ingredient">Firaga</span></td>
+            <td>95</td>
+            <td>Fire Boost</td>
+            <td>Magic Haste</td>
+            <td>Leaf Bracer</td>
+            <td>Air Combo Plus</td>
+            <td>HP Boost</td>
+            <td>HP Prize Plus</td>
+            <td>Link Prize Plus</td>
+         </tr>
+         <tr class="A typeD command">
+            <td>Triple Firaga</td>
+            <td>D</td>
+            <td><span class="ingredient">Blitz</span><br><span class="ingredient">Firaga</span></td>
+            <td>90</td>
+            <td>Fire Screen</td>
+            <td>Attack Haste</td>
+            <td>Leaf Bracer</td>
+            <td>Combo Plus</td>
+            <td>HP Boost</td>
+            <td>HP Prize Plus</td>
+            <td>Link Prize Plus</td>
+         </tr>
+         <tr class="A typeB command">
+            <td>Triple Firaga</td>
+            <td>B</td>
+            <td><span class="ingredient">Firaga</span><br><span class="ingredient">Firaga</span></td>
+            <td>90</td>
+            <td>Fire Boost</td>
+            <td>Reload Boost</td>
+            <td>Finish Boost</td>
+            <td>Once More</td>
+            <td>Damage Syphon</td>
+            <td>HP Prize Plus</td>
+            <td>EXP Chance</td>
+         </tr>
+         <tr class="T V A typeA command">
+            <td>Crawling Fire</td>
+            <td>A</td>
+            <td><span class="ingredient">Firaga</span><br><span class="ingredient">Slow</span></td>
+            <td>80</td>
+            <td>Fire Boost</td>
+            <td>Magic Haste</td>
+            <td>Leaf Bracer</td>
+            <td>Air Combo Plus</td>
+            <td>HP Boost</td>
+            <td>HP Prize Plus</td>
+            <td>Link Prize Plus</td>
+         </tr>
+         <tr class="T V A typeD command">
+            <td>Crawling Fire</td>
+            <td>D</td>
+            <td><span class="ingredient">Firaga</span><br><span class="ingredient">Stopra</span></td>
+            <td>80</td>
+            <td>Fire Screen</td>
+            <td>Attack Haste</td>
+            <td>Leaf Bracer</td>
+            <td>Combo Plus</td>
+            <td>HP Boost</td>
+            <td>HP Prize Plus</td>
+            <td>Link Prize Plus</td>
+         </tr>
+         <tr class="T V A typeB command">
+            <td>Crawling Fire</td>
+            <td>B</td>
+            <td><span class="ingredient">Firaga</span><br><span class="ingredient">Stopga</span></td>
+            <td>80</td>
+            <td>Fire Boost</td>
+            <td>Reload Boost</td>
+            <td>Finish Boost</td>
+            <td>Once More</td>
+            <td>Damage Syphon</td>
+            <td>HP Prize Plus</td>
+            <td>EXP Chance</td>
+         </tr>
+         <tr class="A type command">
+            <td>Blizzard</td>
+            <td></td>
+            <td><span class="ingredient">Start</span><br><span class="ingredient"></span></td>
+            <td></td>
+            <td colspan="10"></td>
+         </tr>
+         <tr class="T V type command">
+            <td>Blizzard</td>
+            <td></td>
+            <td><span class="ingredient">Chest</span><br><span class="ingredient"></span></td>
+            <td></td>
+            <td colspan="10"></td>
+         </tr>
+         <tr class="T V A typeG command">
+            <td>Blizzara</td>
+            <td>G</td>
+            <td><span class="ingredient">Strike Raid</span><br><span class="ingredient">Blizzard</span></td>
+            <td>100</td>
+            <td>Blizzard Screen</td>
+            <td>Attack Haste</td>
+            <td>Leaf Bracer</td>
+            <td>Air Combo Plus</td>
+            <td>Item Boost</td>
+            <td>HP Prize Plus</td>
+            <td>Luck Boost</td>
+         </tr>
+         <tr class="T V A typeG command">
+            <td>Blizzara</td>
+            <td>G</td>
+            <td><span class="ingredient">Blizzard Edge</span><br><span class="ingredient">Blizzard</span></td>
+            <td>100</td>
+            <td>Blizzard Screen</td>
+            <td>Attack Haste</td>
+            <td>Leaf Bracer</td>
+            <td>Air Combo Plus</td>
+            <td>Item Boost</td>
+            <td>HP Prize Plus</td>
+            <td>Luck Boost</td>
+         </tr>
+         <tr class="T V A typeE command">
+            <td>Blizzara</td>
+            <td>E</td>
+            <td><span class="ingredient">Blizzard</span><br><span class="ingredient">Blizzard</span></td>
+            <td>100</td>
+            <td>Blizzard Boost</td>
+            <td>Magic Haste</td>
+            <td>Leaf Bracer</td>
+            <td>Combo Plus</td>
+            <td>Item Boost</td>
+            <td>HP Prize Plus</td>
+            <td>Lucky Strike</td>
+         </tr>
+         <tr class="T V A typeH command">
+            <td>Blizzara</td>
+            <td>H</td>
+            <td><span class="ingredient">Blizzard</span><br><span class="ingredient">Aero</span></td>
+            <td>100</td>
+            <td>Blizzard Screen</td>
+            <td>Magic Haste</td>
+            <td>Combo F Boost</td>
+            <td>Air Combo Plus</td>
+            <td>Item Boost</td>
+            <td>HP Prize Plus</td>
+            <td>EXP Walker</td>
+         </tr>
+         <tr class="T V A typeG command">
+            <td>Blizzaga</td>
+            <td>G</td>
+            <td><span class="ingredient">Blizzard Edge</span><br><span class="ingredient">Blizzara</span></td>
+            <td>100</td>
+            <td>Blizzard Screen</td>
+            <td>Attack Haste</td>
+            <td>Leaf Bracer</td>
+            <td>Air Combo Plus</td>
+            <td>Item Boost</td>
+            <td>HP Prize Plus</td>
+            <td>Luck Boost</td>
+         </tr>
+         <tr class="T V A typeE command">
+            <td>Blizzaga</td>
+            <td>E</td>
+            <td><span class="ingredient">Blizzard</span><br><span class="ingredient">Blizzara</span></td>
+            <td>100</td>
+            <td>Blizzard Boost</td>
+            <td>Magic Haste</td>
+            <td>Leaf Bracer</td>
+            <td>Combo Plus</td>
+            <td>Item Boost</td>
+            <td>HP Prize Plus</td>
+            <td>Lucky Strike</td>
+         </tr>
+         <tr class="T V A typeF command">
+            <td>Blizzaga</td>
+            <td>F</td>
+            <td><span class="ingredient">Blizzara</span><br><span class="ingredient">Blizzara</span></td>
+            <td>100</td>
+            <td>Blizzard Boost</td>
+            <td>Reload Boost</td>
+            <td>Second Chance</td>
+            <td>Air Combo Plus</td>
+            <td>Damage Syphon</td>
+            <td>HP Prize Plus</td>
+            <td>Lucky Strike</td>
+         </tr>
+         <tr class="A typeG command">
+            <td>Triple Blizzaga</td>
+            <td>G</td>
+            <td><span class="ingredient">Blitz</span><br><span class="ingredient">Blizzaga</span></td>
+            <td>100</td>
+            <td>Blizzard Screen</td>
+            <td>Attack Haste</td>
+            <td>Leaf Bracer</td>
+            <td>Air Combo Plus</td>
+            <td>Item Boost</td>
+            <td>HP Prize Plus</td>
+            <td>Luck Boost</td>
+         </tr>
+         <tr class="A typeE command">
+            <td>Triple Blizzaga</td>
+            <td>E</td>
+            <td><span class="ingredient">Blizzara</span><br><span class="ingredient">Blizzaga</span></td>
+            <td>100</td>
+            <td>Blizzard Boost</td>
+            <td>Magic Haste</td>
+            <td>Leaf Bracer</td>
+            <td>Combo Plus</td>
+            <td>Item Boost</td>
+            <td>HP Prize Plus</td>
+            <td>Lucky Strike</td>
+         </tr>
+         <tr class="A typeF command">
+            <td>Triple Blizzaga</td>
+            <td>F</td>
+            <td><span class="ingredient">Blizzaga</span><br><span class="ingredient">Blizzaga</span></td>
+            <td>100</td>
+            <td>Blizzard Boost</td>
+            <td>Reload Boost</td>
+            <td>Second Chance</td>
+            <td>Air Combo Plus</td>
+            <td>Damage Syphon</td>
+            <td>HP Prize Plus</td>
+            <td>Lucky Strike</td>
+         </tr>
+         <tr class="A type command">
+            <td>Thunder</td>
+            <td></td>
+            <td><span class="ingredient">Start</span><br><span class="ingredient"></span></td>
+            <td></td>
+            <td colspan="10"></td>
+         </tr>
+         <tr class="T V type command">
+            <td>Thunder</td>
+            <td></td>
+            <td><span class="ingredient">Chest</span><br><span class="ingredient"></span></td>
+            <td></td>
+            <td colspan="10"></td>
+         </tr>
+         <tr class="T V A typeK command">
+            <td>Thundara</td>
+            <td>K</td>
+            <td><span class="ingredient">Stun Edge</span><br><span class="ingredient">Thunder</span></td>
+            <td>100</td>
+            <td>Thunder Screen</td>
+            <td>Attack Haste</td>
+            <td>Finish Boost</td>
+            <td>Combo Plus</td>
+            <td>HP Boost</td>
+            <td>Treasure Magnet</td>
+            <td>Link Prize Plus</td>
+         </tr>
+         <tr class="T V A typeI command">
+            <td>Thundara</td>
+            <td>I</td>
+            <td><span class="ingredient">Thunder</span><br><span class="ingredient">Thunder</span></td>
+            <td>100</td>
+            <td>Thunder Boost</td>
+            <td>Magic Haste</td>
+            <td>Combo F Boost</td>
+            <td>Air Combo Plus</td>
+            <td>HP Boost</td>
+            <td>Treasure Magnet</td>
+            <td>Link Prize Plus</td>
+         </tr>
+         <tr class="T V A typeL command">
+            <td>Thundara</td>
+            <td>L</td>
+            <td><span class="ingredient">Zero Gravity</span><br><span class="ingredient">Magnet</span></td>
+            <td>100</td>
+            <td>Thunder Screen</td>
+            <td>Attack Haste</td>
+            <td>Finish Boost</td>
+            <td>Combo Plus</td>
+            <td>HP Boost</td>
+            <td>Treasure Magnet</td>
+            <td>Lucky Strike</td>
+         </tr>
+         <tr class="T V A typeK command">
+            <td>Thundaga</td>
+            <td>K</td>
+            <td><span class="ingredient">Binding Strike</span><br><span class="ingredient">Thundara</span></td>
+            <td>90</td>
+            <td>Thunder Screen</td>
+            <td>Attack Haste</td>
+            <td>Finish Boost</td>
+            <td>Combo Plus</td>
+            <td>HP Boost</td>
+            <td>Treasure Magnet</td>
+            <td>Link Prize Plus</td>
+         </tr>
+         <tr class="T V A typeI command">
+            <td>Thundaga</td>
+            <td>I</td>
+            <td><span class="ingredient">Thunder</span><br><span class="ingredient">Thundara</span></td>
+            <td>90</td>
+            <td>Thunder Boost</td>
+            <td>Magic Haste</td>
+            <td>Combo F Boost</td>
+            <td>Air Combo Plus</td>
+            <td>HP Boost</td>
+            <td>Treasure Magnet</td>
+            <td>Link Prize Plus</td>
+         </tr>
+         <tr class="T V A typeJ command">
+            <td>Thundaga</td>
+            <td>J</td>
+            <td><span class="ingredient">Thundara</span><br><span class="ingredient">Thundara</span></td>
+            <td>90</td>
+            <td>Thunder Boost</td>
+            <td>Reload Boost</td>
+            <td>Combo F Boost</td>
+            <td>Once More</td>
+            <td>Defender</td>
+            <td>Treasure Magnet</td>
+            <td>EXP Chance</td>
+         </tr>
+         <tr class="A typeI command">
+            <td>Thundaga Shot</td>
+            <td>I</td>
+            <td><span class="ingredient">Strike Raid</span><br><span class="ingredient">Thundaga</span></td>
+            <td>85</td>
+            <td>Thunder Boost</td>
+            <td>Magic Haste</td>
+            <td>Combo F Boost</td>
+            <td>Air Combo Plus</td>
+            <td>HP Boost</td>
+            <td>Treasure Magnet</td>
+            <td>Link Prize Plus</td>
+         </tr>
+         <tr class="A typeE command">
+            <td>Thundaga Shot</td>
+            <td>E</td>
+            <td><span class="ingredient">Freeze Raid</span><br><span class="ingredient">Thundaga</span></td>
+            <td>85</td>
+            <td>Blizzard Boost</td>
+            <td>Magic Haste</td>
+            <td>Leaf Bracer</td>
+            <td>Combo Plus</td>
+            <td>Item Boost</td>
+            <td>HP Prize Plus</td>
+            <td>Lucky Strike</td>
+         </tr>
+         <tr class="A typeA command">
+            <td>Thundaga Shot</td>
+            <td>A</td>
+            <td><span class="ingredient">Firaga</span><br><span class="ingredient">Thundaga</span></td>
+            <td>85</td>
+            <td>Fire Boost</td>
+            <td>Magic Haste</td>
+            <td>Leaf Bracer</td>
+            <td>Air Combo Plus</td>
+            <td>HP Boost</td>
+            <td>HP Prize Plus</td>
+            <td>Link Prize Plus</td>
+         </tr>
+         <tr class="T V A type command">
+            <td>Cure</td>
+            <td></td>
+            <td><span class="ingredient">Chest</span><br><span class="ingredient"></span></td>
+            <td></td>
+            <td colspan="10"></td>
+         </tr>
+         <tr class="T V A typeI command">
+            <td>Cura</td>
+            <td>I</td>
+            <td><span class="ingredient">Thunder</span><br><span class="ingredient">Cure</span></td>
+            <td>100</td>
+            <td>Thunder Boost</td>
+            <td>Magic Haste</td>
+            <td>Combo F Boost</td>
+            <td>Air Combo Plus</td>
+            <td>HP Boost</td>
+            <td>Treasure Magnet</td>
+            <td>Link Prize Plus</td>
+         </tr>
+         <tr class="T V A typeM command">
+            <td>Cura</td>
+            <td>M</td>
+            <td><span class="ingredient">Cure</span><br><span class="ingredient">Cure</span></td>
+            <td>100</td>
+            <td>Cure Boost</td>
+            <td>Magic Haste</td>
+            <td>Combo F Boost</td>
+            <td>Combo Plus</td>
+            <td>Item Boost</td>
+            <td>Treasure Magnet</td>
+            <td>Lucky Strike</td>
+         </tr>
+         <tr class="T V A typeO command">
+            <td>Cura</td>
+            <td>O</td>
+            <td><span class="ingredient">Cure</span><br><span class="ingredient">Aero</span></td>
+            <td>100</td>
+            <td>Dark Screen</td>
+            <td>Attack Haste</td>
+            <td>Finish Boost</td>
+            <td>Air Combo Plus</td>
+            <td>Item Boost</td>
+            <td>Treasure Magnet</td>
+            <td>Lucky Strike</td>
+         </tr>
+         <tr class="T V A typeM command">
+            <td>Curaga</td>
+            <td>M</td>
+            <td><span class="ingredient">Cure</span><br><span class="ingredient">Cura</span></td>
+            <td>100</td>
+            <td>Cure Boost</td>
+            <td>Magic Haste</td>
+            <td>Combo F Boost</td>
+            <td>Combo Plus</td>
+            <td>Item Boost</td>
+            <td>Treasure Magnet</td>
+            <td>Lucky Strike</td>
+         </tr>
+         <tr class="T V A typeN command">
+            <td>Curaga</td>
+            <td>N</td>
+            <td><span class="ingredient">Cura</span><br><span class="ingredient">Cura</span></td>
+            <td>100</td>
+            <td>Cure Boost</td>
+            <td>Reload Boost</td>
+            <td>Second Chance</td>
+            <td>Combo Plus</td>
+            <td>Defender</td>
+            <td>Treasure Magnet</td>
+            <td>Lucky Strike</td>
+         </tr>
+         <tr class="T type command">
+            <td>Esuna</td>
+            <td></td>
+            <td><span class="ingredient">Chest</span><br><span class="ingredient"></span></td>
+            <td></td>
+            <td colspan="10"></td>
+         </tr>
+         <tr class="V A type command">
+            <td>Esuna</td>
+            <td></td>
+            <td><span class="ingredient">Shop</span><br><span class="ingredient"></span></td>
+            <td></td>
+            <td colspan="10"></td>
+         </tr>
+         <tr class="T V A typeA command">
+            <td>Mine Shield</td>
+            <td>A</td>
+            <td><span class="ingredient">Fira</span><br><span class="ingredient">Zero Gravity</span></td>
+            <td>100</td>
+            <td>Fire Boost</td>
+            <td>Magic Haste</td>
+            <td>Leaf Bracer</td>
+            <td>Air Combo Plus</td>
+            <td>HP Boost</td>
+            <td>HP Prize Plus</td>
+            <td>Link Prize Plus</td>
+         </tr>
+         <tr class="V T typeC command">
+            <td>Mine Shield</td>
+            <td>C</td>
+            <td><span class="ingredient">Fira</span><br><span class="ingredient">Block</span></td>
+            <td>100</td>
+            <td>Fire Screen</td>
+            <td>Attack Haste</td>
+            <td>Finish Boost</td>
+            <td>Combo Plus</td>
+            <td>HP Boost</td>
+            <td>HP Prize Plus</td>
+            <td>Link Prize Plus</td>
+         </tr>
+         <tr class="T V A typeD command">
+            <td>Mine Shield</td>
+            <td>D</td>
+            <td><span class="ingredient">Ignite</span><br><span class="ingredient">Stop</span></td>
+            <td>100</td>
+            <td>Fire Screen</td>
+            <td>Attack Haste</td>
+            <td>Leaf Bracer</td>
+            <td>Combo Plus</td>
+            <td>HP Boost</td>
+            <td>HP Prize Plus</td>
+            <td>Link Prize Plus</td>
+         </tr>
+         <tr class="V T typeM command">
+            <td>Mine Shield</td>
+            <td>M</td>
+            <td><span class="ingredient">Stopra</span><br><span class="ingredient">Block</span></td>
+            <td>100</td>
+            <td>Cure Boost</td>
+            <td>Magic Haste</td>
+            <td>Combo F Boost</td>
+            <td>Combo Plus</td>
+            <td>Item Boost</td>
+            <td>Treasure Magnet</td>
+            <td>Lucky Strike</td>
+         </tr>
+         <tr class="T V A typeA command">
+            <td>Mine Square</td>
+            <td>A</td>
+            <td><span class="ingredient">Fira</span><br><span class="ingredient">Stop</span></td>
+            <td>100</td>
+            <td>Fire Boost</td>
+            <td>Magic Haste</td>
+            <td>Leaf Bracer</td>
+            <td>Air Combo Plus</td>
+            <td>HP Boost</td>
+            <td>HP Prize Plus</td>
+            <td>Link Prize Plus</td>
+         </tr>
+         <tr class="A typeC command">
+            <td>Mine Square</td>
+            <td>C</td>
+            <td><span class="ingredient">Fira</span><br><span class="ingredient">Barrier</span></td>
+            <td>100</td>
+            <td>Fire Screen</td>
+            <td>Attack Haste</td>
+            <td>Finish Boost</td>
+            <td>Combo Plus</td>
+            <td>HP Boost</td>
+            <td>HP Prize Plus</td>
+            <td>Link Prize Plus</td>
+         </tr>
+         <tr class="T V A typeD command">
+            <td>Mine Square</td>
+            <td>D</td>
+            <td><span class="ingredient">Aerora</span><br><span class="ingredient">Ignite</span></td>
+            <td>100</td>
+            <td>Fire Screen</td>
+            <td>Attack Haste</td>
+            <td>Leaf Bracer</td>
+            <td>Combo Plus</td>
+            <td>HP Boost</td>
+            <td>HP Prize Plus</td>
+            <td>Link Prize Plus</td>
+         </tr>
+         <tr class="A typeM command">
+            <td>Mine Square</td>
+            <td>M</td>
+            <td><span class="ingredient">Stopra</span><br><span class="ingredient">Barrier</span></td>
+            <td>100</td>
+            <td>Cure Boost</td>
+            <td>Magic Haste</td>
+            <td>Combo F Boost</td>
+            <td>Combo Plus</td>
+            <td>Item Boost</td>
+            <td>Treasure Magnet</td>
+            <td>Lucky Strike</td>
+         </tr>
+         <tr class="A typeB command">
+            <td>Seeker Mine</td>
+            <td>B</td>
+            <td><span class="ingredient">Mine Shield</span><br><span class="ingredient">Mine Square</span></td>
+            <td>100</td>
+            <td>Fire Boost</td>
+            <td>Reload Boost</td>
+            <td>Finish Boost</td>
+            <td>Once More</td>
+            <td>Damage Syphon</td>
+            <td>HP Prize Plus</td>
+            <td>EXP Chance</td>
+         </tr>
+         <tr class="A typeC command">
+            <td>Seeker Mine</td>
+            <td>C</td>
+            <td><span class="ingredient">Mine Shield</span><br><span class="ingredient">Magnega</span></td>
+            <td>100</td>
+            <td>Fire Screen</td>
+            <td>Attack Haste</td>
+            <td>Finish Boost</td>
+            <td>Combo Plus</td>
+            <td>HP Boost</td>
+            <td>HP Prize Plus</td>
+            <td>Link Prize Plus</td>
+         </tr>
+         <tr class="A typeD command">
+            <td>Seeker Mine</td>
+            <td>D</td>
+            <td><span class="ingredient">Mine Square</span><br><span class="ingredient">Magnega</span></td>
+            <td>100</td>
+            <td>Fire Screen</td>
+            <td>Attack Haste</td>
+            <td>Leaf Bracer</td>
+            <td>Combo Plus</td>
+            <td>HP Boost</td>
+            <td>HP Prize Plus</td>
+            <td>Link Prize Plus</td>
+         </tr>
+         <tr class="T V A type command">
+            <td>Zero Gravity</td>
+            <td></td>
+            <td><span class="ingredient">Chest</span><br><span class="ingredient"></span></td>
+            <td></td>
+            <td colspan="10"></td>
+         </tr>
+         <tr class="T V A typeI command">
+            <td>Zero Gravira</td>
+            <td>I</td>
+            <td><span class="ingredient">Thunder</span><br><span class="ingredient">Zero Gravity</span></td>
+            <td>90</td>
+            <td>Thunder Boost</td>
+            <td>Magic Haste</td>
+            <td>Combo F Boost</td>
+            <td>Air Combo Plus</td>
+            <td>HP Boost</td>
+            <td>Treasure Magnet</td>
+            <td>Link Prize Plus</td>
+         </tr>
+         <tr class="T V A typeM command">
+            <td>Zero Gravira</td>
+            <td>M</td>
+            <td><span class="ingredient">Zero Gravity</span><br><span class="ingredient">Zero Gravity</span></td>
+            <td>90</td>
+            <td>Cure Boost</td>
+            <td>Magic Haste</td>
+            <td>Combo F Boost</td>
+            <td>Combo Plus</td>
+            <td>Item Boost</td>
+            <td>Treasure Magnet</td>
+            <td>Lucky Strike</td>
+         </tr>
+         <tr class="T V A typeP command">
+            <td>Zero Gravira</td>
+            <td>P</td>
+            <td><span class="ingredient">Magnet</span><br><span class="ingredient">Aero</span></td>
+            <td>90</td>
+            <td>Dark Screen</td>
+            <td>Magic Haste</td>
+            <td>Combo F Boost</td>
+            <td>Air Combo Plus</td>
+            <td>Item Boost</td>
+            <td>Treasure Magnet</td>
+            <td>EXP Walker</td>
+         </tr>
+         <tr class="T V A typeI command">
+            <td>Zero Graviga</td>
+            <td>I</td>
+            <td><span class="ingredient">Thundara</span><br><span class="ingredient">Zero Gravira</span></td>
+            <td>80</td>
+            <td>Thunder Boost</td>
+            <td>Magic Haste</td>
+            <td>Combo F Boost</td>
+            <td>Air Combo Plus</td>
+            <td>HP Boost</td>
+            <td>Treasure Magnet</td>
+            <td>Link Prize Plus</td>
+         </tr>
+         <tr class="T V A typeM command">
+            <td>Zero Graviga</td>
+            <td>M</td>
+            <td><span class="ingredient">Zero Gravity</span><br><span class="ingredient">Zero Gravira</span></td>
+            <td>80</td>
+            <td>Cure Boost</td>
+            <td>Magic Haste</td>
+            <td>Combo F Boost</td>
+            <td>Combo Plus</td>
+            <td>Item Boost</td>
+            <td>Treasure Magnet</td>
+            <td>Lucky Strike</td>
+         </tr>
+         <tr class="T V A typeN command">
+            <td>Zero Graviga</td>
+            <td>N</td>
+            <td><span class="ingredient">Zero Gravira</span><br><span class="ingredient">Zero Gravira</span></td>
+            <td>80</td>
+            <td>Cure Boost</td>
+            <td>Reload Boost</td>
+            <td>Second Chance</td>
+            <td>Combo Plus</td>
+            <td>Defender</td>
+            <td>Treasure Magnet</td>
+            <td>Lucky Strike</td>
+         </tr>
+         <tr class="V A type command">
+            <td>Magnet</td>
+            <td></td>
+            <td><span class="ingredient">Chest</span><br><span class="ingredient"></span></td>
+            <td></td>
+            <td colspan="10"></td>
+         </tr>
+         <tr class="T type command">
+            <td>Magnet</td>
+            <td></td>
+            <td><span class="ingredient">Keyblade Board</span><br><span class="ingredient"></span></td>
+            <td></td>
+            <td colspan="10"></td>
+         </tr>
+         <tr class="T V A typeK command">
+            <td>Magnera</td>
+            <td>K</td>
+            <td><span class="ingredient">Stun Edge</span><br><span class="ingredient">Magnet</span></td>
+            <td>100</td>
+            <td>Thunder Screen</td>
+            <td>Attack Haste</td>
+            <td>Finish Boost</td>
+            <td>Combo Plus</td>
+            <td>HP Boost</td>
+            <td>Treasure Magnet</td>
+            <td>Link Prize Plus</td>
+         </tr>
+         <tr class="T V A typeI command">
+            <td>Magnera</td>
+            <td>I</td>
+            <td><span class="ingredient">Thunder</span><br><span class="ingredient">Magnet</span></td>
+            <td>100</td>
+            <td>Thunder Boost</td>
+            <td>Magic Haste</td>
+            <td>Combo F Boost</td>
+            <td>Air Combo Plus</td>
+            <td>HP Boost</td>
+            <td>Treasure Magnet</td>
+            <td>Link Prize Plus</td>
+         </tr>
+         <tr class="T V A typeM command">
+            <td>Magnera</td>
+            <td>M</td>
+            <td><span class="ingredient">Magnet</span><br><span class="ingredient">Magnet</span></td>
+            <td>100</td>
+            <td>Cure Boost</td>
+            <td>Magic Haste</td>
+            <td>Combo F Boost</td>
+            <td>Combo Plus</td>
+            <td>Item Boost</td>
+            <td>Treasure Magnet</td>
+            <td>Lucky Strike</td>
+         </tr>
+         <tr class="T V A typeI command">
+            <td>Magnega</td>
+            <td>I</td>
+            <td><span class="ingredient">Magnet</span><br><span class="ingredient">Magnera</span></td>
+            <td>100</td>
+            <td>Thunder Boost</td>
+            <td>Magic Haste</td>
+            <td>Combo F Boost</td>
+            <td>Air Combo Plus</td>
+            <td>HP Boost</td>
+            <td>Treasure Magnet</td>
+            <td>Link Prize Plus</td>
+         </tr>
+         <tr class="T V A typeJ command">
+            <td>Magnega</td>
+            <td>J</td>
+            <td><span class="ingredient">Magnera</span><br><span class="ingredient">Magnera</span></td>
+            <td>100</td>
+            <td>Thunder Boost</td>
+            <td>Reload Boost</td>
+            <td>Combo F Boost</td>
+            <td>Once More</td>
+            <td>Defender</td>
+            <td>Treasure Magnet</td>
+            <td>EXP Chance</td>
+         </tr>
+         <tr class="A typeK command">
+            <td>Munny Magnet</td>
+            <td>K</td>
+            <td><span class="ingredient">Wishing Edge</span><br><span class="ingredient">Magnera</span></td>
+            <td>100</td>
+            <td>Thunder Screen</td>
+            <td>Attack Haste</td>
+            <td>Finish Boost</td>
+            <td>Combo Plus</td>
+            <td>HP Boost</td>
+            <td>Treasure Magnet</td>
+            <td>Link Prize Plus</td>
+         </tr>
+         <tr class="A typeI command">
+            <td>Munny Magnet</td>
+            <td>I</td>
+            <td><span class="ingredient">Thundara</span><br><span class="ingredient">Magnera</span></td>
+            <td>100</td>
+            <td>Thunder Boost</td>
+            <td>Magic Haste</td>
+            <td>Combo F Boost</td>
+            <td>Air Combo Plus</td>
+            <td>HP Boost</td>
+            <td>Treasure Magnet</td>
+            <td>Link Prize Plus</td>
+         </tr>
+         <tr class="A typeM command">
+            <td>Energy Magnet</td>
+            <td>M</td>
+            <td><span class="ingredient">Cure</span><br><span class="ingredient">Magnera</span></td>
+            <td>100</td>
+            <td>Cure Boost</td>
+            <td>Magic Haste</td>
+            <td>Combo F Boost</td>
+            <td>Combo Plus</td>
+            <td>Item Boost</td>
+            <td>Treasure Magnet</td>
+            <td>Lucky Strike</td>
+         </tr>
+         <tr class="A typeN command">
+            <td>Energy Magnet</td>
+            <td>N</td>
+            <td><span class="ingredient">Cura</span><br><span class="ingredient">Magnera</span></td>
+            <td>100</td>
+            <td>Cure Boost</td>
+            <td>Reload Boost</td>
+            <td>Second Chance</td>
+            <td>Combo Plus</td>
+            <td>Defender</td>
+            <td>Treasure Magnet</td>
+            <td>Lucky Strike</td>
+         </tr>
+         <tr class="A typeL command">
+            <td>D-Link Magnet</td>
+            <td>L</td>
+            <td><span class="ingredient">Zero Gravira</span><br><span class="ingredient">Magnera</span></td>
+            <td>100</td>
+            <td>Thunder Screen</td>
+            <td>Attack Haste</td>
+            <td>Finish Boost</td>
+            <td>Combo Plus</td>
+            <td>HP Boost</td>
+            <td>Treasure Magnet</td>
+            <td>Lucky Strike</td>
+         </tr>
+         <tr class="A typeI command">
+            <td>D-Link Magnet</td>
+            <td>I</td>
+            <td><span class="ingredient">Magnera</span><br><span class="ingredient">Stopra</span></td>
+            <td>100</td>
+            <td>Thunder Boost</td>
+            <td>Magic Haste</td>
+            <td>Combo F Boost</td>
+            <td>Air Combo Plus</td>
+            <td>HP Boost</td>
+            <td>Treasure Magnet</td>
+            <td>Link Prize Plus</td>
+         </tr>
+         <tr class="V type command">
+            <td>Aero</td>
+            <td></td>
+            <td><span class="ingredient">Start</span><br><span class="ingredient"></span></td>
+            <td></td>
+            <td colspan="10"></td>
+         </tr>
+         <tr class="T A type command">
+            <td>Aero</td>
+            <td></td>
+            <td><span class="ingredient">Shop</span><br><span class="ingredient"></span></td>
+            <td></td>
+            <td colspan="10"></td>
+         </tr>
+         <tr class="T V A typeG command">
+            <td>Aerora</td>
+            <td>G</td>
+            <td><span class="ingredient">Quick Blitz</span><br><span class="ingredient">Aero</span></td>
+            <td>95</td>
+            <td>Blizzard Screen</td>
+            <td>Attack Haste</td>
+            <td>Leaf Bracer</td>
+            <td>Air Combo Plus</td>
+            <td>Item Boost</td>
+            <td>HP Prize Plus</td>
+            <td>Luck Boost</td>
+         </tr>
+         <tr class="T V A typeI command">
+            <td>Aerora</td>
+            <td>I</td>
+            <td><span class="ingredient">Thunder</span><br><span class="ingredient">Aero</span></td>
+            <td>95</td>
+            <td>Thunder Boost</td>
+            <td>Magic Haste</td>
+            <td>Combo F Boost</td>
+            <td>Air Combo Plus</td>
+            <td>HP Boost</td>
+            <td>Treasure Magnet</td>
+            <td>Link Prize Plus</td>
+         </tr>
+         <tr class="T V A typeE command">
+            <td>Aerora</td>
+            <td>E</td>
+            <td><span class="ingredient">Aero</span><br><span class="ingredient">Aero</span></td>
+            <td>95</td>
+            <td>Blizzard Boost</td>
+            <td>Magic Haste</td>
+            <td>Leaf Bracer</td>
+            <td>Combo Plus</td>
+            <td>Item Boost</td>
+            <td>HP Prize Plus</td>
+            <td>Lucky Strike</td>
+         </tr>
+         <tr class="T V A typeO command">
+            <td>Aeroga</td>
+            <td>O</td>
+            <td><span class="ingredient">Quick Blitz</span><br><span class="ingredient">Aerora</span></td>
+            <td>90</td>
+            <td>Dark Screen</td>
+            <td>Attack Haste</td>
+            <td>Finish Boost</td>
+            <td>Air Combo Plus</td>
+            <td>Item Boost</td>
+            <td>Treasure Magnet</td>
+            <td>Lucky Strike</td>
+         </tr>
+         <tr class="T V A typeM command">
+            <td>Aeroga</td>
+            <td>M</td>
+            <td><span class="ingredient">Aero</span><br><span class="ingredient">Aerora</span></td>
+            <td>90</td>
+            <td>Cure Boost</td>
+            <td>Magic Haste</td>
+            <td>Combo F Boost</td>
+            <td>Combo Plus</td>
+            <td>Item Boost</td>
+            <td>Treasure Magnet</td>
+            <td>Lucky Strike</td>
+         </tr>
+         <tr class="T V A typeN command">
+            <td>Aeroga</td>
+            <td>N</td>
+            <td><span class="ingredient">Aerora</span><br><span class="ingredient">Aerora</span></td>
+            <td>90</td>
+            <td>Cure Boost</td>
+            <td>Reload Boost</td>
+            <td>Second Chance</td>
+            <td>Combo Plus</td>
+            <td>Defender</td>
+            <td>Treasure Magnet</td>
+            <td>Lucky Strike</td>
+         </tr>
+         <tr class="T typeI command">
+            <td>Warp</td>
+            <td>I</td>
+            <td><span class="ingredient">Thundara</span><br><span class="ingredient">Zero Gravira</span></td>
+            <td>20</td>
+            <td>Thunder Boost</td>
+            <td>Magic Haste</td>
+            <td>Combo F Boost</td>
+            <td>Air Combo Plus</td>
+            <td>HP Boost</td>
+            <td>Treasure Magnet</td>
+            <td>Link Prize Plus</td>
+         </tr>
+         <tr class="T typeM command">
+            <td>Warp</td>
+            <td>M</td>
+            <td><span class="ingredient">Zero Gravity</span><br><span class="ingredient">Zero Gravira</span></td>
+            <td>20</td>
+            <td>Cure Boost</td>
+            <td>Magic Haste</td>
+            <td>Combo F Boost</td>
+            <td>Combo Plus</td>
+            <td>Item Boost</td>
+            <td>Treasure Magnet</td>
+            <td>Lucky Strike</td>
+         </tr>
+         <tr class="T typeN command">
+            <td>Warp</td>
+            <td>N</td>
+            <td><span class="ingredient">Zero Gravira</span><br><span class="ingredient">Zero Gravira</span></td>
+            <td>20</td>
+            <td>Cure Boost</td>
+            <td>Reload Boost</td>
+            <td>Second Chance</td>
+            <td>Combo Plus</td>
+            <td>Defender</td>
+            <td>Treasure Magnet</td>
+            <td>Lucky Strike</td>
+         </tr>
+         <tr class="T typeI command">
+            <td>Warp</td>
+            <td>I</td>
+            <td><span class="ingredient">Thunder</span><br><span class="ingredient">Zero Gravity</span></td>
+            <td>10</td>
+            <td>Thunder Boost</td>
+            <td>Magic Haste</td>
+            <td>Combo F Boost</td>
+            <td>Air Combo Plus</td>
+            <td>HP Boost</td>
+            <td>Treasure Magnet</td>
+            <td>Link Prize Plus</td>
+         </tr>
+         <tr class="T typeP command">
+            <td>Warp</td>
+            <td>P</td>
+            <td><span class="ingredient">Magnet</span><br><span class="ingredient">Aero</span></td>
+            <td>10</td>
+            <td>Dark Screen</td>
+            <td>Magic Haste</td>
+            <td>Combo F Boost</td>
+            <td>Air Combo Plus</td>
+            <td>Item Boost</td>
+            <td>Treasure Magnet</td>
+            <td>EXP Walker</td>
+         </tr>
+         <tr class="T typeM command">
+            <td>Warp</td>
+            <td>M</td>
+            <td><span class="ingredient">Zero Gravity</span><br><span class="ingredient">Zero Gravity</span></td>
+            <td>10</td>
+            <td>Cure Boost</td>
+            <td>Magic Haste</td>
+            <td>Combo F Boost</td>
+            <td>Combo Plus</td>
+            <td>Item Boost</td>
+            <td>Treasure Magnet</td>
+            <td>Lucky Strike</td>
+         </tr>
+         <tr class="V typeN command">
+            <td>Faith</td>
+            <td>N</td>
+            <td><span class="ingredient">Wind Raid</span><br><span class="ingredient">Break Time</span></td>
+            <td>100</td>
+            <td>Cure Boost</td>
+            <td>Reload Boost</td>
+            <td>Second Chance</td>
+            <td>Combo Plus</td>
+            <td>Defender</td>
+            <td>Treasure Magnet</td>
+            <td>Lucky Strike</td>
+         </tr>
+         <tr class="T V A typeG command">
+            <td>Deep Freeze</td>
+            <td>G</td>
+            <td><span class="ingredient">Freeze Raid</span><br><span class="ingredient">Blizzaga</span></td>
+            <td>100</td>
+            <td>Blizzard Screen</td>
+            <td>Attack Haste</td>
+            <td>Leaf Bracer</td>
+            <td>Air Combo Plus</td>
+            <td>Item Boost</td>
+            <td>HP Prize Plus</td>
+            <td>Luck Boost</td>
+         </tr>
+         <tr class="T V A typeH command">
+            <td>Deep Freeze</td>
+            <td>H</td>
+            <td><span class="ingredient">Binding Strike</span><br><span class="ingredient">Blizzaga</span></td>
+            <td>100</td>
+            <td>Blizzard Screen</td>
+            <td>Magic Haste</td>
+            <td>Combo F Boost</td>
+            <td>Air Combo Plus</td>
+            <td>Item Boost</td>
+            <td>HP Prize Plus</td>
+            <td>EXP Walker</td>
+         </tr>
+         <tr class="A typeF command">
+            <td>Deep Freeze</td>
+            <td>F</td>
+            <td><span class="ingredient">Blizzaga</span><br><span class="ingredient">Triple Blizzaga</span></td>
+            <td>100</td>
+            <td>Blizzard Boost</td>
+            <td>Reload Boost</td>
+            <td>Second Chance</td>
+            <td>Air Combo Plus</td>
+            <td>Damage Syphon</td>
+            <td>HP Prize Plus</td>
+            <td>Lucky Strike</td>
+         </tr>
+         <tr class="A typeE command">
+            <td>Glacier</td>
+            <td>E</td>
+            <td><span class="ingredient">Blizzaga</span><br><span class="ingredient">Deep Freeze</span></td>
+            <td>100</td>
+            <td>Blizzard Boost</td>
+            <td>Magic Haste</td>
+            <td>Leaf Bracer</td>
+            <td>Combo Plus</td>
+            <td>Item Boost</td>
+            <td>HP Prize Plus</td>
+            <td>Lucky Strike</td>
+         </tr>
+         <tr class="A typeF command">
+            <td>Glacier</td>
+            <td>F</td>
+            <td><span class="ingredient">Triple Blizzaga</span><br><span class="ingredient">Deep Freeze</span></td>
+            <td>100</td>
+            <td>Blizzard Boost</td>
+            <td>Reload Boost</td>
+            <td>Second Chance</td>
+            <td>Air Combo Plus</td>
+            <td>Damage Syphon</td>
+            <td>HP Prize Plus</td>
+            <td>Lucky Strike</td>
+         </tr>
+         <tr class="A typeF command">
+            <td>Ice Barrage</td>
+            <td>F</td>
+            <td><span class="ingredient">Blizzaga</span><br><span class="ingredient">Mine Shield</span></td>
+            <td>100</td>
+            <td>Blizzard Boost</td>
+            <td>Reload Boost</td>
+            <td>Second Chance</td>
+            <td>Air Combo Plus</td>
+            <td>Damage Syphon</td>
+            <td>HP Prize Plus</td>
+            <td>Lucky Strike</td>
+         </tr>
+         <tr class="A typeH command">
+            <td>Ice Barrage</td>
+            <td>H</td>
+            <td><span class="ingredient">Blizzaga</span><br><span class="ingredient">Mine Square</span></td>
+            <td>100</td>
+            <td>Blizzard Screen</td>
+            <td>Magic Haste</td>
+            <td>Combo F Boost</td>
+            <td>Air Combo Plus</td>
+            <td>Item Boost</td>
+            <td>HP Prize Plus</td>
+            <td>EXP Walker</td>
+         </tr>
+         <tr class="A typeA command">
+            <td>Firaga Burst</td>
+            <td>A</td>
+            <td><span class="ingredient">Fira</span><br><span class="ingredient">Aeroga</span></td>
+            <td>20</td>
+            <td>Fire Boost</td>
+            <td>Magic Haste</td>
+            <td>Leaf Bracer</td>
+            <td>Air Combo Plus</td>
+            <td>HP Boost</td>
+            <td>HP Prize Plus</td>
+            <td>Link Prize Plus</td>
+         </tr>
+         <tr class="A typeA command">
+            <td>Firaga Burst</td>
+            <td>A</td>
+            <td><span class="ingredient">Firaga</span><br><span class="ingredient">Aerora</span></td>
+            <td>20</td>
+            <td>Fire Boost</td>
+            <td>Magic Haste</td>
+            <td>Leaf Bracer</td>
+            <td>Air Combo Plus</td>
+            <td>HP Boost</td>
+            <td>HP Prize Plus</td>
+            <td>Link Prize Plus</td>
+         </tr>
+         <tr class="A typeB command">
+            <td>Firaga Burst</td>
+            <td>B</td>
+            <td><span class="ingredient">Firaga</span><br><span class="ingredient">Aeroga</span></td>
+            <td>20</td>
+            <td>Fire Boost</td>
+            <td>Reload Boost</td>
+            <td>Finish Boost</td>
+            <td>Once More</td>
+            <td>Damage Syphon</td>
+            <td>HP Prize Plus</td>
+            <td>EXP Chance</td>
+         </tr>
+         <tr class="A typeA command">
+            <td>Firaga Burst</td>
+            <td>A</td>
+            <td><span class="ingredient">Firaga</span><br><span class="ingredient">Slow</span></td>
+            <td>20</td>
+            <td>Fire Boost</td>
+            <td>Magic Haste</td>
+            <td>Leaf Bracer</td>
+            <td>Air Combo Plus</td>
+            <td>HP Boost</td>
+            <td>HP Prize Plus</td>
+            <td>Link Prize Plus</td>
+         </tr>
+         <tr class="A typeD command">
+            <td>Firaga Burst</td>
+            <td>D</td>
+            <td><span class="ingredient">Firaga</span><br><span class="ingredient">Stopra</span></td>
+            <td>20</td>
+            <td>Fire Screen</td>
+            <td>Attack Haste</td>
+            <td>Leaf Bracer</td>
+            <td>Combo Plus</td>
+            <td>HP Boost</td>
+            <td>HP Prize Plus</td>
+            <td>Link Prize Plus</td>
+         </tr>
+         <tr class="A typeB command">
+            <td>Firaga Burst</td>
+            <td>B</td>
+            <td><span class="ingredient">Firaga</span><br><span class="ingredient">Stopga</span></td>
+            <td>20</td>
+            <td>Fire Boost</td>
+            <td>Reload Boost</td>
+            <td>Finish Boost</td>
+            <td>Once More</td>
+            <td>Damage Syphon</td>
+            <td>HP Prize Plus</td>
+            <td>EXP Chance</td>
+         </tr>
+         <tr class="A typeB command">
+            <td>Raging Storm</td>
+            <td>B</td>
+            <td><span class="ingredient">Fission Firaga</span><br><span class="ingredient">Firaga Burst</span></td>
+            <td>100</td>
+            <td>Fire Boost</td>
+            <td>Reload Boost</td>
+            <td>Finish Boost</td>
+            <td>Once More</td>
+            <td>Damage Syphon</td>
+            <td>HP Prize Plus</td>
+            <td>EXP Chance</td>
+         </tr>
+         <tr class="A typeD command">
+            <td>Raging Storm</td>
+            <td>D</td>
+            <td><span class="ingredient">Blitz</span><br><span class="ingredient">Firaga</span></td>
+            <td>10</td>
+            <td>Fire Screen</td>
+            <td>Attack Haste</td>
+            <td>Leaf Bracer</td>
+            <td>Combo Plus</td>
+            <td>HP Boost</td>
+            <td>HP Prize Plus</td>
+            <td>Link Prize Plus</td>
+         </tr>
+         <tr class="A typeD command">
+            <td>Raging Storm</td>
+            <td>D</td>
+            <td><span class="ingredient">Fire Dash</span><br><span class="ingredient">Fira</span></td>
+            <td>10</td>
+            <td>Fire Screen</td>
+            <td>Attack Haste</td>
+            <td>Leaf Bracer</td>
+            <td>Combo Plus</td>
+            <td>HP Boost</td>
+            <td>HP Prize Plus</td>
+            <td>Link Prize Plus</td>
+         </tr>
+         <tr class="A typeC command">
+            <td>Raging Storm</td>
+            <td>C</td>
+            <td><span class="ingredient">Fire Surge</span><br><span class="ingredient">Cartwheel</span></td>
+            <td>10</td>
+            <td>Fire Screen</td>
+            <td>Attack Haste</td>
+            <td>Finish Boost</td>
+            <td>Combo Plus</td>
+            <td>HP Boost</td>
+            <td>HP Prize Plus</td>
+            <td>Link Prize Plus</td>
+         </tr>
+         <tr class="A typeA command">
+            <td>Raging Storm</td>
+            <td>A</td>
+            <td><span class="ingredient">Fire</span><br><span class="ingredient">Fira</span></td>
+            <td>10</td>
+            <td>Fire Boost</td>
+            <td>Magic Haste</td>
+            <td>Leaf Bracer</td>
+            <td>Air Combo Plus</td>
+            <td>HP Boost</td>
+            <td>HP Prize Plus</td>
+            <td>Link Prize Plus</td>
+         </tr>
+         <tr class="A typeB command">
+            <td>Raging Storm</td>
+            <td>B</td>
+            <td><span class="ingredient">Fira</span><br><span class="ingredient">Fira</span></td>
+            <td>10</td>
+            <td>Fire Boost</td>
+            <td>Reload Boost</td>
+            <td>Finish Boost</td>
+            <td>Once More</td>
+            <td>Damage Syphon</td>
+            <td>HP Prize Plus</td>
+            <td>EXP Chance</td>
+         </tr>
+         <tr class="A typeA command">
+            <td>Raging Storm</td>
+            <td>A</td>
+            <td><span class="ingredient">Fira</span><br><span class="ingredient">Firaga</span></td>
+            <td>10</td>
+            <td>Fire Boost</td>
+            <td>Magic Haste</td>
+            <td>Leaf Bracer</td>
+            <td>Air Combo Plus</td>
+            <td>HP Boost</td>
+            <td>HP Prize Plus</td>
+            <td>Link Prize Plus</td>
+         </tr>
+         <tr class="A typeB command">
+            <td>Raging Storm</td>
+            <td>B</td>
+            <td><span class="ingredient">Firaga</span><br><span class="ingredient">Firaga</span></td>
+            <td>10</td>
+            <td>Fire Boost</td>
+            <td>Reload Boost</td>
+            <td>Finish Boost</td>
+            <td>Once More</td>
+            <td>Damage Syphon</td>
+            <td>HP Prize Plus</td>
+            <td>EXP Chance</td>
+         </tr>
+         <tr class="T V A typeB command">
+            <td>Mega Flare</td>
+            <td>B</td>
+            <td><span class="ingredient">Fission Firaga</span><br><span class="ingredient">Crawling Fire</span></td>
+            <td>100</td>
+            <td>Fire Boost</td>
+            <td>Reload Boost</td>
+            <td>Finish Boost</td>
+            <td>Once More</td>
+            <td>Damage Syphon</td>
+            <td>HP Prize Plus</td>
+            <td>EXP Chance</td>
+         </tr>
+         <tr class="T typeB command">
+            <td>Quake</td>
+            <td>B</td>
+            <td><span class="ingredient">Brutal Blast</span><br><span class="ingredient">Zero Graviga</span></td>
+            <td>90</td>
+            <td>Fire Boost</td>
+            <td>Reload Boost</td>
+            <td>Finish Boost</td>
+            <td>Once More</td>
+            <td>Damage Syphon</td>
+            <td>HP Prize Plus</td>
+            <td>EXP Chance</td>
+         </tr>
+         <tr class="T typeC command">
+            <td>Quake</td>
+            <td>C</td>
+            <td><span class="ingredient">Brutal Blast</span><br><span class="ingredient">Magnega</span></td>
+            <td>90</td>
+            <td>Fire Screen</td>
+            <td>Attack Haste</td>
+            <td>Finish Boost</td>
+            <td>Combo Plus</td>
+            <td>HP Boost</td>
+            <td>HP Prize Plus</td>
+            <td>Link Prize Plus</td>
+         </tr>
+         <tr class="T typeO command">
+            <td>Quake</td>
+            <td>O</td>
+            <td><span class="ingredient">Stun Edge</span><br><span class="ingredient">Mine Shield</span></td>
+            <td>30</td>
+            <td>Dark Screen</td>
+            <td>Attack Haste</td>
+            <td>Finish Boost</td>
+            <td>Air Combo Plus</td>
+            <td>Item Boost</td>
+            <td>Treasure Magnet</td>
+            <td>Lucky Strike</td>
+         </tr>
+         <tr class="T typeL command">
+            <td>Quake</td>
+            <td>L</td>
+            <td><span class="ingredient">Binding Strike</span><br><span class="ingredient">Mine Square</span></td>
+            <td>30</td>
+            <td>Thunder Screen</td>
+            <td>Attack Haste</td>
+            <td>Finish Boost</td>
+            <td>Combo Plus</td>
+            <td>HP Boost</td>
+            <td>Treasure Magnet</td>
+            <td>Lucky Strike</td>
+         </tr>
+         <tr class="T typeN command">
+            <td>Quake</td>
+            <td>N</td>
+            <td><span class="ingredient">Brutal Blast</span><br><span class="ingredient">Brutal Blast</span></td>
+            <td>30</td>
+            <td>Cure Boost</td>
+            <td>Reload Boost</td>
+            <td>Second Chance</td>
+            <td>Combo Plus</td>
+            <td>Defender</td>
+            <td>Treasure Magnet</td>
+            <td>Lucky Strike</td>
+         </tr>
+         <tr class="T typeB command">
+            <td>Meteor</td>
+            <td>B</td>
+            <td><span class="ingredient">Geo Impact</span><br><span class="ingredient">Quake</span></td>
+            <td>100</td>
+            <td>Fire Boost</td>
+            <td>Reload Boost</td>
+            <td>Finish Boost</td>
+            <td>Once More</td>
+            <td>Damage Syphon</td>
+            <td>HP Prize Plus</td>
+            <td>EXP Chance</td>
+         </tr>
+         <tr class="T typeB command">
+            <td>Meteor</td>
+            <td>B</td>
+            <td><span class="ingredient">Brutal Blast</span><br><span class="ingredient">Zero Graviga</span></td>
+            <td>10</td>
+            <td>Fire Boost</td>
+            <td>Reload Boost</td>
+            <td>Finish Boost</td>
+            <td>Once More</td>
+            <td>Damage Syphon</td>
+            <td>HP Prize Plus</td>
+            <td>EXP Chance</td>
+         </tr>
+         <tr class="T typeC command">
+            <td>Meteor</td>
+            <td>C</td>
+            <td><span class="ingredient">Brutal Blast</span><br><span class="ingredient">Magnega</span></td>
+            <td>10</td>
+            <td>Fire Screen</td>
+            <td>Attack Haste</td>
+            <td>Finish Boost</td>
+            <td>Combo Plus</td>
+            <td>HP Boost</td>
+            <td>HP Prize Plus</td>
+            <td>Link Prize Plus</td>
+         </tr>
+         <tr class="V typeN command">
+            <td>Tornado</td>
+            <td>N</td>
+            <td><span class="ingredient">Magnega</span><br><span class="ingredient">Aeroga</span></td>
+            <td>100</td>
+            <td>Cure Boost</td>
+            <td>Reload Boost</td>
+            <td>Second Chance</td>
+            <td>Combo Plus</td>
+            <td>Defender</td>
+            <td>Treasure Magnet</td>
+            <td>Lucky Strike</td>
+         </tr>
+         <tr class="V typeO command">
+            <td>Tornado</td>
+            <td>O</td>
+            <td><span class="ingredient">Quick Blitz</span><br><span class="ingredient">Aerora</span></td>
+            <td>10</td>
+            <td>Dark Screen</td>
+            <td>Attack Haste</td>
+            <td>Finish Boost</td>
+            <td>Air Combo Plus</td>
+            <td>Item Boost</td>
+            <td>Treasure Magnet</td>
+            <td>Lucky Strike</td>
+         </tr>
+         <tr class="V typeM command">
+            <td>Tornado</td>
+            <td>M</td>
+            <td><span class="ingredient">Aero</span><br><span class="ingredient">Aerora</span></td>
+            <td>10</td>
+            <td>Cure Boost</td>
+            <td>Magic Haste</td>
+            <td>Combo F Boost</td>
+            <td>Combo Plus</td>
+            <td>Item Boost</td>
+            <td>Treasure Magnet</td>
+            <td>Lucky Strike</td>
+         </tr>
+         <tr class="V typeN command">
+            <td>Tornado</td>
+            <td>N</td>
+            <td><span class="ingredient">Aerora</span><br><span class="ingredient">Aerora</span></td>
+            <td>10</td>
+            <td>Cure Boost</td>
+            <td>Reload Boost</td>
+            <td>Second Chance</td>
+            <td>Combo Plus</td>
+            <td>Defender</td>
+            <td>Treasure Magnet</td>
+            <td>Lucky Strike</td>
+         </tr>
+         <tr class="V typeG command">
+            <td>Tornado</td>
+            <td>G</td>
+            <td><span class="ingredient">Quick Blitz</span><br><span class="ingredient">Aero</span></td>
+            <td>5</td>
+            <td>Blizzard Screen</td>
+            <td>Attack Haste</td>
+            <td>Leaf Bracer</td>
+            <td>Air Combo Plus</td>
+            <td>Item Boost</td>
+            <td>HP Prize Plus</td>
+            <td>Luck Boost</td>
+         </tr>
+         <tr class="V typeI command">
+            <td>Tornado</td>
+            <td>I</td>
+            <td><span class="ingredient">Thunder</span><br><span class="ingredient">Aero</span></td>
+            <td>5</td>
+            <td>Thunder Boost</td>
+            <td>Magic Haste</td>
+            <td>Combo F Boost</td>
+            <td>Air Combo Plus</td>
+            <td>HP Boost</td>
+            <td>Treasure Magnet</td>
+            <td>Link Prize Plus</td>
+         </tr>
+         <tr class="V typeE command">
+            <td>Tornado</td>
+            <td>E</td>
+            <td><span class="ingredient">Aero</span><br><span class="ingredient">Aero</span></td>
+            <td>5</td>
+            <td>Blizzard Boost</td>
+            <td>Magic Haste</td>
+            <td>Leaf Bracer</td>
+            <td>Combo Plus</td>
+            <td>Item Boost</td>
+            <td>HP Prize Plus</td>
+            <td>Lucky Strike</td>
+         </tr>
+         <tr class="T V A typeJ command">
+            <td>Transcendence</td>
+            <td>J</td>
+            <td><span class="ingredient">Magnet Spiral</span><br><span class="ingredient">Zero Graviga</span></td>
+            <td>100</td>
+            <td>Thunder Boost</td>
+            <td>Reload Boost</td>
+            <td>Combo F Boost</td>
+            <td>Once More</td>
+            <td>Defender</td>
+            <td>Treasure Magnet</td>
+            <td>EXP Chance</td>
+         </tr>
+         <tr class="T typeN command">
+            <td>Mini</td>
+            <td>N</td>
+            <td><span class="ingredient">Magnera</span><br><span class="ingredient">Warp</span></td>
+            <td>100</td>
+            <td>Cure Boost</td>
+            <td>Reload Boost</td>
+            <td>Second Chance</td>
+            <td>Combo Plus</td>
+            <td>Defender</td>
+            <td>Treasure Magnet</td>
+            <td>Lucky Strike</td>
+         </tr>
+         <tr class="T V A typeJ command">
+            <td>Mini</td>
+            <td>J</td>
+            <td><span class="ingredient">Magnega</span><br><span class="ingredient">Magnega</span></td>
+            <td>100</td>
+            <td>Thunder Boost</td>
+            <td>Reload Boost</td>
+            <td>Combo F Boost</td>
+            <td>Once More</td>
+            <td>Defender</td>
+            <td>Treasure Magnet</td>
+            <td>EXP Chance</td>
+         </tr>
+         <tr class="T V A typeI command">
+            <td>Mini</td>
+            <td>I</td>
+            <td><span class="ingredient">Magnega</span><br><span class="ingredient">Bind</span></td>
+            <td>100</td>
+            <td>Thunder Boost</td>
+            <td>Magic Haste</td>
+            <td>Combo F Boost</td>
+            <td>Air Combo Plus</td>
+            <td>HP Boost</td>
+            <td>Treasure Magnet</td>
+            <td>Link Prize Plus</td>
+         </tr>
+         <tr class="T V A typeM command">
+            <td>Blackout</td>
+            <td>M</td>
+            <td><span class="ingredient">Zero Gravity</span><br><span class="ingredient">Confuse</span></td>
+            <td>100</td>
+            <td>Cure Boost</td>
+            <td>Magic Haste</td>
+            <td>Combo F Boost</td>
+            <td>Combo Plus</td>
+            <td>Item Boost</td>
+            <td>Treasure Magnet</td>
+            <td>Lucky Strike</td>
+         </tr>
+         <tr class="T V A typeN command">
+            <td>Blackout</td>
+            <td>N</td>
+            <td><span class="ingredient">Zero Gravira</span><br><span class="ingredient">Confuse</span></td>
+            <td>100</td>
+            <td>Cure Boost</td>
+            <td>Reload Boost</td>
+            <td>Second Chance</td>
+            <td>Combo Plus</td>
+            <td>Defender</td>
+            <td>Treasure Magnet</td>
+            <td>Lucky Strike</td>
+         </tr>
+         <tr class="T V A typeP command">
+            <td>Blackout</td>
+            <td>P</td>
+            <td><span class="ingredient">Zero Gravira</span><br><span class="ingredient">Poison</span></td>
+            <td>100</td>
+            <td>Dark Screen</td>
+            <td>Magic Haste</td>
+            <td>Combo F Boost</td>
+            <td>Air Combo Plus</td>
+            <td>Item Boost</td>
+            <td>Treasure Magnet</td>
+            <td>EXP Walker</td>
+         </tr>
+         <tr class="T V A typeA command">
+            <td>Ignite</td>
+            <td>A</td>
+            <td><span class="ingredient">Fire</span><br><span class="ingredient">Bind</span></td>
+            <td>100</td>
+            <td>Fire Boost</td>
+            <td>Magic Haste</td>
+            <td>Leaf Bracer</td>
+            <td>Air Combo Plus</td>
+            <td>HP Boost</td>
+            <td>HP Prize Plus</td>
+            <td>Link Prize Plus</td>
+         </tr>
+         <tr class="T V A typeC command">
+            <td>Ignite</td>
+            <td>C</td>
+            <td><span class="ingredient">Fira</span><br><span class="ingredient">Bind</span></td>
+            <td>100</td>
+            <td>Fire Screen</td>
+            <td>Attack Haste</td>
+            <td>Finish Boost</td>
+            <td>Combo Plus</td>
+            <td>HP Boost</td>
+            <td>HP Prize Plus</td>
+            <td>Link Prize Plus</td>
+         </tr>
+         <tr class="T V A type command">
+            <td>Confuse</td>
+            <td></td>
+            <td><span class="ingredient">Shop</span><br><span class="ingredient"></span></td>
+            <td></td>
+            <td colspan="10"></td>
+         </tr>
+         <tr class="A type command">
+            <td>Bind</td>
+            <td></td>
+            <td><span class="ingredient">Chest</span><br><span class="ingredient"></span></td>
+            <td></td>
+            <td colspan="10"></td>
+         </tr>
+         <tr class="T V A type command">
+            <td>Bind</td>
+            <td></td>
+            <td><span class="ingredient">Shop</span><br><span class="ingredient"></span></td>
+            <td></td>
+            <td colspan="10"></td>
+         </tr>
+         <tr class="V A type command">
+            <td>Poison</td>
+            <td></td>
+            <td><span class="ingredient">Chest</span><br><span class="ingredient"></span></td>
+            <td></td>
+            <td colspan="10"></td>
+         </tr>
+         <tr class="T type command">
+            <td>Poison</td>
+            <td></td>
+            <td><span class="ingredient">Shop</span><br><span class="ingredient"></span></td>
+            <td></td>
+            <td colspan="10"></td>
+         </tr>
+         <tr class="T V A type command">
+            <td>Slow</td>
+            <td></td>
+            <td><span class="ingredient">Chest</span><br><span class="ingredient"></span></td>
+            <td></td>
+            <td colspan="10"></td>
+         </tr>
+         <tr class="T V type command">
+            <td>Stop</td>
+            <td></td>
+            <td><span class="ingredient">Chest</span><br><span class="ingredient"></span></td>
+            <td></td>
+            <td colspan="10"></td>
+         </tr>
+         <tr class="Aqua type command">
+            <td>Stop</td>
+            <td></td>
+            <td><span class="ingredient">Shop</span><br><span class="ingredient"></span></td>
+            <td></td>
+            <td colspan="10"></td>
+         </tr>
+         <tr class="T V A typeL command">
+            <td>Stopra</td>
+            <td>L</td>
+            <td><span class="ingredient">Slow</span><br><span class="ingredient">Slow</span></td>
+            <td>100</td>
+            <td>Thunder Screen</td>
+            <td>Attack Haste</td>
+            <td>Finish Boost</td>
+            <td>Combo Plus</td>
+            <td>HP Boost</td>
+            <td>Treasure Magnet</td>
+            <td>Lucky Strike</td>
+         </tr>
+         <tr class="T V A typeK command">
+            <td>Stopra</td>
+            <td>K</td>
+            <td><span class="ingredient">Slow</span><br><span class="ingredient">Stop</span></td>
+            <td>100</td>
+            <td>Thunder Screen</td>
+            <td>Attack Haste</td>
+            <td>Finish Boost</td>
+            <td>Combo Plus</td>
+            <td>HP Boost</td>
+            <td>Treasure Magnet</td>
+            <td>Link Prize Plus</td>
+         </tr>
+         <tr class="T V A typeI command">
+            <td>Stopra</td>
+            <td>I</td>
+            <td><span class="ingredient">Stop</span><br><span class="ingredient">Stop</span></td>
+            <td>100</td>
+            <td>Thunder Boost</td>
+            <td>Magic Haste</td>
+            <td>Combo F Boost</td>
+            <td>Air Combo Plus</td>
+            <td>HP Boost</td>
+            <td>Treasure Magnet</td>
+            <td>Link Prize Plus</td>
+         </tr>
+         <tr class="T V A typeI command">
+            <td>Stopga</td>
+            <td>I</td>
+            <td><span class="ingredient">Stop</span><br><span class="ingredient">Stopra</span></td>
+            <td>100</td>
+            <td>Thunder Boost</td>
+            <td>Magic Haste</td>
+            <td>Combo F Boost</td>
+            <td>Air Combo Plus</td>
+            <td>HP Boost</td>
+            <td>Treasure Magnet</td>
+            <td>Link Prize Plus</td>
+         </tr>
+         <tr class="T V A typeJ command">
+            <td>Stopga</td>
+            <td>J</td>
+            <td><span class="ingredient">Stopra</span><br><span class="ingredient">Stopra</span></td>
+            <td>100</td>
+            <td>Thunder Boost</td>
+            <td>Reload Boost</td>
+            <td>Combo F Boost</td>
+            <td>Once More</td>
+            <td>Defender</td>
+            <td>Treasure Magnet</td>
+            <td>EXP Chance</td>
+         </tr>
+         <tr class="V A typeP command">
+            <td>Homing Slide</td>
+            <td>P</td>
+            <td><span class="ingredient">Sliding Dash</span><br><span class="ingredient">Magnera</span></td>
+            <td>100</td>
+            <td>Dark Screen</td>
+            <td>Magic Haste</td>
+            <td>Combo F Boost</td>
+            <td>Air Combo Plus</td>
+            <td>Item Boost</td>
+            <td>Treasure Magnet</td>
+            <td>EXP Walker</td>
+         </tr>
+         <tr class="V A typeC command">
+            <td>Homing Slide</td>
+            <td>C</td>
+            <td><span class="ingredient">Sliding Dash</span><br><span class="ingredient">Air Slide</span></td>
+            <td>100</td>
+            <td>Fire Screen</td>
+            <td>Attack Haste</td>
+            <td>Finish Boost</td>
+            <td>Combo Plus</td>
+            <td>HP Boost</td>
+            <td>HP Prize Plus</td>
+            <td>Link Prize Plus</td>
+         </tr>
+         <tr class="V A typeL command">
+            <td>Homing Slide</td>
+            <td>L</td>
+            <td><span class="ingredient">Magnet</span><br><span class="ingredient">Air Slide</span></td>
+            <td>100</td>
+            <td>Thunder Screen</td>
+            <td>Attack Haste</td>
+            <td>Finish Boost</td>
+            <td>Combo Plus</td>
+            <td>HP Boost</td>
+            <td>Treasure Magnet</td>
+            <td>Lucky Strike</td>
+         </tr>
+         <tr class="V typeP command">
+            <td>Thunder Roll</td>
+            <td>P</td>
+            <td><span class="ingredient">Thunder Surge</span><br><span class="ingredient">Dodge Roll</span></td>
+            <td>80</td>
+            <td>Dark Screen</td>
+            <td>Magic Haste</td>
+            <td>Combo F Boost</td>
+            <td>Air Combo Plus</td>
+            <td>Item Boost</td>
+            <td>Treasure Magnet</td>
+            <td>EXP Walker</td>
+         </tr>
+         <tr class="V typeL command">
+            <td>Thunder Roll</td>
+            <td>L</td>
+            <td><span class="ingredient">Thundaga</span><br><span class="ingredient">Dodge Roll</span></td>
+            <td>80</td>
+            <td>Thunder Screen</td>
+            <td>Attack Haste</td>
+            <td>Finish Boost</td>
+            <td>Combo Plus</td>
+            <td>HP Boost</td>
+            <td>Treasure Magnet</td>
+            <td>Lucky Strike</td>
+         </tr>
+         <tr class="V typeL command">
+            <td>Thunder Roll</td>
+            <td>L</td>
+            <td><span class="ingredient">Stun Block</span><br><span class="ingredient">Dodge Roll</span></td>
+            <td>80</td>
+            <td>Thunder Screen</td>
+            <td>Attack Haste</td>
+            <td>Finish Boost</td>
+            <td>Combo Plus</td>
+            <td>HP Boost</td>
+            <td>Treasure Magnet</td>
+            <td>Lucky Strike</td>
+         </tr>
+         <tr class="A typeB command">
+            <td>Firewheel</td>
+            <td>B</td>
+            <td><span class="ingredient">Firaga</span><br><span class="ingredient">Cartwheel</span></td>
+            <td>100</td>
+            <td>Fire Boost</td>
+            <td>Reload Boost</td>
+            <td>Finish Boost</td>
+            <td>Once More</td>
+            <td>Damage Syphon</td>
+            <td>HP Prize Plus</td>
+            <td>EXP Chance</td>
+         </tr>
+         <tr class="A typeB command">
+            <td>Firewheel</td>
+            <td>B</td>
+            <td><span class="ingredient">Fission Firaga</span><br><span class="ingredient">Cartwheel</span></td>
+            <td>100</td>
+            <td>Fire Boost</td>
+            <td>Reload Boost</td>
+            <td>Finish Boost</td>
+            <td>Once More</td>
+            <td>Damage Syphon</td>
+            <td>HP Prize Plus</td>
+            <td>EXP Chance</td>
+         </tr>
+         <tr class="A typeC command">
+            <td>Firewheel</td>
+            <td>C</td>
+            <td><span class="ingredient">Fire Surge</span><br><span class="ingredient">Cartwheel</span></td>
+            <td>90</td>
+            <td>Fire Screen</td>
+            <td>Attack Haste</td>
+            <td>Finish Boost</td>
+            <td>Combo Plus</td>
+            <td>HP Boost</td>
+            <td>HP Prize Plus</td>
+            <td>Link Prize Plus</td>
+         </tr>
+         <tr class="T V A typeF command">
+            <td>Ice Slide</td>
+            <td>F</td>
+            <td><span class="ingredient">Blizzard Edge</span><br><span class="ingredient">Air Slide</span></td>
+            <td>100</td>
+            <td>Blizzard Boost</td>
+            <td>Reload Boost</td>
+            <td>Second Chance</td>
+            <td>Air Combo Plus</td>
+            <td>Damage Syphon</td>
+            <td>HP Prize Plus</td>
+            <td>Lucky Strike</td>
+         </tr>
+         <tr class="T V A typeH command">
+            <td>Ice Slide</td>
+            <td>H</td>
+            <td><span class="ingredient">Blizzaga</span><br><span class="ingredient">Air Slide</span></td>
+            <td>100</td>
+            <td>Blizzard Screen</td>
+            <td>Magic Haste</td>
+            <td>Combo F Boost</td>
+            <td>Air Combo Plus</td>
+            <td>Item Boost</td>
+            <td>HP Prize Plus</td>
+            <td>EXP Walker</td>
+         </tr>
+         <tr class="V typeC command">
+            <td>Fire Glide</td>
+            <td>C</td>
+            <td><span class="ingredient">Fire Surge</span><br><span class="ingredient">Glide</span></td>
+            <td>100</td>
+            <td>Fire Screen</td>
+            <td>Attack Haste</td>
+            <td>Finish Boost</td>
+            <td>Combo Plus</td>
+            <td>HP Boost</td>
+            <td>HP Prize Plus</td>
+            <td>Link Prize Plus</td>
+         </tr>
+         <tr class="V typeB command">
+            <td>Fire Glide</td>
+            <td>B</td>
+            <td><span class="ingredient">Firaga</span><br><span class="ingredient">Glide</span></td>
+            <td>100</td>
+            <td>Fire Boost</td>
+            <td>Reload Boost</td>
+            <td>Finish Boost</td>
+            <td>Once More</td>
+            <td>Damage Syphon</td>
+            <td>HP Prize Plus</td>
+            <td>EXP Chance</td>
+         </tr>
+         <tr class="V T typeP command">
+            <td>Renewal Block</td>
+            <td>P</td>
+            <td><span class="ingredient">Curaga</span><br><span class="ingredient">Block</span></td>
+            <td>100</td>
+            <td>Dark Screen</td>
+            <td>Magic Haste</td>
+            <td>Combo F Boost</td>
+            <td>Air Combo Plus</td>
+            <td>Item Boost</td>
+            <td>Treasure Magnet</td>
+            <td>EXP Walker</td>
+         </tr>
+         <tr class="V T typeC command">
+            <td>Renewal Block</td>
+            <td>C</td>
+            <td><span class="ingredient">Esuna</span><br><span class="ingredient">Block</span></td>
+            <td>100</td>
+            <td>Fire Screen</td>
+            <td>Attack Haste</td>
+            <td>Finish Boost</td>
+            <td>Combo Plus</td>
+            <td>HP Boost</td>
+            <td>HP Prize Plus</td>
+            <td>Link Prize Plus</td>
+         </tr>
+         <tr class="V T typeL command">
+            <td>Stun Block</td>
+            <td>L</td>
+            <td><span class="ingredient">Stun Edge</span><br><span class="ingredient">Block</span></td>
+            <td>100</td>
+            <td>Thunder Screen</td>
+            <td>Attack Haste</td>
+            <td>Finish Boost</td>
+            <td>Combo Plus</td>
+            <td>HP Boost</td>
+            <td>Treasure Magnet</td>
+            <td>Lucky Strike</td>
+         </tr>
+         <tr class="V T typeI command">
+            <td>Stun Block</td>
+            <td>I</td>
+            <td><span class="ingredient">Thundaga</span><br><span class="ingredient">Block</span></td>
+            <td>100</td>
+            <td>Thunder Boost</td>
+            <td>Magic Haste</td>
+            <td>Combo F Boost</td>
+            <td>Air Combo Plus</td>
+            <td>HP Boost</td>
+            <td>Treasure Magnet</td>
+            <td>Link Prize Plus</td>
+         </tr>
+         <tr class="V T typeH command">
+            <td>Poison Block</td>
+            <td>H</td>
+            <td><span class="ingredient">Poison Edge</span><br><span class="ingredient">Block</span></td>
+            <td>80</td>
+            <td>Blizzard Screen</td>
+            <td>Magic Haste</td>
+            <td>Combo F Boost</td>
+            <td>Air Combo Plus</td>
+            <td>Item Boost</td>
+            <td>HP Prize Plus</td>
+            <td>EXP Walker</td>
+         </tr>
+         <tr class="V T typeP command">
+            <td>Poison Block</td>
+            <td>P</td>
+            <td><span class="ingredient">Poison</span><br><span class="ingredient">Block</span></td>
+            <td>80</td>
+            <td>Dark Screen</td>
+            <td>Magic Haste</td>
+            <td>Combo F Boost</td>
+            <td>Air Combo Plus</td>
+            <td>Item Boost</td>
+            <td>Treasure Magnet</td>
+            <td>EXP Walker</td>
+         </tr>
+         <tr class="A typeP command">
+            <td>Renewal Barrier</td>
+            <td>P</td>
+            <td><span class="ingredient">Curaga</span><br><span class="ingredient">Barrier</span></td>
+            <td>100</td>
+            <td>Dark Screen</td>
+            <td>Magic Haste</td>
+            <td>Combo F Boost</td>
+            <td>Air Combo Plus</td>
+            <td>Item Boost</td>
+            <td>Treasure Magnet</td>
+            <td>EXP Walker</td>
+         </tr>
+         <tr class="A typeN command">
+            <td>Renewal Barrier</td>
+            <td>N</td>
+            <td><span class="ingredient">Esuna</span><br><span class="ingredient">Barrier</span></td>
+            <td>100</td>
+            <td>Cure Boost</td>
+            <td>Reload Boost</td>
+            <td>Second Chance</td>
+            <td>Combo Plus</td>
+            <td>Defender</td>
+            <td>Treasure Magnet</td>
+            <td>Lucky Strike</td>
+         </tr>
+         <tr class="A typeC command">
+            <td>Confuse Barrier</td>
+            <td>C</td>
+            <td><span class="ingredient">Confusion Strike</span><br><span class="ingredient">Barrier</span></td>
+            <td>100</td>
+            <td>Fire Screen</td>
+            <td>Attack Haste</td>
+            <td>Finish Boost</td>
+            <td>Combo Plus</td>
+            <td>HP Boost</td>
+            <td>HP Prize Plus</td>
+            <td>Link Prize Plus</td>
+         </tr>
+         <tr class="A typeL command">
+            <td>Confuse Barrier</td>
+            <td>L</td>
+            <td><span class="ingredient">Confuse</span><br><span class="ingredient">Barrier</span></td>
+            <td>100</td>
+            <td>Thunder Screen</td>
+            <td>Attack Haste</td>
+            <td>Finish Boost</td>
+            <td>Combo Plus</td>
+            <td>HP Boost</td>
+            <td>Treasure Magnet</td>
+            <td>Lucky Strike</td>
+         </tr>
+         <tr class="A typeC command">
+            <td>Stop Barrier</td>
+            <td>C</td>
+            <td><span class="ingredient">Stopga</span><br><span class="ingredient">Barrier</span></td>
+            <td>80</td>
+            <td>Fire Screen</td>
+            <td>Attack Haste</td>
+            <td>Finish Boost</td>
+            <td>Combo Plus</td>
+            <td>HP Boost</td>
+            <td>HP Prize Plus</td>
+            <td>Link Prize Plus</td>
+         </tr>
+         <tr class="T typeP command">
+            <td>Payback Fang</td>
+            <td>P</td>
+            <td><span class="ingredient">Sliding Dash</span><br><span class="ingredient">Counter Hammer</span></td>
+            <td>100</td>
+            <td>Dark Screen</td>
+            <td>Magic Haste</td>
+            <td>Combo F Boost</td>
+            <td>Air Combo Plus</td>
+            <td>Item Boost</td>
+            <td>Treasure Magnet</td>
+            <td>EXP Walker</td>
+         </tr>
+         <tr class="V typeP command">
+            <td>Payback Raid</td>
+            <td>P</td>
+            <td><span class="ingredient">Sliding Dash</span><br><span class="ingredient">Strike Raid</span></td>
+            <td>100</td>
+            <td>Dark Screen</td>
+            <td>Magic Haste</td>
+            <td>Combo F Boost</td>
+            <td>Air Combo Plus</td>
+            <td>Item Boost</td>
+            <td>Treasure Magnet</td>
+            <td>EXP Walker</td>
+         </tr>
+         <tr class="A typeC command">
+            <td>Payback Surge</td>
+            <td>C</td>
+            <td><span class="ingredient">Sliding Dash</span><br><span class="ingredient">Fire Surge</span></td>
+            <td>100</td>
+            <td>Fire Screen</td>
+            <td>Attack Haste</td>
+            <td>Finish Boost</td>
+            <td>Combo Plus</td>
+            <td>HP Boost</td>
+            <td>HP Prize Plus</td>
+            <td>Link Prize Plus</td>
+         </tr>
+         <tr class="A typeL command">
+            <td>Payback Surge</td>
+            <td>L</td>
+            <td><span class="ingredient">Sliding Dash</span><br><span class="ingredient">Thunder Surge</span></td>
+            <td>100</td>
+            <td>Thunder Screen</td>
+            <td>Attack Haste</td>
+            <td>Finish Boost</td>
+            <td>Combo Plus</td>
+            <td>HP Boost</td>
+            <td>Treasure Magnet</td>
+            <td>Lucky Strike</td>
+         </tr>
+         <tr class="T type command">
+            <td>Lightning Ray</td>
+            <td></td>
+            <td><span class="ingredient">Blitz</span><br><span class="ingredient">Dark Haze</span></td>
+            <td>10</td>
+         </tr>
+         <tr class="T V A type command">
+            <td>Lightning Ray</td>
+            <td></td>
+            <td><span class="ingredient">Blitz</span><br><span class="ingredient">Air Slide</span></td>
+            <td>10</td>
+         </tr>
+         <tr class="T V A type command">
+            <td>Lightning Ray</td>
+            <td></td>
+            <td><span class="ingredient">Fire Dash</span><br><span class="ingredient">Thunder Surge</span></td>
+            <td>10</td>
+         </tr>
+         <tr class="T V A type command">
+            <td>Lightning Ray</td>
+            <td></td>
+            <td><span class="ingredient">Binding Strike</span><br><span class="ingredient">Thundara</span></td>
+            <td>10</td>
+         </tr>
+         <tr class="T V A type command">
+            <td>Lightning Ray</td>
+            <td></td>
+            <td><span class="ingredient">Thunder</span><br><span class="ingredient">Thundara</span></td>
+            <td>10</td>
+         </tr>
+         <tr class="T V A type command">
+            <td>Lightning Ray</td>
+            <td></td>
+            <td><span class="ingredient">Thundara</span><br><span class="ingredient">Thundara</span></td>
+            <td>10</td>
+         </tr>
+         <tr class="A type command">
+            <td>Lightning Ray</td>
+            <td></td>
+            <td><span class="ingredient">Aeroga</span><br><span class="ingredient">Barrier Surge</span></td>
+            <td>10</td>
+         </tr>
+         <tr class="A type command">
+            <td>Meteor Shower</td>
+            <td></td>
+            <td><span class="ingredient">Strike Raid</span><br><span class="ingredient">Thundaga</span></td>
+            <td>15</td>
+         </tr>
+         <tr class="A type command">
+            <td>Meteor Shower</td>
+            <td></td>
+            <td><span class="ingredient">Freeze Raid</span><br><span class="ingredient">Thundaga</span></td>
+            <td>15</td>
+         </tr>
+         <tr class="A type command">
+            <td>Meteor Shower</td>
+            <td></td>
+            <td><span class="ingredient">Firaga</span><br><span class="ingredient">Thundaga</span></td>
+            <td>15</td>
+         </tr>
+         <tr class="A type command">
+            <td>Meteor Shower</td>
+            <td></td>
+            <td><span class="ingredient">Blitz</span><br><span class="ingredient">Zero Graviga</span></td>
+            <td>10</td>
+         </tr>
+         <tr class="V T type command">
+            <td>Bio Barrage</td>
+            <td></td>
+            <td><span class="ingredient">Poison Edge</span><br><span class="ingredient">Block</span></td>
+            <td>20</td>
+         </tr>
+         <tr class="V T type command">
+            <td>Bio Barrage</td>
+            <td></td>
+            <td><span class="ingredient">Poison</span><br><span class="ingredient">Block</span></td>
+            <td>20</td>
+         </tr>
+         <tr class="T V A type command">
+            <td>Bio Barrage</td>
+            <td></td>
+            <td><span class="ingredient">Quick Blitz</span><br><span class="ingredient">Poison</span></td>
+            <td>5</td>
+         </tr>
+         <tr class="T V A type command">
+            <td>Bio Barrage</td>
+            <td></td>
+            <td><span class="ingredient">Sliding Dash</span><br><span class="ingredient">Poison</span></td>
+            <td>5</td>
+         </tr>
+         <tr class="T V A type command">
+            <td>Bio Barrage</td>
+            <td></td>
+            <td><span class="ingredient">Strike Raid</span><br><span class="ingredient">Poison</span></td>
+            <td>5</td>
+         </tr>
+      </table><script src="bbs5.js" type="text/javascript"></script></body>
+</html>

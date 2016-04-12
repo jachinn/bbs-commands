@@ -1,0 +1,747 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bbs>
+<!--
+   ^\|\s+([A-Z][a-z\s\-A-Z]+?)\s+\|\s+([A-Z][a-z\sA-Z]+?)\s+\|\s+([A-Z][a-z\sA-Z]+?)\s+\|\s([A-Z])\s\|\s([TVA\.]{3})\s\|\s+(\d+)\s\|$
+	<command ingredient="\2" ingredient2="\3" type="magic"  class="\4" who="\5" per="\6">\1</command>
+-->
+	<commands>
+		<command ingredient="Quick Blitz" ingredient2="Slot Edge" type="attack"
+			class="O" who="T V A" per="90">Blitz</command>
+		<command ingredient="Barrier Surge" ingredient2="Wishing Edge" type="attack"
+			class="P" who="A" per="90">Blitz</command>
+		<command ingredient="Stun Edge" ingredient2="Slot Edge" type="attack"
+			class="K" who="T V A" per="90">Blitz</command>
+		<command ingredient="Blitz" ingredient2="Quake" type="attack" class="N"
+			who="T" per="100">Meteor Crash</command>
+		<command ingredient="Fire Strike" ingredient2="Brutal Blast" type="attack"
+			class="D" who="T" per="100">Meteor Crash</command>
+		<command ingredient="Blitz" ingredient2="Zero Graviga" type="attack"
+			class="O" who="A" per="90">Magic Hour</command>
+		<command ingredient="Barrier Surge" ingredient2="Aeroga" type="attack"
+			class="N" who="A" per="90">Magic Hour</command>
+		<command ingredient="Sliding Dash" ingredient2="Fire" type="attack"
+			class="D" who="T V A" per="100">Fire Dash</command>
+		<command ingredient="Sliding Dash" ingredient2="Fira" type="attack"
+			class="C" who="T V A" per="100">Fire Dash</command>
+		<command ingredient="Confusion Strike" ingredient2="Fire" type="attack"
+			class="D" who="T V A" per="100">Fire Dash</command>
+		<command ingredient="Fire Dash" ingredient2="Zero Gravira" type="attack"
+			class="D" who="T" per="100">Dark Haze</command>
+		<command ingredient="Fire Dash" ingredient2="Blackout" type="attack"
+			class="A" who="T" per="100">Dark Haze</command>
+		<command ingredient="Fire Surge" ingredient2="Zero Gravity" type="attack"
+			class="C" who="T" per="100">Dark Haze</command>
+		<command ingredient="Blitz" ingredient2="Dark Haze" type="attack"
+			class="D" who="T" per="90">Sonic Blade</command>
+		<command ingredient="Blitz" ingredient2="Air Slide" type="attack"
+			class="N" who="T V A" per="90">Sonic Blade</command>
+		<command ingredient="Fire Dash" ingredient2="Thunder Surge" type="attack"
+			class="K" who="T V A" per="90">Sonic Blade</command>
+		<command ingredient="Dark Haze" ingredient2="Sonic Blade" type="attack"
+			class="B" who="T" per="90">Chaos Blade</command>
+		<command ingredient="Dark Haze" ingredient2="Stopga" type="attack"
+			class="B" who="T" per="80">Zantetsuken</command>
+		<command ingredient="Sonic Blade" ingredient2="Stopga" type="attack"
+			class="F" who="T" per="80">Zantetsuken</command>
+		<command ingredient="Quick Blitz" ingredient2="Sliding Dash" type="attack"
+			class="O" who="T V A" per="100">Strike Raid</command>
+		<command ingredient="Strike Raid" ingredient2="Blizzara" type="attack"
+			class="I" who="T V A" per="100">Freeze Raid</command>
+		<command ingredient="Blizzard Edge" ingredient2="Binding Strike"
+			type="attack" class="K" who="T V A" per="100">Freeze Raid</command>
+		<command ingredient="Strike Raid" ingredient2="Slot Edge" type="attack"
+			class="O" who="V" per="100">Treasure Raid</command>
+		<command ingredient="Slot Edge" ingredient2="Magnet" type="attack"
+			class="D" who="V" per="100">Treasure Raid</command>
+		<command ingredient="Slot Edge" ingredient2="Magnera" type="attack"
+			class="K" who="V" per="100">Treasure Raid</command>
+		<command ingredient="Freeze Raid" ingredient2="Magnega" type="attack"
+			class="J" who="V" per="100">Spark Raid</command>
+		<command ingredient="Treasure Raid" ingredient2="Magnega" type="attack"
+			class="N" who="V" per="100">Spark Raid</command>
+		<command ingredient="Thunder Surge" ingredient2="Dodge Roll" type="attack"
+			class="P" who="V" per="20">Spark Raid</command>
+		<command ingredient="Thundaga" ingredient2="Dodge Roll" type="attack"
+			class="L" who="V" per="20">Spark Raid</command>
+		<command ingredient="Dodge Roll" ingredient2="Stun Block" type="attack"
+			class="L" who="V" per="20">Spark Raid</command>
+		<command ingredient="Freeze Raid" ingredient2="Aeroga" type="attack"
+			class="B" who="V" per="100">Wind Raid</command>
+		<command ingredient="Treasure Raid" ingredient2="Aeroga" type="attack"
+			class="F" who="V" per="100">Wind Raid</command>
+		<command ingredient="Fire Dash" ingredient2="Ignite" type="attack"
+			class="D" who="T V A" per="100">Fire Surge</command>
+		<command ingredient="Fire Strike" ingredient2="Fira" type="attack"
+			class="A" who="T V A" per="100">Fire Surge</command>
+		<command ingredient="Confusion Strike" ingredient2="Fira" type="attack"
+			class="O" who="T V A" per="100">Fire Surge</command>
+		<command ingredient="Binding Strike" ingredient2="Fira" type="attack"
+			class="K" who="T V A" per="100">Fire Surge</command>
+		<command ingredient="Fire Dash" ingredient2="Barrier" type="attack"
+			class="D" who="A" per="100">Barrier Surge</command>
+		<command ingredient="Stun Edge" ingredient2="Barrier" type="attack"
+			class="K" who="A" per="100">Barrier Surge</command>
+		<command ingredient="Fire Dash" ingredient2="Thundara" type="attack"
+			class="D" who="T V A" per="100">Thunder Surge</command>
+		<command ingredient="Freeze Raid" ingredient2="Thundara" type="attack"
+			class="G" who="T V A" per="100">Thunder Surge</command>
+		<command ingredient="Stun Edge" ingredient2="Thundara" type="attack"
+			class="I" who="T V A" per="100">Thunder Surge</command>
+		<command ingredient="Confusion Strike" ingredient2="Thundara" type="attack"
+			class="I" who="T V A" per="95">Thunder Surge</command>
+		<command ingredient="Fire Dash" ingredient2="High Jump" type="attack"
+			class="A" who="T V A" per="100">Aerial Slam</command>
+		<command ingredient="Fire Surge" ingredient2="Aero" type="attack"
+			class="D" who="T V A" per="100">Aerial Slam</command>
+		<command ingredient="Fire Strike" ingredient2="Aerora" type="attack"
+			class="C" who="T V A" per="90">Aerial Slam</command>
+		<command ingredient="Dark Haze" ingredient2="Sonic Blade" type="attack"
+			class="B" who="T" per="20">Ars Solum</command>
+		<command ingredient="Dark Haze" ingredient2="Stopga" type="attack"
+			class="B" who="T" per="20">Ars Solum</command>
+		<command ingredient="Sonic Blade" ingredient2="Stopga" type="attack"
+			class="F" who="T" per="20">Ars Solum</command>
+		<command ingredient="Sliding Dash" ingredient2="Thunder" type="attack"
+			class="K" who="T" per="5">Ars Solum</command>
+		<command ingredient="Strike Raid" ingredient2="Thunder" type="attack"
+			class="L" who="T" per="5">Ars Solum</command>
+		<command ingredient="Strike Raid" ingredient2="Thundara" type="attack"
+			class="K" who="T" per="5">Ars Solum</command>
+		<command ingredient="Confusion Strike" ingredient2="Thundara" type="attack"
+			class="I" who="T" per="5">Ars Solum</command>
+		<command ingredient="Blitz" ingredient2="Aerial Slam" type="attack"
+			class="F" who="V" per="100">Ars Arcanum</command>
+		<command ingredient="Quick Blitz" ingredient2="Slot Edge" type="attack"
+			class="O" who="V" per="10">Ars Arcanum</command>
+		<command ingredient="Fire Strike" ingredient2="Aerora" type="attack"
+			class="C" who="V" per="10">Ars Arcanum</command>
+		<command ingredient="Quick Blitz" ingredient2="Blizzard" type="attack"
+			class="G" who="V" per="5">Ars Arcanum</command>
+		<command ingredient="Quick Blitz" ingredient2="Blizzara" type="attack"
+			class="H" who="V" per="5">Ars Arcanum</command>
+		<command ingredient="Sliding Dash" ingredient2="Blizzard" type="attack"
+			class="E" who="V" per="5">Ars Arcanum</command>
+		<command ingredient="Sliding Dash" ingredient2="Blizzara" type="attack"
+			class="G" who="V" per="5">Ars Arcanum</command>
+		<command ingredient="Poison Edge" ingredient2="Cura" type="attack"
+			class="P" who="V" per="5">Ars Arcanum</command>
+		<command ingredient="Blizzard Edge" ingredient2="Cura" type="attack"
+			class="G" who="V" per="5">Ars Arcanum</command>
+		<command ingredient="Aerial Slam" ingredient2="Stopga" type="attack"
+			class="F" who="V A" per="100">Time Splicer</command>
+		<command ingredient="Stopga" ingredient2="Barrier" type="attack"
+			class="C" who="A" per="20">Time Splicer</command>
+		<command ingredient="Barrier Surge" ingredient2="Wishing Edge" type="attack"
+			class="P" who="A" per="10">Time Splicer</command>
+		<command ingredient="Stun Edge" ingredient2="Slot Edge" type="attack"
+			class="K" who="V A" per="10">Time Splicer</command>
+		<command ingredient="Quick Blitz" ingredient2="Poison" type="attack"
+			class="O" who="T V A" per="95">Poison Edge</command>
+		<command ingredient="Sliding Dash" ingredient2="Poison" type="attack"
+			class="K" who="T V A" per="95">Poison Edge</command>
+		<command ingredient="Strike Raid" ingredient2="Poison" type="attack"
+			class="D" who="T V A" per="95">Poison Edge</command>
+		<command ingredient="Strike Raid" ingredient2="Barrier Surge" type="attack"
+			class="O" who="A" per="100">Wishing Edge</command>
+		<command ingredient="Barrier Surge" ingredient2="Stun Edge" type="attack"
+			class="K" who="A" per="100">Wishing Edge</command>
+		<command ingredient="Stun Edge" ingredient2="Binding Strike" type="attack"
+			class="J" who="A" per="100">Wishing Edge</command>
+		<command ingredient="Quick Blitz" ingredient2="Blizzard" type="attack"
+			class="G" who="T V A" per="95">Blizzard Edge</command>
+		<command ingredient="Quick Blitz" ingredient2="Blizzara" type="attack"
+			class="H" who="T V A" per="95">Blizzard Edge</command>
+		<command ingredient="Sliding Dash" ingredient2="Blizzard" type="attack"
+			class="E" who="T V A" per="95">Blizzard Edge</command>
+		<command ingredient="Sliding Dash" ingredient2="Blizzara" type="attack"
+			class="G" who="T V A" per="95">Blizzard Edge</command>
+		<command ingredient="Sliding Dash" ingredient2="Thunder" type="attack"
+			class="K" who="T V A" per="95">Stun Edge</command>
+		<command ingredient="Strike Raid" ingredient2="Thunder" type="attack"
+			class="L" who="T V A" per="95">Stun Edge</command>
+		<command ingredient="Strike Raid" ingredient2="Thundara" type="attack"
+			class="K" who="T V A" per="95">Stun Edge</command>
+		<command ingredient="Wishing Edge" ingredient2="Cure" type="attack"
+			class="O" who="A" per="100">Slot Edge</command>
+		<command ingredient="Poison Edge" ingredient2="Cura" type="attack"
+			class="P" who="T V A" per="95">Slot Edge</command>
+		<command ingredient="Blizzard Edge" ingredient2="Cura" type="attack"
+			class="G" who="T V A" per="95">Slot Edge</command>
+		<command ingredient="Curaga" ingredient2="Renewal Block" type="attack"
+			class="N" who="V T" per="90">Slot Edge</command>
+		<command ingredient="Curaga" ingredient2="Focus Block" type="attack"
+			class="P" who="V T" per="90">Slot Edge</command>
+		<command ingredient="Curaga" ingredient2="Renewal Barrier" type="attack"
+			class="N" who="A" per="90">Slot Edge</command>
+		<command ingredient="Curaga" ingredient2="Focus Barrier" type="attack"
+			class="P" who="A" per="90">Slot Edge</command>
+		<command ingredient="Poison Edge" ingredient2="Fira" type="attack"
+			class="D" who="T V A" per="100">Fire Strike</command>
+		<command ingredient="Wishing Edge" ingredient2="Ignite" type="attack"
+			class="A" who="A" per="100">Fire Strike</command>
+		<command ingredient="Stun Edge" ingredient2="Fire" type="attack"
+			class="K" who="T V A" per="100">Fire Strike</command>
+		<command ingredient="Quick Blitz" ingredient2="Confuse" type="attack"
+			class="O" who="T V A" per="100">Confusion Strike</command>
+		<command ingredient="Sliding Dash" ingredient2="Zero Gravity" type="attack"
+			class="K" who="T V A" per="100">Confusion Strike</command>
+		<command ingredient="Strike Raid" ingredient2="Confuse" type="attack"
+			class="G" who="T V A" per="100">Confusion Strike</command>
+		<command ingredient="Quick Blitz" ingredient2="Bind" type="attack"
+			class="K" who="T V A" per="100">Binding Strike</command>
+		<command ingredient="Strike Raid" ingredient2="Bind" type="attack"
+			class="O" who="T V A" per="100">Binding Strike</command>
+		<command ingredient="Stun Edge" ingredient2="Zero Gravity" type="attack"
+			class="I" who="T V A" per="100">Binding Strike</command>
+		<command ingredient="Stun Edge" ingredient2="Mine Shield" type="attack"
+			class="O" who="T" per="70">Brutal Blast</command>
+		<command ingredient="Binding Strike" ingredient2="Mine Square" type="attack"
+			class="L" who="T" per="70">Brutal Blast</command>
+		<command ingredient="Confusion Strike" ingredient2="Aeroga" type="attack"
+			class="G" who="V" per="100">Tornado Strike</command>
+		<command ingredient="Binding Strike" ingredient2="Aeroga" type="attack"
+			class="F" who="V" per="100">Tornado Strike</command>
+		<command ingredient="Binding Strike" ingredient2="Collision Magnet"
+			type="attack" class="K" who="T V A" per="100">Magnet Spiral</command>
+		<command ingredient="Binding Strike" ingredient2="Magnega" type="attack"
+			class="J" who="T V A" per="100">Magnet Spiral</command>
+		<command ingredient="Quick Blitz" ingredient2="Magnera" type="attack"
+			class="K" who="T V A" per="20">Magnet Spiral</command>
+		<command ingredient="Stun Edge" ingredient2="Magnera" type="attack"
+			class="L" who="T V A" per="20">Magnet Spiral</command>
+		<command ingredient="Zero Gravira" ingredient2="Magnet" type="attack"
+			class="I" who="T V A" per="20">Magnet Spiral</command>
+		<command ingredient="Binding Strike" ingredient2="Aeroga" type="attack"
+			class="F" who="T" per="100">Windcutter</command>
+		<command ingredient="Confusion Strike" ingredient2="Aeroga" type="attack"
+			class="G" who="T" per="100">Windcutter</command>
+		<command ingredient="Brutal Blast" ingredient2="Confusion Strike"
+			type="attack" class="G" who="T" per="100">Limit Storm</command>
+		<command ingredient="Brutal Blast" ingredient2="Binding Strike"
+			type="attack" class="D" who="T" per="100">Limit Storm</command>
+		<command ingredient="Wind Raid" ingredient2="Curaga" type="attack"
+			class="N" who="V" per="100">Salvation</command>
+		<command ingredient="Quick Blitz" ingredient2="Magnera" type="attack"
+			class="K" who="T V A" per="80">Collision Magnet</command>
+		<command ingredient="Stun Edge" ingredient2="Magnera" type="attack"
+			class="L" who="T V A" per="80">Collision Magnet</command>
+		<command ingredient="Zero Gravira" ingredient2="Magnet" type="attack"
+			class="I" who="T V A" per="80">Collision Magnet</command>
+		<command ingredient="Brutal Blast" ingredient2="Brutal Blast" type="attack"
+			class="N" who="T" per="70">Geo Impact</command>
+		<command ingredient="Dark Haze" ingredient2="Warp" type="attack"
+			class="B" who="T" per="100">Sacrifice</command>
+		<command ingredient="Poison Edge" ingredient2="Warp" type="attack"
+			class="D" who="T" per="100">Sacrifice</command>
+		<command ingredient="Curaga" ingredient2="Renewal Block" type="attack"
+			class="N" who="V T" per="10">Break Time</command>
+		<command ingredient="Curaga" ingredient2="Renewal Barrier" type="attack"
+			class="N" who="A" per="10">Break Time</command>
+		<command ingredient="Curaga" ingredient2="Focus Block" type="attack"
+			class="P" who="V T" per="10">Break Time</command>
+		<command ingredient="Curaga" ingredient2="Focus Barrier" type="attack"
+			class="P" who="A" per="10">Break Time</command>
+		<command ingredient="Fire Dash" ingredient2="Fire" type="magic"
+			class="D" who="T V A" per="100">Fira</command>
+		<command ingredient="Fire Strike" ingredient2="Fire" type="magic"
+			class="D" who="T V A" per="100">Fira</command>
+		<command ingredient="Fire" ingredient2="Fire" type="magic" class="A"
+			who="T V A" per="100">Fira</command>
+		<command ingredient="Fire" ingredient2="Ignite" type="magic" class="C"
+			who="T V A" per="100">Fira</command>
+		<command ingredient="Fire Dash" ingredient2="Fira" type="magic"
+			class="D" who="T V A" per="90">Firaga</command>
+		<command ingredient="Fire" ingredient2="Fira" type="magic" class="A"
+			who="T V A" per="90">Firaga</command>
+		<command ingredient="Fira" ingredient2="Fira" type="magic" class="B"
+			who="T V A" per="90">Firaga</command>
+		<command ingredient="Dark Haze" ingredient2="Firaga" type="magic"
+			class="D" who="T" per="100">Dark Firaga</command>
+		<command ingredient="Firaga" ingredient2="Blackout" type="magic"
+			class="B" who="T" per="100">Dark Firaga</command>
+		<command ingredient="Fira" ingredient2="Aeroga" type="magic" class="A"
+			who="T V A" per="80">Fission Firaga</command>
+		<command ingredient="Firaga" ingredient2="Aerora" type="magic" class="A"
+			who="T V A" per="80">Fission Firaga</command>
+		<command ingredient="Firaga" ingredient2="Aeroga" type="magic" class="B"
+			who="T V A" per="80">Fission Firaga</command>
+		<command ingredient="Fira" ingredient2="Firaga" type="magic" class="A"
+			who="A" per="95">Triple Firaga</command>
+		<command ingredient="Blitz" ingredient2="Firaga" type="magic" class="D"
+			who="A" per="90">Triple Firaga</command>
+		<command ingredient="Firaga" ingredient2="Firaga" type="magic" class="B"
+			who="A" per="90">Triple Firaga</command>
+		<command ingredient="Firaga" ingredient2="Slow" type="magic" class="A"
+			who="T V A" per="80">Crawling Fire</command>
+		<command ingredient="Firaga" ingredient2="Stopra" type="magic" class="D"
+			who="T V A" per="80">Crawling Fire</command>
+		<command ingredient="Firaga" ingredient2="Stopga" type="magic" class="B"
+			who="T V A" per="80">Crawling Fire</command>
+		<command ingredient="Strike Raid" ingredient2="Blizzard" type="magic"
+			class="G" who="T V A" per="100">Blizzara</command>
+		<command ingredient="Blizzard Edge" ingredient2="Blizzard" type="magic"
+			class="G" who="T V A" per="100">Blizzara</command>
+		<command ingredient="Blizzard" ingredient2="Blizzard" type="magic"
+			class="E" who="T V A" per="100">Blizzara</command>
+		<command ingredient="Blizzard" ingredient2="Aero" type="magic" class="H"
+			who="T V A" per="100">Blizzara</command>
+		<command ingredient="Blizzard Edge" ingredient2="Blizzara" type="magic"
+			class="G" who="T V A" per="100">Blizzaga</command>
+		<command ingredient="Blizzard" ingredient2="Blizzara" type="magic"
+			class="E" who="T V A" per="100">Blizzaga</command>
+		<command ingredient="Blizzara" ingredient2="Blizzara" type="magic"
+			class="F" who="T V A" per="100">Blizzaga</command>
+		<command ingredient="Blitz" ingredient2="Blizzaga" type="magic"
+			class="G" who="A" per="100">Triple Blizzaga</command>
+		<command ingredient="Blizzara" ingredient2="Blizzaga" type="magic"
+			class="E" who="A" per="100">Triple Blizzaga</command>
+		<command ingredient="Blizzaga" ingredient2="Blizzaga" type="magic"
+			class="F" who="A" per="100">Triple Blizzaga</command>
+		<command ingredient="Stun Edge" ingredient2="Thunder" type="magic"
+			class="K" who="T V A" per="100">Thundara</command>
+		<command ingredient="Thunder" ingredient2="Thunder" type="magic"
+			class="I" who="T V A" per="100">Thundara</command>
+		<command ingredient="Zero Gravity" ingredient2="Magnet" type="magic"
+			class="L" who="T V A" per="100">Thundara</command>
+		<command ingredient="Binding Strike" ingredient2="Thundara" type="magic"
+			class="K" who="T V A" per="90">Thundaga</command>
+		<command ingredient="Thunder" ingredient2="Thundara" type="magic"
+			class="I" who="T V A" per="90">Thundaga</command>
+		<command ingredient="Thundara" ingredient2="Thundara" type="magic"
+			class="J" who="T V A" per="90">Thundaga</command>
+		<command ingredient="Strike Raid" ingredient2="Thundaga" type="magic"
+			class="I" who="A" per="85">Thundaga Shot</command>
+		<command ingredient="Freeze Raid" ingredient2="Thundaga" type="magic"
+			class="E" who="A" per="85">Thundaga Shot</command>
+		<command ingredient="Firaga" ingredient2="Thundaga" type="magic"
+			class="A" who="A" per="85">Thundaga Shot</command>
+		<command ingredient="Thunder" ingredient2="Cure" type="magic" class="I"
+			who="T V A" per="100">Cura</command>
+		<command ingredient="Cure" ingredient2="Cure" type="magic" class="M"
+			who="T V A" per="100">Cura</command>
+		<command ingredient="Cure" ingredient2="Aero" type="magic" class="O"
+			who="T V A" per="100">Cura</command>
+		<command ingredient="Cure" ingredient2="Cura" type="magic" class="M"
+			who="T V A" per="100">Curaga</command>
+		<command ingredient="Cura" ingredient2="Cura" type="magic" class="N"
+			who="T V A" per="100">Curaga</command>
+		<command ingredient="Fira" ingredient2="Zero Gravity" type="magic"
+			class="A" who="T V A" per="100">Mine Shield</command>
+		<command ingredient="Fira" ingredient2="Block" type="magic" class="C"
+			who="V T" per="100">Mine Shield</command>
+		<command ingredient="Ignite" ingredient2="Stop" type="magic" class="D"
+			who="T V A" per="100">Mine Shield</command>
+		<command ingredient="Stopra" ingredient2="Block" type="magic" class="M"
+			who="V T" per="100">Mine Shield</command>
+		<command ingredient="Fira" ingredient2="Stop" type="magic" class="A"
+			who="T V A" per="100">Mine Square</command>
+		<command ingredient="Fira" ingredient2="Barrier" type="magic" class="C"
+			who="A" per="100">Mine Square</command>
+		<command ingredient="Aerora" ingredient2="Ignite" type="magic" class="D"
+			who="T V A" per="100">Mine Square</command>
+		<command ingredient="Stopra" ingredient2="Barrier" type="magic"
+			class="M" who="A" per="100">Mine Square</command>
+		<command ingredient="Mine Shield" ingredient2="Mine Square" type="magic"
+			class="B" who="A" per="100">Seeker Mine</command>
+		<command ingredient="Mine Shield" ingredient2="Magnega" type="magic"
+			class="C" who="A" per="100">Seeker Mine</command>
+		<command ingredient="Mine Square" ingredient2="Magnega" type="magic"
+			class="D" who="A" per="100">Seeker Mine</command>
+		<command ingredient="Thunder" ingredient2="Zero Gravity" type="magic"
+			class="I" who="T V A" per="90">Zero Gravira</command>
+		<command ingredient="Zero Gravity" ingredient2="Zero Gravity" type="magic"
+			class="M" who="T V A" per="90">Zero Gravira</command>
+		<command ingredient="Magnet" ingredient2="Aero" type="magic" class="P"
+			who="T V A" per="90">Zero Gravira</command>
+		<command ingredient="Thundara" ingredient2="Zero Gravira" type="magic"
+			class="I" who="T V A" per="80">Zero Graviga</command>
+		<command ingredient="Zero Gravity" ingredient2="Zero Gravira" type="magic"
+			class="M" who="T V A" per="80">Zero Graviga</command>
+		<command ingredient="Zero Gravira" ingredient2="Zero Gravira" type="magic"
+			class="N" who="T V A" per="80">Zero Graviga</command>
+		<command ingredient="Stun Edge" ingredient2="Magnet" type="magic"
+			class="K" who="T V A" per="100">Magnera</command>
+		<command ingredient="Thunder" ingredient2="Magnet" type="magic"
+			class="I" who="T V A" per="100">Magnera</command>
+		<command ingredient="Magnet" ingredient2="Magnet" type="magic" class="M"
+			who="T V A" per="100">Magnera</command>
+		<command ingredient="Magnet" ingredient2="Magnera" type="magic"
+			class="I" who="T V A" per="100">Magnega</command>
+		<command ingredient="Magnera" ingredient2="Magnera" type="magic"
+			class="J" who="T V A" per="100">Magnega</command>
+		<command ingredient="Wishing Edge" ingredient2="Magnera" type="magic"
+			class="K" who="A" per="100">Munny Magnet</command>
+		<command ingredient="Thundara" ingredient2="Magnera" type="magic"
+			class="I" who="A" per="100">Munny Magnet</command>
+		<command ingredient="Cure" ingredient2="Magnera" type="magic" class="M"
+			who="A" per="100">Energy Magnet</command>
+		<command ingredient="Cura" ingredient2="Magnera" type="magic" class="N"
+			who="A" per="100">Energy Magnet</command>
+		<command ingredient="Zero Gravira" ingredient2="Magnera" type="magic"
+			class="L" who="A" per="100">D-Link Magnet</command>
+		<command ingredient="Magnera" ingredient2="Stopra" type="magic"
+			class="I" who="A" per="100">D-Link Magnet</command>
+		<command ingredient="Quick Blitz" ingredient2="Aero" type="magic"
+			class="G" who="T V A" per="95">Aerora</command>
+		<command ingredient="Thunder" ingredient2="Aero" type="magic" class="I"
+			who="T V A" per="95">Aerora</command>
+		<command ingredient="Aero" ingredient2="Aero" type="magic" class="E"
+			who="T V A" per="95">Aerora</command>
+		<command ingredient="Quick Blitz" ingredient2="Aerora" type="magic"
+			class="O" who="T V A" per="90">Aeroga</command>
+		<command ingredient="Aero" ingredient2="Aerora" type="magic" class="M"
+			who="T V A" per="90">Aeroga</command>
+		<command ingredient="Aerora" ingredient2="Aerora" type="magic" class="N"
+			who="T V A" per="90">Aeroga</command>
+		<command ingredient="Thundara" ingredient2="Zero Gravira" type="magic"
+			class="I" who="T" per="20">Warp</command>
+		<command ingredient="Zero Gravity" ingredient2="Zero Gravira" type="magic"
+			class="M" who="T" per="20">Warp</command>
+		<command ingredient="Zero Gravira" ingredient2="Zero Gravira" type="magic"
+			class="N" who="T" per="20">Warp</command>
+		<command ingredient="Thunder" ingredient2="Zero Gravity" type="magic"
+			class="I" who="T" per="10">Warp</command>
+		<command ingredient="Magnet" ingredient2="Aero" type="magic" class="P"
+			who="T" per="10">Warp</command>
+		<command ingredient="Zero Gravity" ingredient2="Zero Gravity" type="magic"
+			class="M" who="T" per="10">Warp</command>
+		<command ingredient="Wind Raid" ingredient2="Break Time" type="magic"
+			class="N" who="V" per="100">Faith</command>
+		<command ingredient="Freeze Raid" ingredient2="Blizzaga" type="magic"
+			class="G" who="T V A" per="100">Deep Freeze</command>
+		<command ingredient="Binding Strike" ingredient2="Blizzaga" type="magic"
+			class="H" who="T V A" per="100">Deep Freeze</command>
+		<command ingredient="Blizzaga" ingredient2="Triple Blizzaga" type="magic"
+			class="F" who="A" per="100">Deep Freeze</command>
+		<command ingredient="Blizzaga" ingredient2="Deep Freeze" type="magic"
+			class="E" who="A" per="100">Glacier</command>
+		<command ingredient="Triple Blizzaga" ingredient2="Deep Freeze"
+			type="magic" class="F" who="A" per="100">Glacier</command>
+		<command ingredient="Blizzaga" ingredient2="Mine Shield" type="magic"
+			class="F" who="A" per="100">Ice Barrage</command>
+		<command ingredient="Blizzaga" ingredient2="Mine Square" type="magic"
+			class="H" who="A" per="100">Ice Barrage</command>
+		<command ingredient="Fira" ingredient2="Aeroga" type="magic" class="A"
+			who="A" per="20">Firaga Burst</command>
+		<command ingredient="Firaga" ingredient2="Aerora" type="magic" class="A"
+			who="A" per="20">Firaga Burst</command>
+		<command ingredient="Firaga" ingredient2="Aeroga" type="magic" class="B"
+			who="A" per="20">Firaga Burst</command>
+		<command ingredient="Firaga" ingredient2="Slow" type="magic" class="A"
+			who="A" per="20">Firaga Burst</command>
+		<command ingredient="Firaga" ingredient2="Stopra" type="magic" class="D"
+			who="A" per="20">Firaga Burst</command>
+		<command ingredient="Firaga" ingredient2="Stopga" type="magic" class="B"
+			who="A" per="20">Firaga Burst</command>
+		<command ingredient="Fission Firaga" ingredient2="Firaga Burst"
+			type="magic" class="B" who="A" per="100">Raging Storm</command>
+		<command ingredient="Blitz" ingredient2="Firaga" type="magic" class="D"
+			who="A" per="10">Raging Storm</command>
+		<command ingredient="Fire Dash" ingredient2="Fira" type="magic"
+			class="D" who="A" per="10">Raging Storm</command>
+		<command ingredient="Fire Surge" ingredient2="Cartwheel" type="magic"
+			class="C" who="A" per="10">Raging Storm</command>
+		<command ingredient="Fire" ingredient2="Fira" type="magic" class="A"
+			who="A" per="10">Raging Storm</command>
+		<command ingredient="Fira" ingredient2="Fira" type="magic" class="B"
+			who="A" per="10">Raging Storm</command>
+		<command ingredient="Fira" ingredient2="Firaga" type="magic" class="A"
+			who="A" per="10">Raging Storm</command>
+		<command ingredient="Firaga" ingredient2="Firaga" type="magic" class="B"
+			who="A" per="10">Raging Storm</command>
+		<command ingredient="Fission Firaga" ingredient2="Crawling Fire"
+			type="magic" class="B" who="T V A" per="100">Mega Flare</command>
+		<command ingredient="Brutal Blast" ingredient2="Zero Graviga" type="magic"
+			class="B" who="T" per="90">Quake</command>
+		<command ingredient="Brutal Blast" ingredient2="Magnega" type="magic"
+			class="C" who="T" per="90">Quake</command>
+		<command ingredient="Stun Edge" ingredient2="Mine Shield" type="magic"
+			class="O" who="T" per="30">Quake</command>
+		<command ingredient="Binding Strike" ingredient2="Mine Square" type="magic"
+			class="L" who="T" per="30">Quake</command>
+		<command ingredient="Brutal Blast" ingredient2="Brutal Blast" type="magic"
+			class="N" who="T" per="30">Quake</command>
+		<command ingredient="Geo Impact" ingredient2="Quake" type="magic"
+			class="B" who="T" per="100">Meteor</command>
+		<command ingredient="Brutal Blast" ingredient2="Zero Graviga" type="magic"
+			class="B" who="T" per="10">Meteor</command>
+		<command ingredient="Brutal Blast" ingredient2="Magnega" type="magic"
+			class="C" who="T" per="10">Meteor</command>
+		<command ingredient="Magnega" ingredient2="Aeroga" type="magic"
+			class="N" who="V" per="100">Tornado</command>
+		<command ingredient="Quick Blitz" ingredient2="Aerora" type="magic"
+			class="O" who="V" per="10">Tornado</command>
+		<command ingredient="Aero" ingredient2="Aerora" type="magic" class="M"
+			who="V" per="10">Tornado</command>
+		<command ingredient="Aerora" ingredient2="Aerora" type="magic" class="N"
+			who="V" per="10">Tornado</command>
+		<command ingredient="Quick Blitz" ingredient2="Aero" type="magic"
+			class="G" who="V" per="5">Tornado</command>
+		<command ingredient="Thunder" ingredient2="Aero" type="magic" class="I"
+			who="V" per="5">Tornado</command>
+		<command ingredient="Aero" ingredient2="Aero" type="magic" class="E"
+			who="V" per="5">Tornado</command>
+		<command ingredient="Magnet Spiral" ingredient2="Zero Graviga" type="magic"
+			class="J" who="T V A" per="100">Transcendence</command>
+		<command ingredient="Magnera" ingredient2="Warp" type="magic" class="N"
+			who="T" per="100">Mini</command>
+		<command ingredient="Magnega" ingredient2="Magnega" type="magic"
+			class="J" who="T V A" per="100">Mini</command>
+		<command ingredient="Magnega" ingredient2="Bind" type="magic" class="I"
+			who="T V A" per="100">Mini</command>
+		<command ingredient="Zero Gravity" ingredient2="Confuse" type="magic"
+			class="M" who="T V A" per="100">Blackout</command>
+		<command ingredient="Zero Gravira" ingredient2="Confuse" type="magic"
+			class="N" who="T V A" per="100">Blackout</command>
+		<command ingredient="Zero Gravira" ingredient2="Poison" type="magic"
+			class="P" who="T V A" per="100">Blackout</command>
+		<command ingredient="Fire" ingredient2="Bind" type="magic" class="A"
+			who="T V A" per="100">Ignite</command>
+		<command ingredient="Fira" ingredient2="Bind" type="magic" class="C"
+			who="T V A" per="100">Ignite</command>
+		<command ingredient="Slow" ingredient2="Slow" type="magic" class="L"
+			who="T V A" per="100">Stopra</command>
+		<command ingredient="Slow" ingredient2="Stop" type="magic" class="K"
+			who="T V A" per="100">Stopra</command>
+		<command ingredient="Stop" ingredient2="Stop" type="magic" class="I"
+			who="T V A" per="100">Stopra</command>
+		<command ingredient="Stop" ingredient2="Stopra" type="magic" class="I"
+			who="T V A" per="100">Stopga</command>
+		<command ingredient="Stopra" ingredient2="Stopra" type="magic" class="J"
+			who="T V A" per="100">Stopga</command>
+		<command ingredient="Sliding Dash" ingredient2="Magnera" type="action"
+			class="P" who="V A" per="100">Homing Slide</command>
+		<command ingredient="Sliding Dash" ingredient2="Air Slide" type="action"
+			class="C" who="V A" per="100">Homing Slide</command>
+		<command ingredient="Magnet" ingredient2="Air Slide" type="action"
+			class="L" who="V A" per="100">Homing Slide</command>
+		<command ingredient="Thunder Surge" ingredient2="Dodge Roll" type="action"
+			class="P" who="V" per="80">Thunder Roll</command>
+		<command ingredient="Thundaga" ingredient2="Dodge Roll" type="action"
+			class="L" who="V" per="80">Thunder Roll</command>
+		<command ingredient="Stun Block" ingredient2="Dodge Roll" type="action"
+			class="L" who="V" per="80">Thunder Roll</command>
+		<command ingredient="Firaga" ingredient2="Cartwheel" type="action"
+			class="B" who="A" per="100">Firewheel</command>
+		<command ingredient="Fission Firaga" ingredient2="Cartwheel" type="action"
+			class="B" who="A" per="100">Firewheel</command>
+		<command ingredient="Fire Surge" ingredient2="Cartwheel" type="action"
+			class="C" who="A" per="90">Firewheel</command>
+		<command ingredient="Blizzard Edge" ingredient2="Air Slide" type="action"
+			class="F" who="T V A" per="100">Ice Slide</command>
+		<command ingredient="Blizzaga" ingredient2="Air Slide" type="action"
+			class="H" who="T V A" per="100">Ice Slide</command>
+		<command ingredient="Fire Surge" ingredient2="Glide" type="action"
+			class="C" who="V" per="100">Fire Glide</command>
+		<command ingredient="Firaga" ingredient2="Glide" type="action" class="B"
+			who="V" per="100">Fire Glide</command>
+		<command ingredient="Curaga" ingredient2="Block" type="action" class="P"
+			who="V T" per="100">Renewal Block</command>
+		<command ingredient="Esuna" ingredient2="Block" type="action" class="C"
+			who="V T" per="100">Renewal Block</command>
+		<command ingredient="Stun Edge" ingredient2="Block" type="action"
+			class="L" who="V T" per="100">Stun Block</command>
+		<command ingredient="Thundaga" ingredient2="Block" type="action"
+			class="I" who="V T" per="100">Stun Block</command>
+		<command ingredient="Poison Edge" ingredient2="Block" type="action"
+			class="H" who="V T" per="80">Poison Block</command>
+		<command ingredient="Poison" ingredient2="Block" type="action" class="P"
+			who="V T" per="80">Poison Block</command>
+		<command ingredient="Curaga" ingredient2="Barrier" type="action"
+			class="P" who="A" per="100">Renewal Barrier</command>
+		<command ingredient="Esuna" ingredient2="Barrier" type="action"
+			class="N" who="A" per="100">Renewal Barrier</command>
+		<command ingredient="Confusion Strike" ingredient2="Barrier" type="action"
+			class="C" who="A" per="100">Confuse Barrier</command>
+		<command ingredient="Confuse" ingredient2="Barrier" type="action"
+			class="L" who="A" per="100">Confuse Barrier</command>
+		<command ingredient="Stopga" ingredient2="Barrier" type="action"
+			class="C" who="A" per="80">Stop Barrier</command>
+		<command ingredient="Sliding Dash" ingredient2="Counter Hammer"
+			type="action" class="P" who="T" per="100">Payback Fang</command>
+		<command ingredient="Sliding Dash" ingredient2="Strike Raid" type="action"
+			class="P" who="V" per="100">Payback Raid</command>
+		<command ingredient="Sliding Dash" ingredient2="Fire Surge" type="action"
+			class="C" who="A" per="100">Payback Surge</command>
+		<command ingredient="Sliding Dash" ingredient2="Thunder Surge" type="action"
+			class="L" who="A" per="100">Payback Surge</command>
+		<command ingredient="Blitz" ingredient2="Dark Haze" type="shotlock"
+			who="T" per="10">Lightning Ray</command>
+		<command ingredient="Blitz" ingredient2="Air Slide" type="shotlock"
+			who="T V A" per="10">Lightning Ray</command>
+		<command ingredient="Fire Dash" ingredient2="Thunder Surge" type="shotlock"
+			who="T V A" per="10">Lightning Ray</command>
+		<command ingredient="Binding Strike" ingredient2="Thundara" type="shotlock"
+			who="T V A" per="10">Lightning Ray</command>
+		<command ingredient="Thunder" ingredient2="Thundara" type="shotlock"
+			who="T V A" per="10">Lightning Ray</command>
+		<command ingredient="Thundara" ingredient2="Thundara" type="shotlock"
+			who="T V A" per="10">Lightning Ray</command>
+		<command ingredient="Aeroga" ingredient2="Barrier Surge" type="shotlock"
+			who="A" per="10">Lightning Ray</command>
+		<command ingredient="Strike Raid" ingredient2="Thundaga" type="shotlock"
+			who="A" per="15">Meteor Shower</command>
+		<command ingredient="Freeze Raid" ingredient2="Thundaga" type="shotlock"
+			who="A" per="15">Meteor Shower</command>
+		<command ingredient="Firaga" ingredient2="Thundaga" type="shotlock"
+			who="A" per="15">Meteor Shower</command>
+		<command ingredient="Blitz" ingredient2="Zero Graviga" type="shotlock"
+			who="A" per="10">Meteor Shower</command>
+		<command ingredient="Poison Edge" ingredient2="Block" type="shotlock"
+			who="V T" per="20">Bio Barrage</command>
+		<command ingredient="Poison" ingredient2="Block" type="shotlock"
+			who="V T" per="20">Bio Barrage</command>
+		<command ingredient="Quick Blitz" ingredient2="Poison" type="shotlock"
+			who="T V A" per="5">Bio Barrage</command>
+		<command ingredient="Sliding Dash" ingredient2="Poison" type="shotlock"
+			who="T V A" per="5">Bio Barrage</command>
+		<command ingredient="Strike Raid" ingredient2="Poison" type="shotlock"
+			who="T V A" per="5">Bio Barrage</command>
+	</commands>
+	<classes>
+		<class name="A">
+			<ability crystal="shimmering">Fire Boost</ability>
+			<ability crystal="fleeting">Magic Haste</ability>
+			<ability crystal="pulsing">Leaf Bracer</ability>
+			<ability crystal="wellspring">Air Combo Plus</ability>
+			<ability crystal="soothing">HP Boost</ability>
+			<ability crystal="hungry">HP Prize Plus</ability>
+			<ability crystal="abounding">Link Prize Plus</ability>
+		</class>
+		<class name="B">
+			<ability crystal="shimmering">Fire Boost</ability>
+			<ability crystal="fleeting">Reload Boost</ability>
+			<ability crystal="pulsing">Finish Boost</ability>
+			<ability crystal="wellspring">Once More</ability>
+			<ability crystal="soothing">Damage Syphon</ability>
+			<ability crystal="hungry">HP Prize Plus</ability>
+			<ability crystal="abounding">EXP Chance</ability>
+		</class>
+		<class name="C">
+			<ability crystal="shimmering">Fire Screen</ability>
+			<ability crystal="fleeting">Attack Haste</ability>
+			<ability crystal="pulsing">Finish Boost</ability>
+			<ability crystal="wellspring">Combo Plus</ability>
+			<ability crystal="soothing">HP Boost</ability>
+			<ability crystal="hungry">HP Prize Plus</ability>
+			<ability crystal="abounding">Link Prize Plus</ability>
+		</class>
+		<class name="D">
+			<ability crystal="shimmering">Fire Screen</ability>
+			<ability crystal="fleeting">Attack Haste</ability>
+			<ability crystal="pulsing">Leaf Bracer</ability>
+			<ability crystal="wellspring">Combo Plus</ability>
+			<ability crystal="soothing">HP Boost</ability>
+			<ability crystal="hungry">HP Prize Plus</ability>
+			<ability crystal="abounding">Link Prize Plus</ability>
+		</class>
+		<class name="E">
+			<ability crystal="shimmering">Blizzard Boost</ability>
+			<ability crystal="fleeting">Magic Haste</ability>
+			<ability crystal="pulsing">Leaf Bracer</ability>
+			<ability crystal="wellspring">Combo Plus</ability>
+			<ability crystal="soothing">Item Boost</ability>
+			<ability crystal="hungry">HP Prize Plus</ability>
+			<ability crystal="abounding">Lucky Strike</ability>
+		</class>
+		<class name="F">
+			<ability crystal="shimmering">Blizzard Boost</ability>
+			<ability crystal="fleeting">Reload Boost</ability>
+			<ability crystal="pulsing">Second Chance</ability>
+			<ability crystal="wellspring">Air Combo Plus</ability>
+			<ability crystal="soothing">Damage Syphon</ability>
+			<ability crystal="hungry">HP Prize Plus</ability>
+			<ability crystal="abounding">Lucky Strike</ability>
+		</class>
+		<class name="G">
+			<ability crystal="shimmering">Blizzard Screen</ability>
+			<ability crystal="fleeting">Attack Haste</ability>
+			<ability crystal="pulsing">Leaf Bracer</ability>
+			<ability crystal="wellspring">Air Combo Plus</ability>
+			<ability crystal="soothing">Item Boost</ability>
+			<ability crystal="hungry">HP Prize Plus</ability>
+			<ability crystal="abounding">Luck Boost</ability>
+		</class>
+		<class name="H">
+			<ability crystal="shimmering">Blizzard Screen</ability>
+			<ability crystal="fleeting">Magic Haste</ability>
+			<ability crystal="pulsing">Combo F Boost</ability>
+			<ability crystal="wellspring">Air Combo Plus</ability>
+			<ability crystal="soothing">Item Boost</ability>
+			<ability crystal="hungry">HP Prize Plus</ability>
+			<ability crystal="abounding">EXP Walker</ability>
+		</class>
+		<class name="I">
+			<ability crystal="shimmering">Thunder Boost</ability>
+			<ability crystal="fleeting">Magic Haste</ability>
+			<ability crystal="pulsing">Combo F Boost</ability>
+			<ability crystal="wellspring">Air Combo Plus</ability>
+			<ability crystal="soothing">HP Boost</ability>
+			<ability crystal="hungry">Treasure Magnet</ability>
+			<ability crystal="abounding">Link Prize Plus</ability>
+		</class>
+		<class name="J">
+			<ability crystal="shimmering">Thunder Boost</ability>
+			<ability crystal="fleeting">Reload Boost</ability>
+			<ability crystal="pulsing">Combo F Boost</ability>
+			<ability crystal="wellspring">Once More</ability>
+			<ability crystal="soothing">Defender</ability>
+			<ability crystal="hungry">Treasure Magnet</ability>
+			<ability crystal="abounding">EXP Chance</ability>
+		</class>
+		<class name="K">
+			<ability crystal="shimmering">Thunder Screen</ability>
+			<ability crystal="fleeting">Attack Haste</ability>
+			<ability crystal="pulsing">Finish Boost</ability>
+			<ability crystal="wellspring">Combo Plus</ability>
+			<ability crystal="soothing">HP Boost</ability>
+			<ability crystal="hungry">Treasure Magnet</ability>
+			<ability crystal="abounding">Link Prize Plus</ability>
+		</class>
+		<class name="L">
+			<ability crystal="shimmering">Thunder Screen</ability>
+			<ability crystal="fleeting">Attack Haste</ability>
+			<ability crystal="pulsing">Finish Boost</ability>
+			<ability crystal="wellspring">Combo Plus</ability>
+			<ability crystal="soothing">HP Boost</ability>
+			<ability crystal="hungry">Treasure Magnet</ability>
+			<ability crystal="abounding">Lucky Strike</ability>
+		</class>
+		<class name="M">
+			<ability crystal="shimmering">Cure Boost</ability>
+			<ability crystal="fleeting">Magic Haste</ability>
+			<ability crystal="pulsing">Combo F Boost</ability>
+			<ability crystal="wellspring">Combo Plus</ability>
+			<ability crystal="soothing">Item Boost</ability>
+			<ability crystal="hungry">Treasure Magnet</ability>
+			<ability crystal="abounding">Lucky Strike</ability>
+		</class>
+		<class name="N">
+			<ability crystal="shimmering">Cure Boost</ability>
+			<ability crystal="fleeting">Reload Boost</ability>
+			<ability crystal="pulsing">Second Chance</ability>
+			<ability crystal="wellspring">Combo Plus</ability>
+			<ability crystal="soothing">Defender</ability>
+			<ability crystal="hungry">Treasure Magnet</ability>
+			<ability crystal="abounding">Lucky Strike</ability>
+		</class>
+		<class name="O">
+			<ability crystal="shimmering">Dark Screen</ability>
+			<ability crystal="fleeting">Attack Haste</ability>
+			<ability crystal="pulsing">Finish Boost</ability>
+			<ability crystal="wellspring">Air Combo Plus</ability>
+			<ability crystal="soothing">Item Boost</ability>
+			<ability crystal="hungry">Treasure Magnet</ability>
+			<ability crystal="abounding">Lucky Strike</ability>
+		</class>
+		<class name="P">
+			<ability crystal="shimmering">Dark Screen</ability>
+			<ability crystal="fleeting">Magic Haste</ability>
+			<ability crystal="pulsing">Combo F Boost</ability>
+			<ability crystal="wellspring">Air Combo Plus</ability>
+			<ability crystal="soothing">Item Boost</ability>
+			<ability crystal="hungry">Treasure Magnet</ability>
+			<ability crystal="abounding">EXP Walker</ability>
+		</class>
+	</classes>
+</bbs>
