@@ -198,15 +198,9 @@ commandInput.addEventListener("input", function(event) {
     onType(meldSuggestions, "meld", event.target.value);
         
 });
-commandInput.addEventListener("blur", function(event) {
-    meldSuggestions.style.display = 'none';
-})
 ingredientInput.addEventListener("input", function(event) {
     onType(ingredientSuggestions, "ingredient", event.target.value);
 });
-ingredientInput.addEventListener("input", function(event) {
-    ingredientSuggestions.style.display = 'none';
-})
 
 //autocomplete handler
 function onType(suggestions, type, input){
